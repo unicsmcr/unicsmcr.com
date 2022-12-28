@@ -8,9 +8,9 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				'guh-gold': '#FFCC33',
-				'guh-silver': '',
-				'guh-purple': '',
+				'guh-gold': '#FC3',
+				'guh-silver': '#F1',
+				'guh-purple': '#609',
 			},
 		},
 	},
