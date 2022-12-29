@@ -13,6 +13,8 @@ module.exports = {
 				'guh-gold': '#FC3',
 				'guh-silver': '#f1f1f1',
 				'guh-purple': '#609',
+				'guh-black': '#1A1A1A',
+				'guh-grey': '#bbb',
 			},
 			fontFamily: {
 				sans: ['var(--font-inter)', ...fontFamily.sans],
