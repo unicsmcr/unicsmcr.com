@@ -1,5 +1,3 @@
-import { FaFacebookSquare, FaDiscord, FaTwitter, FaInstagram, FaGithub } from 'react-icons/fa';
-
 const Hero = (): JSX.Element => (
 	<section
 		id='hero'
