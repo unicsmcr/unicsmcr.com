@@ -1,0 +1,25 @@
+<svg width="1em" height="0.5em" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="transparent" viewBox="0 0 124 64">
+	<path d="M92 0    A32 32, 0, 0, 1, 92 64    A32 32, 0, 0, 1, 60 32    L64 32    A28 28, 0, 0, 0, 92 60    A28 28, 0, 0, 0, 92 4    L92 0" fill="#b0bbbf"/> <!--Frame Circle R-->
+
+	<path d="M92 64    A32 32, 0, 0, 0, 124 32    A2 2, 0, 0, 0, 120, 32    A28 28, 0, 0, 1, 92 60    A2 2, 0, 0, 0, 92 64" fill="#666f73"/> <!--R Bumper-->
+
+	<path d="M32 0    A32 32, 0, 0, 0, 32 64    A32 32, 0, 0, 0, 64 32    A28 28, 0, 0, 1, 92 4    A2 2, 0, 0, 0, 92 0    A32 32, 0, 0, 0, 60 32    A28 28, 0, 0, 1, 32 60    A28 28, 0, 0, 1, 32 4    A2 2, 0, 0, 0, 32 0" fill="#666f73"/> <!--Frame Circle L-->
+
+	<!--<path d="M32 64
+		 A32 32, 0, 0, 1, 0 32
+		 A2 2, 0, 0, 1, 4 32
+		 A28 28, 0, 0, 0, 32 60
+		 A2 2, 0, 0, 1, 32 64" fill="#97a2a6" />--> <!--L Bumper-->
+
+	<path d="M28 16 L36 16 L36 48 L28 48 L28 16" fill="#b0bbbf" fill-opacity="0.7"/> <!-- Vertical line -->
+	<path d="M16 28 L48 28 L48 36 L16 36 L16 28" fill="#b0bbbf" fill-opacity="0.7"/> <!-- Horizontal line -->
+
+	<path d="M92 26    A4 4, 0, 0, 0, 92 14    A4 4, 0, 0, 0, 92 26" stroke="#8d64c6" stroke-width="4"/> <!-- Button N -->
+
+	<path d="M104 38    A4 4, 0, 1, 0, 104 26    A4 4, 0, 1, 0, 104 38" stroke="#ff9a75" stroke-width="4"/> <!-- Button E -->
+
+	<path d="M92 50    A4 4, 0, 1, 0, 92 38    A4 4, 0, 1, 0, 92 50" stroke="#fedb73" stroke-width="4"/> <!-- Button S -->
+
+	<path d="M80 38    A4 4, 0, 1, 0, 80 26    A4 4, 0, 1, 0, 80 38" stroke="#56bea7" stroke-width="4"/> <!-- Button W -->
+
+</svg>

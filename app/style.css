@@ -1,0 +1,254 @@
+.gold
+
+{
+    color: #ffcc33;
+}
+
+.headerHolder {
+    background-color: black;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(assets/cover.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+    header h1,
+    header .subtitle {
+        display: inline-block;
+        padding: 16px;
+        background: black;
+    }
+
+    header.section {
+        color: white;
+        text-align: center;
+        padding: 90px 0;
+        font-weight: bold;
+    }
+
+#intro {
+    background: #ffcc33;
+    color: black;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+}
+
+#committee {
+    background: white;
+}
+
+#committee-list {
+    list-style: none;
+    margin: 0px -16px -16px -32px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    #committee-list li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 125px;
+        margin: 32px;
+    }
+
+        #committee-list li img {
+            width: 125px;
+            height: 125px;
+            border-radius: 75px;
+            margin-bottom: 16px;
+        }
+
+    #committee-list p {
+        margin: 0;
+        font-weight: bold;
+        line-height: 32px;
+    }
+
+    #committee-list .name {
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #committee-list .role {
+        font-size: 16px;
+        color: #444;
+        text-align: center;
+        line-height: 24px;
+    }
+
+#events-lists {
+    display: flex;
+    flex-direction: column;
+    margin-top: 64px;
+}
+
+    #events-lists section {
+        flex: 1;
+    }
+
+    #events-lists ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #events-lists li.event a {
+        display: flex;
+        align-items: center;
+        height: 72px;
+        background: white;
+        border: 1px solid grey;
+        box-shadow: 0 4px 8px -4px grey;
+    }
+
+    #events-lists li:not(:first-child) {
+        margin-top: 24px;
+    }
+
+    #events-lists .date {
+        width: 72px;
+        height: 72px;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+    }
+
+#upcoming-events .date {
+    background: #660099;
+    color: white;
+}
+
+    #upcoming-events .date.ongoing {
+        background: #ffcc33;
+        color: black;
+    }
+
+#past-events .date {
+    background: #5d5d5d;
+    color: white;
+}
+
+#events-lists .date span {
+    text-transform: uppercase;
+    width: 100%;
+    word-spacing: 64px;
+    text-align: center;
+}
+
+#events-lists .title {
+    background: white;
+    width: 100%;
+    padding: 0 16px;
+    font-size: 20px;
+    flex: 1;
+}
+
+#events-lists li.placeholder {
+    margin: 64px 0;
+    color: #4a4a4a;
+    font-size: 20px;
+    text-align: center;
+}
+
+#events-lists li.event a {
+    color: black;
+    font-weight: normal;
+}
+
+@media screen and (min-width: 960px) {
+    header.section {
+        padding: 220px 0;
+    }
+
+    #intro {
+        background: #ffcc33;
+        color: black;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    }
+
+    #events-lists {
+        flex-direction: row;
+    }
+
+    #committee-list {
+        margin-top: 64px;
+    }
+
+    #upcoming-events {
+        margin-right: 64px;
+    }
+}
+
+li#sponsors-link a {
+    color: #ffcc33;
+}
+
+header h1,
+header .subtitle {
+    display: inline-block;
+    padding: 16px;
+    background: black;
+}
+
+header.section {
+    color: white;
+    text-align: center;
+    padding: 90px 0;
+    font-weight: bold;
+}
+
+#intro {
+    background: #ffcc33;
+    color: black;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+}
+
+ul.sponsors-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    ul.sponsors-list li {
+        display: flex;
+        min-height: 200px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+        ul.sponsors-list li:not(:first-child) {
+            margin-top: 64px;
+        }
+
+h1:not(:first-child) {
+    margin-top: 64px;
+}
+
+.sponsor-image img {
+    width: 200px;
+    height: auto;
+    margin: 0 0 32px 0;
+}
+
+p.sponsor-desc {
+    flex: 1;
+    margin-top: 0;
+    text-justify: newspaper;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 960px) {
+    ul.sponsors-list li {
+        flex-direction: row;
+    }
+
+    .sponsor-image img {
+        margin: 0 32px 0 0;
+    }
+}
