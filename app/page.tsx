@@ -1,7 +1,6 @@
 'use client';
-import './style.css';
 import Marquee from 'react-fast-marquee';
-import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const Hero = (): JSX.Element => (
 	<section
@@ -50,7 +49,7 @@ const Home = (): JSX.Element => {
 						You can keep up-to-date with our events and see a full list of them by following our Facebook page.
 					</p>
 				</section>
-				<section id='sponsors' className='mx-auto py-10'>
+				<section id='sponsors' className='mx-auto py-10 max-w-screen-xl'>
 					<Marquee gradient={false}>
 						<div className='mx-5'>
 							<a href='https://www.bet365.com/#/HO/'>
@@ -114,79 +113,167 @@ const Home = (): JSX.Element => {
 						</div>
 					</Marquee>
 				</section>
-			</div>
-			<section id='committee' className='section'>
-				<div className='container padded'>
-					<h1>Committee</h1>
-					<ul id='committee-list'>
-						<li>
-							<img src='assets/people/gwydion.jpg' alt='Gwydion Smit' />
-							<p className='name'>Gwydion Smit</p>
-							<p className='role'>Co-Chair</p>
+				<section id='committee' className='max-w-screen-xl mx-auto py-20'>
+					<h2 className='text-6xl font-bold text-black text-center'>Committee</h2>
+					<ul id='committee-list' className='pt-8 grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4'>
+						<li className='flex flex-col mx-auto hover:-translate-y-1 items-center content-around'>
+							<Image
+								width={128}
+								height={128}
+								quality={100}
+								className='h-32 w-32 rounded-full'
+								src='/assets/people/gwydion.jpg'
+								alt='Gwydion Smit'
+							/>
+							<p className='text-center text-lg font-bold'>Gwydion Smit</p>
+							<p className='text-center text-md'>Co-Chair</p>
 						</li>
-						<li>
-							<img src='assets/people/germaine.jpg' alt='Germaine George' />
-							<p className='name'>Germaine George</p>
-							<p className='role'>Co-Chair</p>
+						<li className='flex flex-col mx-auto hover:-translate-y-1 items-center content-around'>
+							<Image
+								width={128}
+								height={128}
+								quality={100}
+								className='h-32 w-32 rounded-full'
+								src='/assets/people/germaine.jpg'
+								alt='Germaine George'
+							/>
+							<p className='text-center text-lg font-bold'>Germaine George</p>
+							<p className='text-center text-md'>Co-Chair</p>
 						</li>
-						<li>
-							<img src='assets/people/ali.jpg' alt='Ali Lakho' />
-							<p className='name'>Ali Lakho</p>
-							<p className='role'>Treasurer</p>
+						<li className='flex flex-col mx-auto hover:-translate-y-1 items-center content-around'>
+							<Image
+								width={128}
+								height={128}
+								quality={100}
+								className='h-32 w-32 rounded-full'
+								src='/assets/people/ali.jpg'
+								alt='Ali Lakho'
+							/>
+							<p className='text-center text-lg font-bold'>Ali Lakho</p>
+							<p className='text-center text-md'>Treasurer</p>
 						</li>
-						<li>
-							<img src='assets/people/joshua.jpg' alt='Joshua Simanullang' />
-							<p className='name'>Joshua Simanullang</p>
-							<p className='role'>Secretary</p>
+						<li className='flex flex-col mx-auto hover:-translate-y-1 items-center content-around'>
+							<Image
+								width={128}
+								height={128}
+								quality={100}
+								className='w-32 h-32 rounded-full'
+								src='/assets/people/joshua.jpg'
+								alt='Joshua Simanullang'
+							/>
+							<p className='text-center text-lg font-bold'>Joshua Simanullang</p>
+							<p className='text-center text-md'>Secretary</p>
 						</li>
-						<li>
-							<img src='assets/people/sambbhav.jpg' alt='Sambbhav Khare' />
-							<p className='name'>Sambbhav Khare</p>
-							<p className='role'>Dev Officer</p>
+						<li className='flex flex-col mx-auto hover:-translate-y-1 items-center content-around'>
+							<Image
+								width={128}
+								height={128}
+								quality={100}
+								className='h-32 w-32 rounded-full'
+								src='/assets/people/sambbhav.jpg'
+								alt='Sambbhav Khare'
+							/>
+							<p className='text-center text-lg font-bold'>Sambbhav Khare</p>
+							<p className='text-center text-md'>Dev Officer</p>
 						</li>
-						<li>
-							<img src='assets/people/mehar.jpg' alt='Mehar Mehta' />
-							<p className='name'>Mehar Mehta</p>
-							<p className='role'>PR Officer</p>
+						<li className='flex flex-col mx-auto hover:-translate-y-1 items-center content-around'>
+							<Image
+								width={128}
+								height={128}
+								quality={100}
+								className='h-32 w-32 rounded-full'
+								src='/assets/people/mehar.jpg'
+								alt='Mehar Mehta'
+							/>
+							<p className='text-center text-lg font-bold'>Mehar Mehta</p>
+							<p className='text-center text-md'>PR Officer</p>
 						</li>
-						<li>
-							<img src='/assets/people/dhruv.jpg' alt='Dhruv Sharma' />
-							<p className='name'>Graphics Officer</p>
-							<p className='role'>dhruv</p>
+						<li className='flex flex-col mx-auto hover:-translate-y-1 items-center content-around'>
+							<Image
+								width={128}
+								height={128}
+								quality={100}
+								className='h-32 w-32 rounded-full'
+								src='/assets/people/dhruv.jpg'
+								alt='Dhruv Sharma'
+							/>
+							<p className='text-center text-lg font-bold'>Graphics Officer</p>
+							<p className='text-center text-md'>dhruv</p>
 						</li>
-						<li>
-							<img src='assets/people/dhrishaj.jpg' alt='Dhrishaj Garg' />
-							<p className='name'>Dhrishaj Garg</p>
-							<p className='role'>Events Officer</p>
+						<li className='flex flex-col mx-auto hover:-translate-y-1 items-center content-around'>
+							<Image
+								width={128}
+								height={128}
+								className='h-32 w-32 rounded-full'
+								src='/assets/people/dhrishaj.jpg'
+								alt='Dhrishaj Garg'
+							/>
+							<p className='text-center text-lg font-bold'>Dhrishaj Garg</p>
+							<p className='text-center text-md'>Events Officer</p>
 						</li>
-						<li>
-							<img src='assets/people/mj.jpg' alt='MJ Ponsonby' />
-							<p className='name'>MJ Ponsonby</p>
-							<p className='role'>Game Dev Head</p>
+						<li className='flex flex-col mx-auto hover:-translate-y-1 items-center content-around'>
+							<Image
+								width={128}
+								height={128}
+								className='h-32 w-32 rounded-full'
+								src='/assets/people/mj.jpg'
+								alt='MJ Ponsonby'
+							/>
+							<p className='text-center text-lg font-bold'>MJ Ponsonby</p>
+							<p className='text-center text-md'>Game Dev Head</p>
 						</li>
-						<li>
-							<img src='assets/people/siqi.jpg' alt='Siqi Li' />
-							<p className='name'>Siqi Li</p>
-							<p className='role'>Procurement Officer</p>
+						<li className='flex flex-col mx-auto hover:-translate-y-1 items-center content-around'>
+							<Image
+								width={128}
+								height={128}
+								quality={100}
+								className='h-32 w-32 rounded-full'
+								src='/assets/people/siqi.jpg'
+								alt='Siqi Li'
+							/>
+							<p className='text-center text-lg font-bold'>Siqi Li</p>
+							<p className='text-center text-md'>Procurement Officer</p>
 						</li>
-						<li>
-							<img src='assets/people/keshav.jpg' alt='Keshav Gupta' />
-							<p className='name'>Keshav Gupta</p>
+						<span />
+						<li className='flex flex-col mx-auto hover:-translate-y-1 items-center content-around'>
+							<Image
+								width={128}
+								height={128}
+								quality={100}
+								className='h-32 w-32 rounded-full'
+								src='/assets/people/keshav.jpg'
+								alt='Keshav Gupta'
+							/>
+							<p className='text-center text-lg font-bold'>Keshav Gupta</p>
 							<p className='role'>May Ball Officer</p>
 						</li>
-						<li>
-							<img src='assets/people/mihir.jpg' alt='Mihirr M Bhaagwat' />
-							<p className='name'>Mihirr M Bhaagwat</p>
-							<p className='role'>Co-Hackathon Lead</p>
+						<li className='flex flex-col mx-auto hover:-translate-y-1 items-center content-around'>
+							<Image
+								width={128}
+								height={128}
+								quality={100}
+								className='h-32 w-32 rounded-full'
+								src='/assets/people/mihir.jpg'
+								alt='Mihirr M Bhaagwat'
+							/>
+							<p className='text-center text-lg font-bold'>Mihirr M Bhaagwat</p>
+							<p className='text-center text-md'>Co-Hackathon Lead</p>
 						</li>
-						<li>
-							<img src='assets/people/mateusz.jpg' alt='Mateusz Krajewski' />
-							<p className='name'>Mateusz Krajewski</p>
-							<p className='role'>Co-Hackathon Lead</p>
+						<li className='flex flex-col mx-auto hover:-translate-y-1 items-center content-around'>
+							<Image
+								width={128}
+								height={128}
+								quality={100}
+								className='h-32 w-32 rounded-full'
+								src='/assets/people/mateusz.jpg'
+								alt='Mateusz Krajewski'
+							/>
+							<p className='text-center text-lg font-bold'>Mateusz Krajewski</p>
+							<p className='text-center text-md'>Co-Hackathon Lead</p>
 						</li>
 					</ul>
-				</div>
-			</section>
+				</section>
+			</div>
 		</>
 	);
 };
