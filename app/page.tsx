@@ -12,7 +12,7 @@ import googleCalendarPlugin from "@fullcalendar/google-calendar";
 const Hero = (): JSX.Element => (
   <section
     id="hero"
-    className="flex justify-center items-center bg-hero-img bg-center bg-repeat py-56 bg-blend-darken bg-cover"
+    className="flex justify-center items-center bg-black bg-center bg-repeat py-56 bg-blend-darken bg-cover"
   >
     <div className="flex items-center space-y-12 flex-col">
       <h1 className="text-6xl text-white bg-black font-bold p-4">
@@ -90,6 +90,7 @@ const Home = (): JSX.Element => {
         </section>
 
         <section id="sponsors" className="mx-auto py-10 max-w-screen-xl">
+		<h2 className="text-6xl text-black font-bold">Sponsors</h2>
           <Marquee gradient={false}>
             <div className="mx-5">
               <a href="https://www.bet365.com/#/HO/">
