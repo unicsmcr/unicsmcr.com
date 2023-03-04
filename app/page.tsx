@@ -156,9 +156,7 @@ const Home = (): JSX.Element => {
         </section>
         <section id="committee" className="bg-guh-green">
 					<div className="max-w-screen-xl mx-auto">
-          <h2 className="text-6xl font-bold text-black text-center">
-            Committee
-          </h2>
+					<h2 className="text-6xl text-black font-bold">Committee</h2>
           <ul
             id="committee-list"
             className="pt-8 grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4"
