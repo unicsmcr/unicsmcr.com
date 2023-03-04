@@ -16,7 +16,7 @@ const Hero = (): JSX.Element => (
   >
     <div className="flex items-center space-y-12 flex-col">
       <h1 className="text-6xl text-white bg-black font-bold p-4">
-        Uni<span className="text-guh-gold">CS</span>
+        Uni<span className="text-guh-green">CS</span>
       </h1>
       <div className="text-2xl text-white bg-black p-4 text-center leading-relaxed">
         <p>University of Manchester</p>
@@ -31,7 +31,7 @@ const Home = (): JSX.Element => {
     <>
       <Hero />
       <div className="bg-guh-silver">
-        <section id="about" className="bg-guh-gold py-20 clip-diagonal">
+        <section id="about" className="bg-guh-green py-20 clip-diagonal">
           <div className="max-w-screen-xl mx-auto">
             <h2 className="text-6xl font-bold text-black">About us</h2>
             <p className="pt-8 text-xl text-black leading-relaxed">
@@ -153,7 +153,7 @@ const Home = (): JSX.Element => {
             </div>
           </Marquee>
         </section>
-        <section id="committee" className=" mx-auto py-20 guh-green">
+        <section id="committee" className="bg-guh-green">
 					<div className="max-w-screen-xl mx-auto">
           <h2 className="text-6xl font-bold text-black text-center">
             Committee
