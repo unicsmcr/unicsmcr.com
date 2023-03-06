@@ -91,8 +91,198 @@ const Home = (): JSX.Element => {
 
         <section id="sponsors" className="mx-auto py-10 max-w-screen-xl">
 		<h2 className="text-6xl text-black font-bold">Sponsors</h2>
+              <div className="grid grid-cols-2 gap-3">
+
+                    <a href="https://www.qube-rt.com/">
+                      <img className="w-21 gap-2" src="assets/sponsors/qube-rt.png" />
+                    </a>
+                    <a href="https://www.bet365.com/#/HO/">
+                      <img className="w-35 space-y-80" src="assets/sponsors/bet365.png" />
+                    </a>
+              </div>
+              
+              <div className="grid grid-cols-2 gap-4">
+                <a href="https://www.booking.com/content/about.en-gb.html?aid=356980&label=gog235jc-1FCBQoggJCBWFib3V0SDNYA2hQiAEBmAEJuAEXyAEM2AEB6AEB-AEMiAIBqAIDuALaoICeBsACAdICJDJhNjgxN2VjLTU5ODEtNGY4Zi1hM2YwLTdmMzhkYTBmZWRkZdgCBuACAQ&sid=8d2e7f7c44719f3d97a6535a216b914c">
+                  <img className="h-25  gap-4" src="assets/sponsors/booking.png" />
+                </a>
+             
+     
+                <a href="https://www.bloomberg.com/company">
+                  <img className="h-30 w-25 gap-4 " src="assets/sponsors/bloomberg.png" />
+                </a>
+
+              </div>
+            
+              
+              
+          
+
+   
+              
+            
+    {/* <h3 className="text-2xl text-black space-y-px"> Previous Sponsors</h3> */}
           <Marquee gradient={false}>
+          <div className="mx-5">
+              <a href="">
+                <img className="h-16" src="assets/sponsors/image255.png" />
+              </a>
+          </div>
+          <div className="mx-5">
+              <a href="">
+                <img className="h-16" src="assets/sponsors/image315.png" />
+              </a>
+          </div>
+          <div className="mx-5">
+          <a href="">
+                <img className="h-16" src="assets/sponsors/image327.png" />
+              </a>
+          </div>
+          <div className="mx-5">
+          <a href="">
+                <img className="h-16" src="assets/sponsors/image339.png" />
+              </a>
+          </div>
+          <div className="mx-5">
+          <a href="">
+                <img className="h-16" src="assets/sponsors/image387.png" />
+              </a>
+          </div>
+          <div className="mx-5">
+          <a href="">
+                <img className="h-16" src="assets/sponsors/image483.png" />
+              </a>
+          </div>
             <div className="mx-5">
+            <a href="">
+                <img className="h-16" src="assets/sponsors/image507.png" />
+              </a>
+            </div>
+            <div className="mx-5">
+            <a href="">
+                <img className="h-16" src="assets/sponsors/image543.png" />
+              </a>
+            </div>
+            <div className="mx-5">
+            <a href="">
+                <img className="h-16" src="assets/sponsors/image591.png" />
+              </a>
+              </div>
+              <div className="mx-5">
+              <a href="">
+                <img className="h-16" src="assets/sponsors/image651.png" />
+              </a>
+              </div>
+              <div className="mx-5">
+              <a href="">
+                <img className="h-16" src="assets/sponsors/image783.png" />
+              </a>
+              </div>
+              <div className="mx-5">
+              <a href="">
+                <img className="h-16" src="assets/sponsors/image1362.png" />
+              </a>
+              </div>
+            <div className="mx-5">
+            <a href="">
+                <img className="h-16" src="assets/sponsors/image1374.png" />
+              </a>
+            </div>
+            <div className="mx-5">
+            <a href="">
+                <img className="h-16" src="assets/sponsors/image1398.png" />
+              </a>
+            </div>
+            <div className="mx-5">
+            <a href="">
+                <img className="h-16" src="assets/sponsors/image1480.png" />
+              </a>
+            </div>
+            <div className="mx-5">
+            <a href="">
+                <img className="h-16" src="assets/sponsors/image1504.png" />
+              </a>
+            </div>
+            <div className="mx-5">
+              <a href="">
+                <img className="h-16" src="assets/sponsors/image255.png" />
+              </a>
+          </div>
+          <div className="mx-5">
+              <a href="">
+                <img className="h-16" src="assets/sponsors/image315.png" />
+              </a>
+          </div>
+          <div className="mx-5">
+          <a href="">
+                <img className="h-16" src="assets/sponsors/image327.png" />
+              </a>
+          </div>
+          <div className="mx-5">
+          <a href="">
+                <img className="h-16" src="assets/sponsors/image339.png" />
+              </a>
+          </div>
+          <div className="mx-5">
+          <a href="">
+                <img className="h-16" src="assets/sponsors/image387.png" />
+              </a>
+          </div>
+          <div className="mx-5">
+          <a href="">
+                <img className="h-16" src="assets/sponsors/image483.png" />
+              </a>
+          </div>
+            <div className="mx-5">
+            <a href="">
+                <img className="h-16" src="assets/sponsors/image507.png" />
+              </a>
+            </div>
+            <div className="mx-5">
+            <a href="">
+                <img className="h-16" src="assets/sponsors/image543.png" />
+              </a>
+            </div>
+            <div className="mx-5">
+            <a href="">
+                <img className="h-16" src="assets/sponsors/image591.png" />
+              </a>
+              </div>
+              <div className="mx-5">
+              <a href="">
+                <img className="h-16" src="assets/sponsors/image651.png" />
+              </a>
+              </div>
+              <div className="mx-5">
+              <a href="">
+                <img className="h-16" src="assets/sponsors/image783.png" />
+              </a>
+              </div>
+              <div className="mx-5">
+              <a href="">
+                <img className="h-16" src="assets/sponsors/image1362.png" />
+              </a>
+              </div>
+            <div className="mx-5">
+            <a href="">
+                <img className="h-16" src="assets/sponsors/image1374.png" />
+              </a>
+            </div>
+            <div className="mx-5">
+            <a href="">
+                <img className="h-16" src="assets/sponsors/image1398.png" />
+              </a>
+            </div>
+            <div className="mx-5">
+            <a href="">
+                <img className="h-16" src="assets/sponsors/image1480.png" />
+              </a>
+            </div>
+            <div className="mx-5">
+            <a href="">
+                <img className="h-16" src="assets/sponsors/image1504.png" />
+              </a>
+            </div>
+            {/* <div className="mx-5">
               <a href="https://www.bet365.com/#/HO/">
                 <img className="h-16" src="assets/sponsors/bet365.png" />
               </a>
@@ -111,47 +301,7 @@ const Home = (): JSX.Element => {
               <a href="https://www.bloomberg.com/company">
                 <img className="h-16" src="assets/sponsors/bloomberg.png" />
               </a>
-            </div>
-            <div className="mx-5">
-              <a href="https://www.bet365.com/#/HO/">
-                <img className="h-16" src="assets/sponsors/bet365.png" />
-              </a>
-            </div>
-            <div className="mx-5">
-              <a href="https://www.qube-rt.com/">
-                <img className="h-16" src="assets/sponsors/qube-rt.png" />
-              </a>
-            </div>
-            <div className="mx-5">
-              <a href="https://www.booking.com/content/about.en-gb.html?aid=356980&label=gog235jc-1FCBQoggJCBWFib3V0SDNYA2hQiAEBmAEJuAEXyAEM2AEB6AEB-AEMiAIBqAIDuALaoICeBsACAdICJDJhNjgxN2VjLTU5ODEtNGY4Zi1hM2YwLTdmMzhkYTBmZWRkZdgCBuACAQ&sid=8d2e7f7c44719f3d97a6535a216b914c">
-                <img className="h-16" src="assets/sponsors/booking.png" />
-              </a>
-            </div>
-            <div className="mx-5">
-              <a href="https://www.bloomberg.com/company">
-                <img className="h-16" src="assets/sponsors/bloomberg.png" />
-              </a>
-            </div>
-            <div className="mx-5">
-              <a href="https://www.bet365.com/#/HO/">
-                <img className="h-16" src="assets/sponsors/bet365.png" />
-              </a>
-            </div>
-            <div className="mx-5">
-              <a href="https://www.qube-rt.com/">
-                <img className="h-16" src="assets/sponsors/qube-rt.png" />
-              </a>
-            </div>
-            <div className="mx-5">
-              <a href="https://www.booking.com/content/about.en-gb.html?aid=356980&label=gog235jc-1FCBQoggJCBWFib3V0SDNYA2hQiAEBmAEJuAEXyAEM2AEB6AEB-AEMiAIBqAIDuALaoICeBsACAdICJDJhNjgxN2VjLTU5ODEtNGY4Zi1hM2YwLTdmMzhkYTBmZWRkZdgCBuACAQ&sid=8d2e7f7c44719f3d97a6535a216b914c">
-                <img className="h-16" src="assets/sponsors/booking.png" />
-              </a>
-            </div>
-            <div className="mx-5">
-              <a href="https://www.bloomberg.com/company">
-                <img className="h-16" src="assets/sponsors/bloomberg.png" />
-              </a>
-            </div>
+            </div> */}
           </Marquee>
         </section>
         <section id="committee" className="bg-guh-green">
