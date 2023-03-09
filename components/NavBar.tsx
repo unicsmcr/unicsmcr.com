@@ -6,9 +6,9 @@ import logo from '../public/logov2.svg';
 
 const pages = [
 	{ label: 'Home', href: '/', key: uuidv4() },
-	{ label: 'Events', href: '../#events', key: uuidv4(), scroll: false },
-	{ label: 'Committee', href: '../#comittee', key: uuidv4(), scroll: false },
-	{ label: 'Sponsors', href: '../#sponsors', key: uuidv4() },
+	{ label: 'Events', href: '/#events', key: uuidv4(), scroll: false },
+	{ label: 'Committee', href: '/#comittee', key: uuidv4(), scroll: false },
+	{ label: 'Sponsors', href: '/#sponsors', key: uuidv4() },
 ];
 
 const NavBar = (): JSX.Element => (
