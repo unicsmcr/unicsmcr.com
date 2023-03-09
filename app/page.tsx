@@ -61,7 +61,7 @@ const Home = (): JSX.Element => {
           </p>
           <p className="pt-4 text-xl text-black leading-relaxed">
             You can keep up-to-date with our events and see a full list of them
-            by following our Facebook page.
+            by following our Instagram page.
           </p>
 
           <FullCalendar
@@ -413,7 +413,7 @@ const Home = (): JSX.Element => {
                 width={128}
                 height={128}
                 className="h-32 w-32 rounded-full"
-                src="/assets/people/mj.jpg"
+                src="/assets/people/gamedev.jpg"
                 alt="MJ Ponsonby"
               />
               <p className="text-center text-lg font-bold">MJ Ponsonby</p>
@@ -450,10 +450,10 @@ const Home = (): JSX.Element => {
                 height={128}
                 quality={100}
                 className="h-32 w-32 rounded-full"
-                src="/assets/people/mihir.jpg"
-                alt="Mihirr M Bhaagwat"
+                src="/assets/people/asmaali.jpg"
+                alt="Asma"
               />
-              <p className="text-center text-lg font-bold">Mihirr M Bhaagwat</p>
+              <p className="text-center text-lg font-bold">Asma Ali</p>
               <p className="text-center text-md">Co-Hackathon Lead</p>
             </li>
             <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
@@ -462,10 +462,10 @@ const Home = (): JSX.Element => {
                 height={128}
                 quality={100}
                 className="h-32 w-32 rounded-full"
-                src="/assets/people/mateusz.jpg"
-                alt="Mateusz Krajewski"
+                src="/assets/people/asmaalshebli.jpg"
+                alt="Asma"
               />
-              <p className="text-center text-lg font-bold">Mateusz Krajewski</p>
+              <p className="text-center text-lg font-bold">Asma Alshebli</p>
               <p className="text-center text-md">Co-Hackathon Lead</p>
             </li>
           </ul>
