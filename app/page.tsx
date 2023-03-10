@@ -397,6 +397,18 @@ const Home = (): JSX.Element => {
                 height={128}
                 quality={100}
                 className="h-32 w-32 rounded-full"
+                src="/assets/people/dhruv.jpg"
+                alt="Dhruv Sharma"
+              />
+              <p className="text-center text-lg font-bold">Dhruv Sharma</p>
+              <p className="text-center text-md">Graphics Officer</p>
+            </li>
+            <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
+              <Image
+                width={128}
+                height={128}
+                quality={100}
+                className="h-32 w-32 rounded-full"
                 src="/assets/people/sambbhav.jpg"
                 alt="Sambbhav Khare"
               />
@@ -415,18 +427,7 @@ const Home = (): JSX.Element => {
               <p className="text-center text-lg font-bold">Mehar Mehta</p>
               <p className="text-center text-md">PR Officer</p>
             </li>
-            <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
-              <Image
-                width={128}
-                height={128}
-                quality={100}
-                className="h-32 w-32 rounded-full"
-                src="/assets/people/dhruv.jpg"
-                alt="Dhruv Sharma"
-              />
-              <p className="text-center text-lg font-bold">Graphics Officer</p>
-              <p className="text-center text-md">dhruv</p>
-            </li>
+            
             <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
               <Image
                 width={128}
