@@ -91,7 +91,7 @@ const Home = (): JSX.Element => {
 
         <section id="sponsors" className="mx-auto py-10 max-w-screen-xl">
 		<h2 className="text-6xl text-black font-bold">Sponsors</h2>
-              <div className="grid grid-cols-2 gap-3">
+              {/* <div className="grid grid-cols-2 gap-3">
 
                     <a href="https://www.qube-rt.com/">
                       <img className="w-21 gap-2" src="assets/sponsors/qube-rt.png" />
@@ -111,16 +111,46 @@ const Home = (): JSX.Element => {
                   <img className="h-30 w-25 gap-4 " src="assets/sponsors/bloomberg.png" />
                 </a>
 
+              </div> */}
+              <div className="row grid grid-cols-2">
+                <div className="column">
+                      <div className="card content-center">
+                        <a href="https://www.qube-rt.com/">
+                                <img className=" content-center gap-2" src="assets/sponsors/qube-rt.png" />
+                        </a>
+                      </div>
+                </div>
+                <div className="column ">
+                      <div className="card content-bottom pt-20 ">
+                        <a href="https://www.bet365.com/#/HO/">
+                                  <img className=" " src="assets/sponsors/bet365.png" />
+                        </a>
+                      </div>
+                </div>
               </div>
-            
-              
-              
-          
+              <div className="row grid grid-cols-2">
+                <div className="column">
+                      <div className="card gap-4 pt-10">
+                      <a href="https://www.booking.com/content/about.en-gb.html?aid=356980&label=gog235jc-1FCBQoggJCBWFib3V0SDNYA2hQiAEBmAEJuAEXyAEM2AEB6AEB-AEMiAIBqAIDuALaoICeBsACAdICJDJhNjgxN2VjLTU5ODEtNGY4Zi1hM2YwLTdmMzhkYTBmZWRkZdgCBuACAQ&sid=8d2e7f7c44719f3d97a6535a216b914c">
+                            <img className="h-20  gap-4" src="assets/sponsors/booking.png" />
+                      </a>
+                      </div>
+                </div>
+                <div className="column">
+                      <div className="card pt-10 pd-100">
+                      <a href="https://www.bloomberg.com/company">
+                            <img className="h-20  gap-4 " src="assets/sponsors/bloomberg.png" />
+                      </a>
+                      </div>
+                </div>
 
+            </div>
+
+  
    
               
             
-    {/* <h3 className="text-2xl text-black space-y-px"> Previous Sponsors</h3> */}
+    <h3 className="text-2xl text-black pt-10 pb-10"> Over the past few years we have been sponsored by:</h3>
           <Marquee gradient={false}>
           <div className="mx-5">
               <a href="">
@@ -467,6 +497,18 @@ const Home = (): JSX.Element => {
               />
               <p className="text-center text-lg font-bold">Asma Alshebli</p>
               <p className="text-center text-md">Co-Hackathon Lead</p>
+            </li>
+            <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
+              <Image
+                width={128}
+                height={128}
+                quality={100}
+                className="h-32 w-32 rounded-full"
+                src="/assets/people/vidhi.jpg"
+                alt="vidhi"
+              />
+              <p className="text-center text-lg font-bold">Vidhi Shetty</p>
+              <p className="text-center text-md">Sponsorship Officer</p>
             </li>
           </ul>
 					</div>
