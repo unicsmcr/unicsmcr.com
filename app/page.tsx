@@ -312,26 +312,6 @@ const Home = (): JSX.Element => {
                 <img className="h-16" src="assets/sponsors/image1504.png" />
               </a>
             </div>
-            {/* <div className="mx-5">
-              <a href="https://www.bet365.com/#/HO/">
-                <img className="h-16" src="assets/sponsors/bet365.png" />
-              </a>
-            </div>
-            <div className="mx-5">
-              <a href="https://www.qube-rt.com/">
-                <img className="h-16" src="assets/sponsors/qube-rt.png" />
-              </a>
-            </div>
-            <div className="mx-5">
-              <a href="https://www.booking.com/content/about.en-gb.html?aid=356980&label=gog235jc-1FCBQoggJCBWFib3V0SDNYA2hQiAEBmAEJuAEXyAEM2AEB6AEB-AEMiAIBqAIDuALaoICeBsACAdICJDJhNjgxN2VjLTU5ODEtNGY4Zi1hM2YwLTdmMzhkYTBmZWRkZdgCBuACAQ&sid=8d2e7f7c44719f3d97a6535a216b914c">
-                <img className="h-16" src="assets/sponsors/booking.png" />
-              </a>
-            </div>
-            <div className="mx-5">
-              <a href="https://www.bloomberg.com/company">
-                <img className="h-16" src="assets/sponsors/bloomberg.png" />
-              </a>
-            </div> */}
           </Marquee>
         </section>
         <section id="committee" className="bg-guh-green">
