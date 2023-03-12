@@ -90,30 +90,10 @@ const Home = (): JSX.Element => {
         </section>
 
         <section id="sponsors" className="mx-auto py-10 max-w-screen-xl">
-		<h2 className="text-6xl text-black font-bold">Sponsors</h2>
-              {/* <div className="grid grid-cols-2 gap-3">
-
-                    <a href="https://www.qube-rt.com/">
-                      <img className="w-21 gap-2" src="assets/sponsors/qube-rt.png" />
-                    </a>
-                    <a href="https://www.bet365.com/#/HO/">
-                      <img className="w-35 space-y-80" src="assets/sponsors/bet365.png" />
-                    </a>
-              </div>
-              
-              <div className="grid grid-cols-2 gap-4">
-                <a href="https://www.booking.com/content/about.en-gb.html?aid=356980&label=gog235jc-1FCBQoggJCBWFib3V0SDNYA2hQiAEBmAEJuAEXyAEM2AEB6AEB-AEMiAIBqAIDuALaoICeBsACAdICJDJhNjgxN2VjLTU5ODEtNGY4Zi1hM2YwLTdmMzhkYTBmZWRkZdgCBuACAQ&sid=8d2e7f7c44719f3d97a6535a216b914c">
-                  <img className="h-25  gap-4" src="assets/sponsors/booking.png" />
-                </a>
-             
-     
-                <a href="https://www.bloomberg.com/company">
-                  <img className="h-30 w-25 gap-4 " src="assets/sponsors/bloomberg.png" />
-                </a>
-
-              </div> */}
-              <div className="row grid grid-cols-2">
-                <div className="column">
+		<h2 className="text-6xl py-10 text-black font-bold">Our Current Sponsors</h2>
+    <h3 className="text-6xl font-bold text-black">Gold Sponsors</h3>
+              <div className="row grid grid-cols-2 ">
+                <div className="column ">
                       <div className="card content-center">
                         <a href="https://www.qube-rt.com/">
                                 <img className=" content-center gap-2" src="assets/sponsors/qube-rt.png" />
@@ -128,6 +108,7 @@ const Home = (): JSX.Element => {
                       </div>
                 </div>
               </div>
+    <h3 className=" text-6xl py-10 font-bold text-black">Silver Sponsors</h3>
               <div className="row grid grid-cols-2">
                 <div className="column">
                       <div className="card gap-4 pt-10">
@@ -312,6 +293,7 @@ const Home = (): JSX.Element => {
                 <img className="h-16" src="assets/sponsors/image1504.png" />
               </a>
             </div>
+            
           </Marquee>
         </section>
         <section id="committee" className="bg-guh-green">
@@ -319,10 +301,9 @@ const Home = (): JSX.Element => {
 					<h2 className="text-6xl text-black font-bold">Committee</h2>
           <ul
             id="committee-list"
-            className="pt-8 grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4"
-          >
+            className="pt-8 grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4" >
             <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
-              <Image
+            <a href="https://www.linkedin.com/in/gwydionsmit/" target="_blank"><Image
                 width={128}
                 height={128}
                 quality={100}
@@ -330,11 +311,13 @@ const Home = (): JSX.Element => {
                 src="/assets/people/gwydion.jpg"
                 alt="Gwydion Smit"
               />
+              </a>
               <p className="text-center text-lg font-bold">Gwydion Smit</p>
               <p className="text-center text-md">Co-Chair</p>
             </li>
+         
             <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
-              <Image
+              <a href="https://www.linkedin.com/in/germaine-george-4136b515b/" target="_blank"><Image
                 width={128}
                 height={128}
                 quality={100}
@@ -342,10 +325,12 @@ const Home = (): JSX.Element => {
                 src="/assets/people/germaine.jpg"
                 alt="Germaine George"
               />
+              </a>
               <p className="text-center text-lg font-bold">Germaine George</p>
               <p className="text-center text-md">Co-Chair</p>
             </li>
             <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
+              <a href="https://www.linkedin.com/in/ali-lakho/" target="_blank">
               <Image
                 width={128}
                 height={128}
@@ -354,10 +339,12 @@ const Home = (): JSX.Element => {
                 src="/assets/people/ali.jpg"
                 alt="Ali Lakho"
               />
+                </a>
               <p className="text-center text-lg font-bold">Ali Lakho</p>
               <p className="text-center text-md">Treasurer</p>
             </li>
             <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
+              <a href="https://www.linkedin.com/in/joshua-simanullang-376374228/" target="_blank">
               <Image
                 width={128}
                 height={128}
@@ -366,12 +353,14 @@ const Home = (): JSX.Element => {
                 src="/assets/people/joshua.jpg"
                 alt="Joshua Simanullang"
               />
+              </a>
               <p className="text-center text-lg font-bold">
                 Joshua Simanullang
               </p>
               <p className="text-center text-md">Secretary</p>
             </li>
             <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
+              <a href="https://www.linkedin.com/in/dsio/" target="_blank">
               <Image
                 width={128}
                 height={128}
@@ -380,10 +369,12 @@ const Home = (): JSX.Element => {
                 src="/assets/people/dhruv.jpg"
                 alt="Dhruv Sharma"
               />
+              </a>
               <p className="text-center text-lg font-bold">Dhruv Sharma</p>
               <p className="text-center text-md">Graphics Officer</p>
             </li>
             <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
+              <a href="https://www.linkedin.com/in/khare-sambbhav/" target="_blank">
               <Image
                 width={128}
                 height={128}
@@ -392,10 +383,12 @@ const Home = (): JSX.Element => {
                 src="/assets/people/sambbhav.jpg"
                 alt="Sambbhav Khare"
               />
+              </a>
               <p className="text-center text-lg font-bold">Sambbhav Khare</p>
               <p className="text-center text-md">Dev Officer</p>
             </li>
             <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
+              <a href="https://www.linkedin.com/in/mehar-mehta/" target="_blank">
               <Image
                 width={128}
                 height={128}
@@ -404,11 +397,13 @@ const Home = (): JSX.Element => {
                 src="/assets/people/mehar.jpg"
                 alt="Mehar Mehta"
               />
+              </a>
               <p className="text-center text-lg font-bold">Mehar Mehta</p>
               <p className="text-center text-md">PR Officer</p>
             </li>
             
             <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
+              <a href="https://www.linkedin.com/in/dhrishaj-garg/" target="_blank">
               <Image
                 width={128}
                 height={128}
@@ -416,21 +411,37 @@ const Home = (): JSX.Element => {
                 src="/assets/people/dhrishaj.jpg"
                 alt="Dhrishaj Garg"
               />
+              </a>
               <p className="text-center text-lg font-bold">Dhrishaj Garg</p>
               <p className="text-center text-md">Events Officer</p>
             </li>
             <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
-              <Image
+              <a href="https://www.linkedin.com/in/muna-a-hassan/" target="_blank">
+                <Image
+                width={128}
+                height={128}
+                quality={100}
+                className="h-32 w-32 rounded-full"
+                src="/assets/people/muna.jpeg"
+                alt="muna"
+              />
+              </a>
+              <p className="text-center text-lg font-bold">Muna Hassan</p>
+              <p className="text-center text-md">Events Officer</p>
+            </li>
+            <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
+              <a href="https://www.linkedin.com/in/mj-ponsonby-23857623b/" target="_blank"><Image
                 width={128}
                 height={128}
                 className="h-32 w-32 rounded-full"
                 src="/assets/people/gamedev.jpg"
                 alt="MJ Ponsonby"
-              />
+              /></a>
               <p className="text-center text-lg font-bold">MJ Ponsonby</p>
               <p className="text-center text-md">Game Dev Head</p>
             </li>
             <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
+              <a href="https://www.linkedin.com/in/siqi-li-862aa021a/" target="_blank">
               <Image
                 width={128}
                 height={128}
@@ -439,11 +450,13 @@ const Home = (): JSX.Element => {
                 src="/assets/people/siqi.jpg"
                 alt="Siqi Li"
               />
+              </a>
               <p className="text-center text-lg font-bold">Siqi Li</p>
               <p className="text-center text-md">Procurement Officer</p>
             </li>
-            <span />
+            {/* <span /> */}
             <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
+              <a href="https://www.linkedin.com/in/keshavigupta/" target="_blank">
               <Image
                 width={128}
                 height={128}
@@ -452,10 +465,12 @@ const Home = (): JSX.Element => {
                 src="/assets/people/keshav.jpg"
                 alt="Keshav Gupta"
               />
+              </a>
               <p className="text-center text-lg font-bold">Keshav Gupta</p>
               <p className="role">May Ball Officer</p>
             </li>
             <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
+              <a href="https://www.linkedin.com/in/asma-o-ali/" target="_blank">
               <Image
                 width={128}
                 height={128}
@@ -464,10 +479,12 @@ const Home = (): JSX.Element => {
                 src="/assets/people/asmaali.jpg"
                 alt="Asma"
               />
+              </a>
               <p className="text-center text-lg font-bold">Asma Ali</p>
               <p className="text-center text-md">Co-Hackathon Lead</p>
             </li>
             <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
+              <a href="https://www.linkedin.com/in/asma-alshebli-86a13a264/" target="_blank">
               <Image
                 width={128}
                 height={128}
@@ -476,10 +493,12 @@ const Home = (): JSX.Element => {
                 src="/assets/people/asmaalshebli.jpg"
                 alt="Asma"
               />
+              </a>
               <p className="text-center text-lg font-bold">Asma Alshebli</p>
               <p className="text-center text-md">Co-Hackathon Lead</p>
             </li>
             <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
+              <a href="https://www.linkedin.com/in/vidhi-shetty-a29417214/" target="_blank">
               <Image
                 width={128}
                 height={128}
@@ -488,6 +507,7 @@ const Home = (): JSX.Element => {
                 src="/assets/people/vidhi.jpg"
                 alt="vidhi"
               />
+              </a>
               <p className="text-center text-lg font-bold">Vidhi Shetty</p>
               <p className="text-center text-md">Sponsorship Officer</p>
             </li>
