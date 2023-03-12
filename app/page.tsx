@@ -293,7 +293,7 @@ const Home = (): JSX.Element => {
                 <img className="h-16" src="assets/sponsors/image1504.png" />
               </a>
             </div>
-            
+
           </Marquee>
         </section>
         <section id="committee" className="bg-guh-green">
