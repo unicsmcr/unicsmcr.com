@@ -64,29 +64,30 @@ const Home = (): JSX.Element => {
             by following our Instagram page.
           </p>
 
-          <FullCalendar
-            plugins={[
-              dayGridPlugin,
-              interactionPlugin,
-              timeGridPlugin,
-              googleCalendarPlugin,
-            ]}
-            headerToolbar={{
-              left: "prev,next today",
-              center: "title",
-              right: "dayGridMonth,timeGridWeek",
-            }}
-            initialView="timeGridWeek"
-            nowIndicator={true}
-            editable={true}
-            selectable={true}
-            selectMirror={true}
-            events={{
-              googleCalendarId:
-                "98ae4449f97bb3e8675a6f4d1cd2037b7a00242d21af729b5b464781cef1f614@group.calendar.google.com",
-            }}
-            googleCalendarApiKey="AIzaSyCN_1HywiY6Z7LZXsVWoC8_fZH0GwOJOec"
-          />
+                  <FullCalendar
+                      plugins={[
+                          dayGridPlugin,
+                          interactionPlugin,
+                          timeGridPlugin,
+                          googleCalendarPlugin,
+                      ]}
+                      headerToolbar={{
+                          left: "prev,next",
+                          center: "title",
+                          right: "",
+                      }}
+                      initialView="dayGridMonth"
+                      nowIndicator={true}
+                      editable={true}
+                      selectable={true}
+                      dayMaxEvents={true}
+                      selectMirror={true}
+                      events={{
+                          googleCalendarId:
+                              "98ae4449f97bb3e8675a6f4d1cd2037b7a00242d21af729b5b464781cef1f614@group.calendar.google.com",
+                      }}
+                      googleCalendarApiKey="AIzaSyCN_1HywiY6Z7LZXsVWoC8_fZH0GwOJOec"
+                  />
         </section>
 
         <section id="sponsors" className="mx-auto py-10 max-w-screen-xl">
