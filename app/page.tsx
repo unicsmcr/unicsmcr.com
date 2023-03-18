@@ -26,10 +26,10 @@ const Home = (): JSX.Element => {
 			<div className="bg-black">
 				<section id="about" className="py-20 ">
 					<div className="max-w-screen-xl mx-auto">
-						<h2 className="text-6xl font-bold text-guh-green">About us</h2>
+						<h2 className="text-6xl font-bold text-guh-green font-sans uppercase">About us</h2>
 						<p className="pt-8 text-2xl text-white leading-relaxed">
-							About us UniCS is the University of Manchester&#39;s tech society. We are a big community with a passion
-							for technology and creating innovative solutions for everyone to enjoy. Through our hackathons and other
+							UniCS is the University of Manchester&#39;s tech society. We are a big community with a passion for
+							technology and creating innovative solutions for everyone to enjoy. Through our hackathons and other
 							events, we aim to bring students and industry closer together. When we aren&#39;t organising our own
 							events we also travel to events in places like Barcelona, Helsinki, and Bordeaux, amongst other exotic
 							destinations, often free due to various hackathon sponsors. Come join us to see what we get up to this
@@ -39,7 +39,7 @@ const Home = (): JSX.Element => {
 				</section>
 
 				<section id="events" className="max-w-screen-xl mx-auto py-20">
-					<h2 className="text-6xl text-unics-green font-bold">Events</h2>
+					<h2 className="text-6xl text-unics-green font-bold font-sans uppercase">Events</h2>
 					<p className="pt-8 text-2xl text-white leading-relaxed">
 						Our events are suited to every level of knowledge and all degree courses. If you are someone who is
 						interested in knowing how they can use computers to see an idea come to life, UniCS is the society for you.
@@ -52,8 +52,7 @@ const Home = (): JSX.Element => {
 				</section>
 
 				<section id="sponsors" className="mx-auto py-10 max-w-screen-xl">
-					<h2 className="text-6xl py-10 text-guh-green font-bold">Our Current Sponsors</h2>
-					<h3 className="text-6xl font-bold text-black">Gold Sponsors</h3>
+					<h2 className="text-6xl py-10 text-guh-green font-bold  font-sans uppercase">Our Current Sponsors</h2>
 					<div className="row grid grid-cols-2 ">
 						<div className="column ">
 							<div className="card content-center">
@@ -70,7 +69,6 @@ const Home = (): JSX.Element => {
 							</div>
 						</div>
 					</div>
-					<h3 className=" text-6xl py-10 font-bold text-guh-green">Silver Sponsors</h3>
 					<div className="row grid grid-cols-2">
 						<div className="column">
 							<div className="card gap-4 pt-10">

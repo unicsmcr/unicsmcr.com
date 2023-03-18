@@ -20,6 +20,7 @@ module.exports = {
 			},
 			fontFamily: {
 				sans: ['var(--font-inter)', ...fontFamily.sans],
+				serif: ['var(--font-roboto)', ...fontFamily.serif],
 			},
 			backgroundImage: {
 				'hero-img': "linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url('/cover.jpg')",
