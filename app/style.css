@@ -33,6 +33,11 @@ header.section {
 	clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
 }
 
+#calendar {
+	background: white;
+	color: white;
+}
+
 #committee {
 	background: white;
 }

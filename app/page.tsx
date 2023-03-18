@@ -1,6 +1,14 @@
 'use client';
 import Marquee from 'react-fast-marquee';
 import React from 'react';
+import Image from "next/image";
+import FullCalendar from "@fullcalendar/react";
+import dayGridPlugin from "@fullcalendar/daygrid";
+import interactionPlugin from "@fullcalendar/interaction";
+import timeGridPlugin from "@fullcalendar/timegrid";
+import { Calendar } from "@fullcalendar/core";
+import googleCalendarPlugin from "@fullcalendar/google-calendar";
+import committeeData from '@data/comittee.json';
 
 const Hero = (): JSX.Element => (
 	<section
@@ -50,6 +58,49 @@ const Home = (): JSX.Element => {
 						You can keep up-to-date with our events and see a full list of them by following our Instagram page.
 					</p>
 				</section>
+
+
+
+					<section id="cal" className="mx-auto py-20 max-w-screen-xl ">
+					<div className="text-3xl text-black bg-white p-4 leading-relaxed">
+					<FullCalendar
+						plugins={[
+							dayGridPlugin,
+							interactionPlugin,
+							timeGridPlugin,
+							googleCalendarPlugin,
+						]}
+						headerToolbar={{
+							left: "",
+							center: "title",
+						    right: "",
+							}}
+							footerToolbar={{
+								left: "",
+								center: "prev,next",
+								right: "",
+                            }}
+						initialView="dayGridMonth"
+						nowIndicator={true}
+						editable={true}
+						selectable={true}
+						dayMaxEvents={true}
+						selectMirror={true}
+						contentHeight={400}
+						aspectRatio={1}
+						events={{
+							googleCalendarId:
+								"98ae4449f97bb3e8675a6f4d1cd2037b7a00242d21af729b5b464781cef1f614@group.calendar.google.com",
+						}}
+						googleCalendarApiKey="AIzaSyCN_1HywiY6Z7LZXsVWoC8_fZH0GwOJOec"
+					/>
+
+						</div>
+						</section>
+						
+				
+
+
 
 				<section id="sponsors" className="mx-auto py-10 max-w-screen-xl ">
 					<h2 className="text-6xl py-10 text-guh-green font-bold  font-sans uppercase">Our Current Sponsors</h2>
