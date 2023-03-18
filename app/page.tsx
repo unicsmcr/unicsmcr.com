@@ -1,14 +1,6 @@
 'use client';
 import Marquee from 'react-fast-marquee';
-import Image from 'next/image';
 import React from 'react';
-import FullCalendar from '@fullcalendar/react';
-import dayGridPlugin from '@fullcalendar/daygrid';
-import interactionPlugin from '@fullcalendar/interaction';
-import timeGridPlugin from '@fullcalendar/timegrid';
-import { Calendar } from '@fullcalendar/core';
-import googleCalendarPlugin from '@fullcalendar/google-calendar';
-import committeeData from '@data/comittee.json';
 
 const Hero = (): JSX.Element => (
 	<section
@@ -35,7 +27,7 @@ const Home = (): JSX.Element => {
 				<section id="about" className="py-20 ">
 					<div className="max-w-screen-xl mx-auto">
 						<h2 className="text-6xl font-bold text-guh-green">About us</h2>
-						<p className="pt-8 text-xl text-white leading-relaxed">
+						<p className="pt-8 text-2xl text-white leading-relaxed">
 							About us UniCS is the University of Manchester&#39;s tech society. We are a big community with a passion
 							for technology and creating innovative solutions for everyone to enjoy. Through our hackathons and other
 							events, we aim to bring students and industry closer together. When we aren&#39;t organising our own
@@ -48,19 +40,19 @@ const Home = (): JSX.Element => {
 
 				<section id="events" className="max-w-screen-xl mx-auto py-20">
 					<h2 className="text-6xl text-unics-green font-bold">Events</h2>
-					<p className="pt-8 text-xl text-white leading-relaxed">
+					<p className="pt-8 text-2xl text-white leading-relaxed">
 						Our events are suited to every level of knowledge and all degree courses. If you are someone who is
 						interested in knowing how they can use computers to see an idea come to life, UniCS is the society for you.
 						It doesn&#39;t matter if you have never touched a computer or been programming for years, you will never be
 						bored at our events. And if you still aren&#39;t convinced, we have free pizza (and occasionally drinks).
 					</p>
-					<p className="pt-4 text-xl text-white leading-relaxed">
+					<p className="pt-4 text-2xl text-white leading-relaxed">
 						You can keep up-to-date with our events and see a full list of them by following our Instagram page.
 					</p>
 				</section>
 
 				<section id="sponsors" className="mx-auto py-10 max-w-screen-xl">
-					<h2 className="text-6xl py-10 text-black font-bold">Our Current Sponsors</h2>
+					<h2 className="text-6xl py-10 text-guh-green font-bold">Our Current Sponsors</h2>
 					<h3 className="text-6xl font-bold text-black">Gold Sponsors</h3>
 					<div className="row grid grid-cols-2 ">
 						<div className="column ">
@@ -78,7 +70,7 @@ const Home = (): JSX.Element => {
 							</div>
 						</div>
 					</div>
-					<h3 className=" text-6xl py-10 font-bold text-black">Silver Sponsors</h3>
+					<h3 className=" text-6xl py-10 font-bold text-guh-green">Silver Sponsors</h3>
 					<div className="row grid grid-cols-2">
 						<div className="column">
 							<div className="card gap-4 pt-10">
@@ -95,7 +87,7 @@ const Home = (): JSX.Element => {
 							</div>
 						</div>
 					</div>
-					<h3 className="text-2xl text-black pt-10 pb-10"> Over the past few years we have been sponsored by:</h3>
+					<h3 className="text-2xl text-white pt-10 pb-10"> Over the past few years we have been sponsored by:</h3>
 					<Marquee gradient={false}>
 						<div className="mx-5">
 							<a href="">
