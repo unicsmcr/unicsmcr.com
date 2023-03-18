@@ -10,7 +10,7 @@ const inter = Inter({
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
 	return (
-		<html lang='en'>
+		<html lang="en">
 			<body className={`${inter.variable} font-sans min-h-screen flex flex-col scroll-smooth`}>
 				<NavBar />
 				{children}
