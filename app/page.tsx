@@ -54,9 +54,12 @@ const Home = (): JSX.Element => {
 						It doesn&#39;t matter if you have never touched a computer or been programming for years, you will never be
 						bored at our events. And if you still aren&#39;t convinced, we have free pizza (and occasionally drinks).
 					</p>
-					<p className="pt-4 text-2xl text-white leading-relaxed">
+					<p className="pt-4 text-2xl text-white leading-relaxed py-20">
 						You can keep up-to-date with our events and see a full list of them by following our Instagram page.
 					</p>
+					<p className="pt-4 text-2xl text-unics-green text-center leading-relaxed">
+						More information about May Ball and GUH 23 coming soon!
+						</p>
 				</section>
 
 
@@ -98,46 +101,45 @@ const Home = (): JSX.Element => {
 						</div>
 						</section>
 						
-				
-
-
 
 				<section id="sponsors" className="mx-auto py-10 max-w-screen-xl ">
 					<h2 className="text-6xl py-10 text-guh-green font-bold  font-sans uppercase">Our Current Sponsors</h2>
-					<div className="row grid grid-cols-2 grayscale">
+					<div className="row grid grid-cols-4 grayscale invert">
 						<div className="column ">
-							<div className="card content-center">
+							<div className="card pt-10">
 								<a href="https://www.qube-rt.com/">
-									<img className=" content-center gap-2" src="assets/sponsors/qube-rt.png" />
+									<img className="w-60" src="assets/sponsors/qube-rt.png" />
+								</a>
+							</div>
+						</div>
+						<div className="column">
+							<div className="card gap-4 pt-40">
+								<a href="https://www.booking.com/content/about.en-gb.html?aid=356980&label=gog235jc-1FCBQoggJCBWFib3V0SDNYA2hQiAEBmAEJuAEXyAEM2AEB6AEB-AEMiAIBqAIDuALaoICeBsACAdICJDJhNjgxN2VjLTU5ODEtNGY4Zi1hM2YwLTdmMzhkYTBmZWRkZdgCBuACAQ&sid=8d2e7f7c44719f3d97a6535a216b914c">
+									<img className="w-60" src="assets/sponsors/booking.png" />
+								</a>
+							</div>
+						</div>
+						<div className="column">
+							<div className="card pt-40">
+								<a href="https://www.bloomberg.com/company">
+									<img className="w-60" src="assets/sponsors/bloomberg.png" />
 								</a>
 							</div>
 						</div>
 						<div className="column ">
-							<div className="card content-bottom pt-20 ">
+							<div className="card pt-20">
 								<a href="https://www.bet365.com/#/HO/">
-									<img className=" " src="assets/sponsors/bet365.png" />
+									<img className="w-60" src="assets/sponsors/bet365.png" />
 								</a>
 							</div>
 						</div>
 					</div>
-					<div className="row grid grid-cols-2 grayscale">
-						<div className="column">
-							<div className="card gap-4 pt-10">
-								<a href="https://www.booking.com/content/about.en-gb.html?aid=356980&label=gog235jc-1FCBQoggJCBWFib3V0SDNYA2hQiAEBmAEJuAEXyAEM2AEB6AEB-AEMiAIBqAIDuALaoICeBsACAdICJDJhNjgxN2VjLTU5ODEtNGY4Zi1hM2YwLTdmMzhkYTBmZWRkZdgCBuACAQ&sid=8d2e7f7c44719f3d97a6535a216b914c">
-									<img className="h-20  gap-4" src="assets/sponsors/booking.png" />
-								</a>
-							</div>
-						</div>
-						<div className="column">
-							<div className="card pt-10 pd-100">
-								<a href="https://www.bloomberg.com/company">
-									<img className="h-20  gap-4 " src="assets/sponsors/bloomberg.png" />
-								</a>
-							</div>
-						</div>
-					</div>
+
+
+
+
 					<h3 className="text-2xl text-white pt-10 pb-10"> Over the past few years we have been sponsored by:</h3>
-					<Marquee gradient={false} className="grayscale">
+					<Marquee gradient={false} className="grayscale invert max-width:100% ">
 						<div className="mx-5">
 							<a href="">
 								<img className="h-16" src="assets/sponsors/image255.png" />
@@ -460,7 +462,9 @@ const Home = (): JSX.Element => {
 						</div>
 					</Marquee>
 				</section>
-			</div>
+
+
+							</div>
 		</>
 	);
 };

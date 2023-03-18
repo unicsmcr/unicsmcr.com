@@ -1,26 +1,26 @@
 import { FaFacebookSquare, FaDiscord, FaTwitter, FaInstagram, FaGithub } from 'react-icons/fa';
 
 const Footer = (): JSX.Element => (
-	<footer className="bg-guh-black py-8">
-		<div className="max-w-screen-xl mx-auto text-center text-guh-grey text-sm">
-			<p className="flex space-x-4 text-guh-grey text-lg font-bold self-center align-center justify-center pb-4">
+	<footer className="bg-guh-black py-16">
+		<div className="max-w-screen-xl mx-auto text-center text-guh-grey">
+			<p className="flex space-x-4 text-guh-grey text-xl font-bold self-center align-center justify-center pb-4">
 				<a href="mailto:contact@unicsmcr.com">Contact Us</a>
 			</p>
 			<ul className="flex space-x-4 text-guh-grey text-lg font-bold self-center align-center justify-center pb-4">
 				<a href="https://www.facebook.com/unicsmcr">
-					<FaFacebookSquare size={32} />
+					<FaFacebookSquare size={40} />
 				</a>
 				<a href="https://twitter.com/unicsmcr_">
-					<FaTwitter size={32} />
+					<FaTwitter size={40} />
 				</a>
 				<a href="https://www.instagram.com/unicsmcr/">
-					<FaInstagram size={32} />
+					<FaInstagram size={40} />
 				</a>
 				<a href="https://github.com/unicsmcr">
-					<FaGithub size={32} />
+					<FaGithub size={40} />
 				</a>
 				<a href="https://unicsmcr.com/discord">
-					<FaDiscord size={32} />
+					<FaDiscord size={40} />
 				</a>
 			</ul>
 			<p>&copy; Copyright 2018&ndash;{new Date().getFullYear()} UniCS</p>

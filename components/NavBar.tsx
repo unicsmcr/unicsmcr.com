@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+//import { Link, animateScroll as scroll } from "react-scroll";
 import { FaFacebookSquare, FaDiscord, FaTwitter, FaInstagram, FaGithub } from 'react-icons/fa';
 import { v4 as uuidv4 } from 'uuid';
 import logo from '../public/logov2.svg';
@@ -20,7 +21,7 @@ const NavBar = (): JSX.Element => {
 		<nav className="bg-black">
 			<div className="max-w-screen-xl mx-auto py-4 flex justify-center items-center">
 				<div className="flex-shrink-0">
-					<Image src={logo} width={64} height={64} alt="UniCS logo" />
+					<Image src={logo} width={64} height={64} alt="UniCS logo"/>
 				</div>
 
 				<div className="hidden md:flex justify-center items-center space-x-4 text-white text-lg font-bold ml-auto">
