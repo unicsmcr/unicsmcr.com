@@ -3,90 +3,105 @@
 		"name": "Gwydion Smit",
 		"img": "/assets/people/gwydion.jpg",
 		"social": "https://www.linkedin.com/in/gwydionsmit/",
-		"role": "Co-Chair"
+		"role": "Co-Chair",
+		"email": "gwydion@unicsmcr.com"
 	},
 	{
 		"name": "Germaine George",
 		"img": "/assets/people/germaine.jpg",
 		"social": "https://www.linkedin.com/in/germaine-george-4136b515b/",
-		"role": "Co-Chair"
+		"role": "Co-Chair",
+		"email": "germaine@unicsmcr.com"
 	},
 	{
 		"name": "Ali Lakho",
 		"img": "/assets/people/ali.jpg",
 		"social": "https://www.linkedin.com/in/ali-lakho/",
-		"role": "Treasurer"
+		"role": "Treasurer",
+		"email": "ali@unicsmcr.com"
 	},
 	{
 		"name": "Joshua Simanullang",
 		"img": "/assets/people/joshua.jpg",
 		"social": "https://www.linkedin.com/in/joshua-simanullang-376374228/",
-		"role": "Secretary"
+		"role": "Secretary",
+		"email": "joshua@unicsmcr.com"
 	},
 	{
 		"name": "Dhruv Sharma",
 		"img": "/assets/people/dhruv.jpg",
 		"social": "https://www.linkedin.com/in/dsio/",
-		"role": "Graphics Officer"
+		"role": "Graphics Officer",
+		"email": "dhruv@unicsmcr.com"
 	},
 	{
 		"name": "Sambbhav Khare",
 		"img": "/assets/people/sambbhav.jpg",
 		"social": "https://www.linkedin.com/in/khare-sambbhav/",
-		"role": "Dev Officer"
+		"role": "Dev Officer",
+		"email": "sambbav@unicsmcr.com"
 	},
 	{
 		"name": "Mehar Meta",
 		"img": "/assets/people/mehar.jpg",
 		"social": "https://www.linkedin.com/in/mehar-mehta/",
-		"role": "PR Officer"
+		"role": "PR Officer",
+		"email": "mehar@unicsmcr.com"
 	},
 	{
 		"name": "Dhrishaj Garg",
 		"img": "/assets/people/dhrishaj.jpg",
 		"social": "https://www.linkedin.com/in/dhrishaj-garg/",
-		"role": "Events Officer"
+		"role": "Events Officer",
+		"email": "dhrishaj@unicsmcr.com"
 	},
 	{
 		"name": "Muna Hassan",
 		"img": "/assets/people/muna.jpeg",
 		"social": "https://www.linkedin.com/in/muna-a-hassan/",
-		"role": "Events Officer"
+		"role": "Events Officer",
+		"email": "muna@unicsmcr.com"
 	},
 	{
 		"name": "MJ Ponsonby",
 		"img": "/assets/people/gamedev.jpg",
 		"social": "https://www.linkedin.com/in/mj-ponsonby-23857623b/",
-		"role": "Game Dev Head"
+		"role": "Game Dev Head",
+		"email": "mj@unicsmcr.com"
 	},
 	{
 		"name": "Siqi Li",
 		"img": "/assets/people/siqi.jpg",
 		"social": "https://www.linkedin.com/in/siqi-li-862aa021a/",
-		"role": "Procurement Officer"
+		"role": "Procurement Officer",
+		"email": "siqi@unicsmcr.com"
 	},
 	{
 		"name": "Keshav Gupta",
 		"img": "/assets/people/keshav.jpg",
 		"social": "https://www.linkedin.com/in/keshavigupta/",
-		"role": "May Ball Officer"
+		"role": "May Ball Officer",
+		"email": "keshav@unicsmcr.com"
 	},
 	{
 		"name": "Asma Ali",
 		"img": "/assets/people/asmaali.jpg",
 		"social": "https://www.linkedin.com/in/asma-o-ali/",
-		"role": "Hackathons Co-Lead"
+		"role": "Hackathons Co-Lead",
+		"email": "asma.ali@unicsmcr.com"
 	},
 	{
 		"name": "Asma Alshebli",
 		"img": "/assets/people/asmaalshebli.jpg",
 		"social": "https://www.linkedin.com/in/asma-alshebli-86a13a264/",
-		"role": "Hackathons Co-Lead"
+		"role": "Hackathons Co-Lead",
+		"email": "asma.alshebli@unicsmcr.com"
 	},
 	{
 		"name": "Vidhi Shetty",
 		"img": "/assets/people/vidhi.jpg",
 		"social": "https://www.linkedin.com/in/vidhi-shetty-a29417214/",
-		"role": "Sponsorship Officer"
+		"role": "Sponsorship Officer",
+		"email": "vidhi@unicsmcr.com" 
 	}
 ]

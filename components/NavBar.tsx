@@ -32,7 +32,7 @@ const NavBar = (): JSX.Element => {
 					))}
 				</div>
 				<div className="ml-auto hidden md:block">
-					<a href="https://unicsmcr.com/join" className="text-guh-green text-lg border-2 border-guh-green py-2 px-9">
+					<a href="https://manchesterstudentsunion.com/activities/view/unics" className="text-guh-green text-lg border-2 border-guh-green py-2 px-9">
 						Join Us
 					</a>
 				</div>
