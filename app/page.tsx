@@ -51,9 +51,9 @@ const Home = (): JSX.Element => {
 					</p>
 				</section>
 
-				<section id="sponsors" className="mx-auto py-10 max-w-screen-xl">
+				<section id="sponsors" className="mx-auto py-10 max-w-screen-xl ">
 					<h2 className="text-6xl py-10 text-guh-green font-bold  font-sans uppercase">Our Current Sponsors</h2>
-					<div className="row grid grid-cols-2 ">
+					<div className="row grid grid-cols-2 grayscale">
 						<div className="column ">
 							<div className="card content-center">
 								<a href="https://www.qube-rt.com/">
@@ -69,7 +69,7 @@ const Home = (): JSX.Element => {
 							</div>
 						</div>
 					</div>
-					<div className="row grid grid-cols-2">
+					<div className="row grid grid-cols-2 grayscale">
 						<div className="column">
 							<div className="card gap-4 pt-10">
 								<a href="https://www.booking.com/content/about.en-gb.html?aid=356980&label=gog235jc-1FCBQoggJCBWFib3V0SDNYA2hQiAEBmAEJuAEXyAEM2AEB6AEB-AEMiAIBqAIDuALaoICeBsACAdICJDJhNjgxN2VjLTU5ODEtNGY4Zi1hM2YwLTdmMzhkYTBmZWRkZdgCBuACAQ&sid=8d2e7f7c44719f3d97a6535a216b914c">
@@ -86,7 +86,167 @@ const Home = (): JSX.Element => {
 						</div>
 					</div>
 					<h3 className="text-2xl text-white pt-10 pb-10"> Over the past few years we have been sponsored by:</h3>
-					<Marquee gradient={false}>
+					<Marquee gradient={false} className="grayscale">
+						<div className="mx-5">
+							<a href="">
+								<img className="h-16" src="assets/sponsors/image255.png" />
+							</a>
+						</div>
+						<div className="mx-5">
+							<a href="">
+								<img className="h-16" src="assets/sponsors/image315.png" />
+							</a>
+						</div>
+						<div className="mx-5">
+							<a href="">
+								<img className="h-16" src="assets/sponsors/image327.png" />
+							</a>
+						</div>
+						<div className="mx-5">
+							<a href="">
+								<img className="h-16" src="assets/sponsors/image339.png" />
+							</a>
+						</div>
+						<div className="mx-5">
+							<a href="">
+								<img className="h-16" src="assets/sponsors/image387.png" />
+							</a>
+						</div>
+						<div className="mx-5">
+							<a href="">
+								<img className="h-16" src="assets/sponsors/image483.png" />
+							</a>
+						</div>
+						<div className="mx-5">
+							<a href="">
+								<img className="h-16" src="assets/sponsors/image507.png" />
+							</a>
+						</div>
+						<div className="mx-5">
+							<a href="">
+								<img className="h-16" src="assets/sponsors/image543.png" />
+							</a>
+						</div>
+						<div className="mx-5">
+							<a href="">
+								<img className="h-16" src="assets/sponsors/image591.png" />
+							</a>
+						</div>
+						<div className="mx-5">
+							<a href="">
+								<img className="h-16" src="assets/sponsors/image651.png" />
+							</a>
+						</div>
+						<div className="mx-5">
+							<a href="">
+								<img className="h-16" src="assets/sponsors/image783.png" />
+							</a>
+						</div>
+						<div className="mx-5">
+							<a href="">
+								<img className="h-16" src="assets/sponsors/image1362.png" />
+							</a>
+						</div>
+						<div className="mx-5">
+							<a href="">
+								<img className="h-16" src="assets/sponsors/image1374.png" />
+							</a>
+						</div>
+						<div className="mx-5">
+							<a href="">
+								<img className="h-16" src="assets/sponsors/image1398.png" />
+							</a>
+						</div>
+						<div className="mx-5">
+							<a href="">
+								<img className="h-16" src="assets/sponsors/image1480.png" />
+							</a>
+						</div>
+						<div className="mx-5">
+							<a href="">
+								<img className="h-16" src="assets/sponsors/image1504.png" />
+							</a>
+						</div>
+						<div className="mx-5">
+							<a href="">
+								<img className="h-16" src="assets/sponsors/image255.png" />
+							</a>
+						</div>
+						<div className="mx-5">
+							<a href="">
+								<img className="h-16" src="assets/sponsors/image315.png" />
+							</a>
+						</div>
+						<div className="mx-5">
+							<a href="">
+								<img className="h-16" src="assets/sponsors/image327.png" />
+							</a>
+						</div>
+						<div className="mx-5">
+							<a href="">
+								<img className="h-16" src="assets/sponsors/image339.png" />
+							</a>
+						</div>
+						<div className="mx-5">
+							<a href="">
+								<img className="h-16" src="assets/sponsors/image387.png" />
+							</a>
+						</div>
+						<div className="mx-5">
+							<a href="">
+								<img className="h-16" src="assets/sponsors/image483.png" />
+							</a>
+						</div>
+						<div className="mx-5">
+							<a href="">
+								<img className="h-16" src="assets/sponsors/image507.png" />
+							</a>
+						</div>
+						<div className="mx-5">
+							<a href="">
+								<img className="h-16" src="assets/sponsors/image543.png" />
+							</a>
+						</div>
+						<div className="mx-5">
+							<a href="">
+								<img className="h-16" src="assets/sponsors/image591.png" />
+							</a>
+						</div>
+						<div className="mx-5">
+							<a href="">
+								<img className="h-16" src="assets/sponsors/image651.png" />
+							</a>
+						</div>
+						<div className="mx-5">
+							<a href="">
+								<img className="h-16" src="assets/sponsors/image783.png" />
+							</a>
+						</div>
+						<div className="mx-5">
+							<a href="">
+								<img className="h-16" src="assets/sponsors/image1362.png" />
+							</a>
+						</div>
+						<div className="mx-5">
+							<a href="">
+								<img className="h-16" src="assets/sponsors/image1374.png" />
+							</a>
+						</div>
+						<div className="mx-5">
+							<a href="">
+								<img className="h-16" src="assets/sponsors/image1398.png" />
+							</a>
+						</div>
+						<div className="mx-5">
+							<a href="">
+								<img className="h-16" src="assets/sponsors/image1480.png" />
+							</a>
+						</div>
+						<div className="mx-5">
+							<a href="">
+								<img className="h-16" src="assets/sponsors/image1504.png" />
+							</a>
+						</div>
 						<div className="mx-5">
 							<a href="">
 								<img className="h-16" src="assets/sponsors/image255.png" />
