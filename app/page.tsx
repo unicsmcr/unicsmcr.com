@@ -8,6 +8,7 @@ import interactionPlugin from "@fullcalendar/interaction";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import { Calendar } from "@fullcalendar/core";
 import googleCalendarPlugin from "@fullcalendar/google-calendar";
+import committeeData from '@data/comittee.json';
 
 const Hero = (): JSX.Element => (
   <section
@@ -299,219 +300,26 @@ const Home = (): JSX.Element => {
         </section>
         <section id="committee" className="bg-guh-green">
 					<div className="max-w-screen-xl mx-auto">
-					<h2 className="text-6xl text-black font-bold">Committee</h2>
+					<h2 className="text-6xl text-black font-bold pt-8">Committee</h2>
           <ul
             id="committee-list"
-            className="pt-8 grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4" >
-            <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
-            <a href="https://www.linkedin.com/in/gwydionsmit/" target="_blank"><Image
-                width={128}
-                height={128}
-                quality={100}
-                className="h-32 w-32 rounded-full"
-                src="/assets/people/gwydion.jpg"
-                alt="Gwydion Smit"
-              />
-              </a>
-              <p className="text-center text-lg font-bold">Gwydion Smit</p>
-              <p className="text-center text-md">Co-Chair</p>
-            </li>
-         
-            <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
-              <a href="https://www.linkedin.com/in/germaine-george-4136b515b/" target="_blank"><Image
-                width={128}
-                height={128}
-                quality={100}
-                className="h-32 w-32 rounded-full"
-                src="/assets/people/germaine.jpg"
-                alt="Germaine George"
-              />
-              </a>
-              <p className="text-center text-lg font-bold">Germaine George</p>
-              <p className="text-center text-md">Co-Chair</p>
-            </li>
-            <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
-              <a href="https://www.linkedin.com/in/ali-lakho/" target="_blank">
-              <Image
-                width={128}
-                height={128}
-                quality={100}
-                className="h-32 w-32 rounded-full"
-                src="/assets/people/ali.jpg"
-                alt="Ali Lakho"
-              />
+            className="pt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 pb-8" >
+              {committeeData.map(({name, role, social, img}) => (
+              <li key={`${name}-comittee`} className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
+                <a href={social}>
+                  <Image
+                    width={128}
+                    height={128}
+                    quality={100}
+                    className="h-32 w-32 rounded-full"
+                    src={img}
+                    alt={name}
+                  />
                 </a>
-              <p className="text-center text-lg font-bold">Ali Lakho</p>
-              <p className="text-center text-md">Treasurer</p>
-            </li>
-            <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
-              <a href="https://www.linkedin.com/in/joshua-simanullang-376374228/" target="_blank">
-              <Image
-                width={128}
-                height={128}
-                quality={100}
-                className="w-32 h-32 rounded-full"
-                src="/assets/people/joshua.jpg"
-                alt="Joshua Simanullang"
-              />
-              </a>
-              <p className="text-center text-lg font-bold">
-                Joshua Simanullang
-              </p>
-              <p className="text-center text-md">Secretary</p>
-            </li>
-            <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
-              <a href="https://www.linkedin.com/in/dsio/" target="_blank">
-              <Image
-                width={128}
-                height={128}
-                quality={100}
-                className="h-32 w-32 rounded-full"
-                src="/assets/people/dhruv.jpg"
-                alt="Dhruv Sharma"
-              />
-              </a>
-              <p className="text-center text-lg font-bold">Dhruv Sharma</p>
-              <p className="text-center text-md">Graphics Officer</p>
-            </li>
-            <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
-              <a href="https://www.linkedin.com/in/khare-sambbhav/" target="_blank">
-              <Image
-                width={128}
-                height={128}
-                quality={100}
-                className="h-32 w-32 rounded-full"
-                src="/assets/people/sambbhav.jpg"
-                alt="Sambbhav Khare"
-              />
-              </a>
-              <p className="text-center text-lg font-bold">Sambbhav Khare</p>
-              <p className="text-center text-md">Dev Officer</p>
-            </li>
-            <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
-              <a href="https://www.linkedin.com/in/mehar-mehta/" target="_blank">
-              <Image
-                width={128}
-                height={128}
-                quality={100}
-                className="h-32 w-32 rounded-full"
-                src="/assets/people/mehar.jpg"
-                alt="Mehar Mehta"
-              />
-              </a>
-              <p className="text-center text-lg font-bold">Mehar Mehta</p>
-              <p className="text-center text-md">PR Officer</p>
-            </li>
-            
-            <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
-              <a href="https://www.linkedin.com/in/dhrishaj-garg/" target="_blank">
-              <Image
-                width={128}
-                height={128}
-                className="h-32 w-32 rounded-full"
-                src="/assets/people/dhrishaj.jpg"
-                alt="Dhrishaj Garg"
-              />
-              </a>
-              <p className="text-center text-lg font-bold">Dhrishaj Garg</p>
-              <p className="text-center text-md">Events Officer</p>
-            </li>
-            <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
-              <a href="https://www.linkedin.com/in/muna-a-hassan/" target="_blank">
-                <Image
-                width={128}
-                height={128}
-                quality={100}
-                className="h-32 w-32 rounded-full"
-                src="/assets/people/muna.jpeg"
-                alt="muna"
-              />
-              </a>
-              <p className="text-center text-lg font-bold">Muna Hassan</p>
-              <p className="text-center text-md">Events Officer</p>
-            </li>
-            <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
-              <a href="https://www.linkedin.com/in/mj-ponsonby-23857623b/" target="_blank"><Image
-                width={128}
-                height={128}
-                className="h-32 w-32 rounded-full"
-                src="/assets/people/gamedev.jpg"
-                alt="MJ Ponsonby"
-              /></a>
-              <p className="text-center text-lg font-bold">MJ Ponsonby</p>
-              <p className="text-center text-md">Game Dev Head</p>
-            </li>
-            <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
-              <a href="https://www.linkedin.com/in/siqi-li-862aa021a/" target="_blank">
-              <Image
-                width={128}
-                height={128}
-                quality={100}
-                className="h-32 w-32 rounded-full"
-                src="/assets/people/siqi.jpg"
-                alt="Siqi Li"
-              />
-              </a>
-              <p className="text-center text-lg font-bold">Siqi Li</p>
-              <p className="text-center text-md">Procurement Officer</p>
-            </li>
-            {/* <span /> */}
-            <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
-              <a href="https://www.linkedin.com/in/keshavigupta/" target="_blank">
-              <Image
-                width={128}
-                height={128}
-                quality={100}
-                className="h-32 w-32 rounded-full"
-                src="/assets/people/keshav.jpg"
-                alt="Keshav Gupta"
-              />
-              </a>
-              <p className="text-center text-lg font-bold">Keshav Gupta</p>
-              <p className="role">May Ball Officer</p>
-            </li>
-            <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
-              <a href="https://www.linkedin.com/in/asma-o-ali/" target="_blank">
-              <Image
-                width={128}
-                height={128}
-                quality={100}
-                className="h-32 w-32 rounded-full"
-                src="/assets/people/asmaali.jpg"
-                alt="Asma"
-              />
-              </a>
-              <p className="text-center text-lg font-bold">Asma Ali</p>
-              <p className="text-center text-md">Co-Hackathon Lead</p>
-            </li>
-            <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
-              <a href="https://www.linkedin.com/in/asma-alshebli-86a13a264/" target="_blank">
-              <Image
-                width={128}
-                height={128}
-                quality={100}
-                className="h-32 w-32 rounded-full"
-                src="/assets/people/asmaalshebli.jpg"
-                alt="Asma"
-              />
-              </a>
-              <p className="text-center text-lg font-bold">Asma Alshebli</p>
-              <p className="text-center text-md">Co-Hackathon Lead</p>
-            </li>
-            <li className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around">
-              <a href="https://www.linkedin.com/in/vidhi-shetty-a29417214/" target="_blank">
-              <Image
-                width={128}
-                height={128}
-                quality={100}
-                className="h-32 w-32 rounded-full"
-                src="/assets/people/vidhi.jpg"
-                alt="vidhi"
-              />
-              </a>
-              <p className="text-center text-lg font-bold">Vidhi Shetty</p>
-              <p className="text-center text-md">Sponsorship Officer</p>
-            </li>
+                <p className="text-center text-lg font-bold">{name}</p>
+                <p className="text-center text-md">{role}</p>
+              </li>
+              ))}
           </ul>
 					</div>
         </section>
