@@ -12,6 +12,7 @@ const pages = [
 	{ label: 'Events', href: '/#events', key: uuidv4(), scroll: true },
 	{ label: 'Committee', href: '/committee', key: uuidv4(), scroll: true },
 	{ label: 'Sponsors', href: '/sponsors', key: uuidv4() },
+	{ label: 'Contact Us', href: '/#contact', key: uuidv4() },
 ];
 
 const NavBar = (): JSX.Element => {

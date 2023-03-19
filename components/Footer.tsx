@@ -4,7 +4,7 @@ const Footer = (): JSX.Element => (
 	<footer className="bg-guh-black py-16">
 		<div className="max-w-screen-xl mx-auto text-center text-guh-grey">
 			<p className="flex space-x-4 text-guh-grey text-xl font-bold self-center align-center justify-center pb-4 underline">
-				<a href="mailto:contact@unicsmcr.com">Contact Us</a>
+				<a id='contact' href="mailto:contact@unicsmcr.com">Contact Us</a>
 			</p>
 			<ul className="flex space-x-4 text-guh-grey text-lg font-bold self-center align-center justify-center pb-4">
 				<a href="https://www.facebook.com/unicsmcr">
