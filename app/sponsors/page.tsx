@@ -19,7 +19,7 @@ function MyComponent() {
 const Sponsors = () => {
 	return (
         
-		<section id="sponsors" className="mx-auto py-10 max-w-screen-xl ">
+		<section id="sponsors" className="mx-auto py-10 max-w-screen-xl pt-40">
             <h2 className="text-6xl py-10 text-guh-green font-bold  font-sans uppercase">Our Sponsors</h2>
       <div className="container padded">
         <h1 className='text-2xl font-bold mb-4 text-guh-green'>Gold Sponsors</h1>

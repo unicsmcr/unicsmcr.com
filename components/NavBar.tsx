@@ -8,7 +8,7 @@ import { v4 as uuidv4 } from 'uuid';
 import logo from '../public/logov2.svg';
 
 const pages = [
-	{ label: 'Home', href: '/', key: uuidv4() },
+	{ label: 'About', href: '/#about', key: uuidv4() },
 	{ label: 'Events', href: '/#events', key: uuidv4(), scroll: true },
 	{ label: 'Committee', href: '/committee', key: uuidv4(), scroll: true },
 	{ label: 'Sponsors', href: '/sponsors', key: uuidv4() },
@@ -19,7 +19,7 @@ const NavBar = (): JSX.Element => {
 	const [showMobileMenu, setShowMobileMenu] = useState(false);
 
 	return (
-		<nav className="bg-black">
+		<nav className="bg-black fixed top-0 left-0 right-0 z-10">
 			<div className="max-w-screen-xl mx-auto py-4 flex justify-center items-center">
 				<div className="flex-shrink-0">
 					<Image src={logo} width={64} height={64} alt="UniCS logo"/>

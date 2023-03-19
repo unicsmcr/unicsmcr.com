@@ -28,7 +28,7 @@ const Home = (): JSX.Element => {
 		<>
 			<Hero />
 			<div className="bg-black">
-				<section id="about" className="py-20 ">
+				<section id="about" className="py-20 pt-40">
 					<div className="max-w-screen-xl mx-auto">
 						<h2 className="text-6xl font-bold text-guh-green font-sans uppercase">About us</h2>
 						<p className="pt-8 text-2xl text-white leading-relaxed">
@@ -42,7 +42,7 @@ const Home = (): JSX.Element => {
 					</div>
 				</section>
 
-				<section id="events" className="max-w-screen-xl mx-auto py-20">
+				<section id="events" className="max-w-screen-xl mx-auto py-20 pt-40">
 					<h2 className="text-6xl text-unics-green font-bold font-sans uppercase">Events</h2>
 					<p className="pt-8 text-2xl text-white leading-relaxed">
 						Our events are suited to every level of knowledge and all degree courses. If you are someone who is
