@@ -50,7 +50,7 @@ const Sponsors = () => {
           <li id="qube-rt">
             <div className="sponsor-image">
               <a href="https://www.qube-rt.com/" target="_blank"
-                ><img src="assets/sponsors/qube-rt-lack.png"
+                ><img src="assets/sponsors/qube-rt-black.png"
               /></a>
             </div>
             <p className="sponsor-desc text-white">
