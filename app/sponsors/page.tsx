@@ -27,7 +27,7 @@ const Sponsors = () => {
           <li id="bet365">
             <div className="sponsor-image">
               <a href="https://www.bet365.com/#/HO/" target="_blank"
-                ><img src="public/assets/sponsors/bet365.png"
+                ><img src="public/assets/sponsors/bet365.jpeg"
               /></a>
             </div>
             <p className="sponsor-desc text-white">
