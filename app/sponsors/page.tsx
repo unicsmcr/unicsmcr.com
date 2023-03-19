@@ -27,7 +27,7 @@ const Sponsors = () => {
           <li id="bet365">
             <div className="sponsor-image">
               <a href="https://www.bet365.com/#/HO/" target="_blank"
-                ><img src="assets/sponsors/bet365.png"
+                ><img src="public/assets/sponsors/bet365.png"
               /></a>
             </div>
             <p className="sponsor-desc text-white">
@@ -50,7 +50,7 @@ const Sponsors = () => {
           <li id="qube-rt">
             <div className="sponsor-image">
               <a href="https://www.qube-rt.com/" target="_blank"
-                ><img src="assets/sponsors/qube-rt.png"
+                ><img src="public/assets/sponsors/qube-rt.png"
               /></a>
             </div>
             <p className="sponsor-desc text-white">
@@ -94,7 +94,7 @@ const Sponsors = () => {
           <li id="bloomberg">
             <div className="sponsor-image">
               <a href="https://www.bloomberg.com/company" target="_blank"
-                ><img src="assets/sponsors/bloomberg.png"
+                ><img src="public/assets/sponsors/bloomberg.png"
               /></a>
             </div>
             <p className="sponsor-desc text-white">
