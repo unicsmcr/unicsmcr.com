@@ -19,7 +19,7 @@
 		"@fullcalendar/list": "^6.1.4",
 		"@fullcalendar/react": "^6.1.4",
 		"@fullcalendar/timegrid": "^6.1.4",
-		"@netlify/plugin-nextjs": "^4.31.0",
+		"@netlify/plugin-nextjs": "^4.32.2",
 		"@next/font": "13.1.1",
 		"@types/node": "18.11.18",
 		"@types/react": "18.0.26",
