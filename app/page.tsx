@@ -102,10 +102,6 @@ const Home = (): JSX.Element => {
 
 						</div>
 						</section>
-						
-
-				
-						<particlesBackground />
 
 							</div>
 		</>
