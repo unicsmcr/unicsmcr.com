@@ -6,7 +6,6 @@ import interactionPlugin from '@fullcalendar/interaction';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import googleCalendarPlugin from '@fullcalendar/google-calendar';
 import listPlugin from '@fullcalendar/list';
-import particlesBackground from './particlesBackground.js';
 
 
 
