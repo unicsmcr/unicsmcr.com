@@ -1,16 +1,18 @@
 'use client';
 import React from 'react';
-import FullCalendar from "@fullcalendar/react";
-import dayGridPlugin from "@fullcalendar/daygrid";
-import interactionPlugin from "@fullcalendar/interaction";
-import timeGridPlugin from "@fullcalendar/timegrid";
-import googleCalendarPlugin from "@fullcalendar/google-calendar";
+import FullCalendar from '@fullcalendar/react';
+import dayGridPlugin from '@fullcalendar/daygrid';
+import interactionPlugin from '@fullcalendar/interaction';
+import timeGridPlugin from '@fullcalendar/timegrid';
+import googleCalendarPlugin from '@fullcalendar/google-calendar';
+import listPlugin from '@fullcalendar/list';
+import particlesBackground from './particlesBackground.js';
+
+
 
 const Hero = (): JSX.Element => (
-	<section
-		id="hero"
-		className="flex justify-center items-center bg-black bg-center bg-repeat py-56 bg-blend-darken bg-cover"
-	>
+	
+	<section id="hero" className="flex justify-center items-center bg-black bg-center bg-repeat py-56 bg-blend-darken bg-cover">
 		<div className="flex items-center space-y-12 flex-col">
 			<h1 className="text-9xl text-white bg-black font-bold p-4">
 				Uni<span className="text-guh-green">CS</span>
@@ -25,7 +27,9 @@ const Hero = (): JSX.Element => (
 
 const Home = (): JSX.Element => {
 	return (
+		
 		<>
+		 	
 			<Hero />
 			<div className="bg-black">
 				<section id="about" className="py-20 pt-40">
@@ -63,43 +67,46 @@ const Home = (): JSX.Element => {
 					<section id="cal" className="mx-auto py-20 max-w-screen-xl ">
 					<div className="text-3xl text-black bg-white p-4 leading-relaxed">
 					<FullCalendar
-						plugins={[
-							dayGridPlugin,
-							interactionPlugin,
-							timeGridPlugin,
-							googleCalendarPlugin,
-						]}
-						headerToolbar={{
-							left: "",
-							center: "title",
-						    right: "",
-							}}
-							footerToolbar={{
-								left: "",
-								center: "prev,next",
-								right: "",
-                            }}
-						initialView="dayGridMonth"
-						nowIndicator={true}
-						editable={true}
-						selectable={true}
-						dayMaxEvents={true}
-						selectMirror={true}
-						contentHeight={400}
-						aspectRatio={1}
-						events={{
-							googleCalendarId:
-								"98ae4449f97bb3e8675a6f4d1cd2037b7a00242d21af729b5b464781cef1f614@group.calendar.google.com",
-						}}
-						googleCalendarApiKey="AIzaSyCN_1HywiY6Z7LZXsVWoC8_fZH0GwOJOec"
-					/>
+      plugins={[
+        dayGridPlugin,
+        interactionPlugin,
+        timeGridPlugin,
+        googleCalendarPlugin,
+        listPlugin, // add bootstrapPlugin here
+      ]}
+      themeSystem='bootstrap'
+      headerToolbar={{
+        left: '',
+        center: 'title',
+        right: '',
+      }}
+      footerToolbar={{
+        left: '',
+        center: 'prev,next',
+        right: '',
+      }}
+      initialView='dayGridMonth'
+      nowIndicator={true}
+      editable={true}
+      selectable={true}
+      dayMaxEvents={true}
+      selectMirror={true}
+      contentHeight={400}
+      aspectRatio={1}
+      events={{
+        googleCalendarId:
+          '98ae4449f97bb3e8675a6f4d1cd2037b7a00242d21af729b5b464781cef1f614@group.calendar.google.com',
+      }}
+      googleCalendarApiKey='AIzaSyCN_1HywiY6Z7LZXsVWoC8_fZH0GwOJOec'
+      bootstrapFontAwesome={false} // set to false to disable font-awesome
+    />
 
 						</div>
 						</section>
 						
 
 				
-
+						<particlesBackground />
 
 							</div>
 		</>
