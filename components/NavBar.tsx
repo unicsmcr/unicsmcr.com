@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-//import { Link, animateScroll as scroll } from "react-scroll";
 import { FaFacebookSquare, FaDiscord, FaTwitter, FaInstagram, FaGithub } from 'react-icons/fa';
 import { v4 as uuidv4 } from 'uuid';
 import logo from '../public/logov2.svg';
@@ -12,7 +11,6 @@ const pages = [
 	{ label: 'Events', href: '/#events', key: uuidv4(), scroll: true },
 	{ label: 'Committee', href: '/committee', key: uuidv4(), scroll: true },
 	{ label: 'Sponsors', href: '/sponsors', key: uuidv4() },
-	{ label: 'Contact Us', href: '/#contact', key: uuidv4() },
 ];
 
 const NavBar = (): JSX.Element => {

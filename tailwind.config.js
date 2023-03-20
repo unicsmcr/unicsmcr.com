@@ -15,8 +15,8 @@ module.exports = {
 				'guh-purple': '#609',
 				'guh-black': '#000000',
 				'guh-grey': '#FFFFFF',
-				'unics-green': '#DEFF80',
-				'guh-green': '#DEFF80',
+				'unics-green': '#B536DA',
+				'guh-green': '#B536DA',
 			},
 			fontFamily: {
 				sans: ['var(--font-inter)', ...fontFamily.sans],
