@@ -1,107 +1,116 @@
 [
+    {
+        "name": "Sarah Saad",
+        "img": "/assets/people/sarah.jpg",
+        "social": "https://www.linkedin.com/in/sarahssaad/",
+        "role": "Co-Chair",
+        "email": "sarah@unicsmcr.com"
+    },
+    {
+        "name": "Minahil Tariq",
+        "img": "/assets/people/minahil.jpg",
+        "social": "https://www.linkedin.com/in/minahil-h-tariq/",
+        "role": "Co-Chair",
+        "email": "minahil@unicsmcr.com"
+    },
+    {
+        "name": "Luke Sanderson",
+        "img": "/assets/people/luke.jpg",
+        "social": "https://www.linkedin.com/in/luke-sanderson-/",
+        "role": "Treasurer",
+        "email": "treasurer@unicsmcr.com"
+    },
+    {
+        "name": "Kayley Lam",
+        "img": "/assets/people/kayley.jpg",
+        "social": "https://www.linkedin.com/in/kayley-lam/",
+        "role": "Secretary",
+        "email": "secretary@unicsmcr.com"
+    },
+    {
+        "name": "Adwik Roshan",
+        "img": "/assets/people/adwik.jpg",
+        "social": "https://www.linkedin.com/in/adwik-roshan-9351a5250/",
+        "role": "Inclusions Officer",
+        "email": "inclusion@unicsmcr.com"
+    },
+    {
+        "name": "Rosie Halsall",
+        "img": "/assets/people/rosie.jpg",
+        "social": "https://www.linkedin.com/in/rosiehalsall/",
+        "role": "Dev Officer",
+        "email": "dev@unicsmcr.com"
+    },
+    {
+        "name": "Pallavi Nair",
+        "img": "/assets/people/pallavi.jpg",
+        "social": "https://www.linkedin.com/in/pallavi-nair-9b0237266/",
+        "role": "Procurement Officer",
+        "email": "procurement@unicsmcr.com"
+    },
+    {
+        "name": "Diya Chutani",
+        "img": "/assets/people/diya.jpg",
+        "social": "https://www.linkedin.com/in/diya-chutani-b0b22a256/",
+        "role": "Sponsorships Director",
+        "email": "sponsorship@unicsmcr.com"
+    },
+    {
+        "name": "Hanzila Hussain",
+        "img": "/assets/people/hanzila.jpg",
+        "social": "https://www.linkedin.com/in/hanzila-hussain-941a40263/",
+        "role": "Graphics Officer",
+        "email": "graphics@unicsmcr.com"
+    },
+    {
+        "name": "Yashika Gandhi",
+        "img": "/assets/people/yashika.jpg",
+        "social": "https://www.linkedin.com/in/yashikagandhi2023/",
+        "role": "PR Officer",
+        "email": "pr@unicsmcr.com"
+    },
+    {
+        "name": "Kavya Jain",
+        "img": "/assets/people/kavya.jpg",
+        "social": "https://www.linkedin.com/in/jain-kavya/",
+        "role": "PR Officer",
+        "email": "pr@unicsmcr.com"
+    },
+    {
+        "name": "Anulome Kishore",
+        "img": "/assets/people/anulome.jpg",
+        "social": "https://www.linkedin.com/in/anulome-kishore-792b00245/",
+        "role": "Events Officer",
+        "email": "events@unicsmcr.com"
+    },
 	{
-		"name": "Gwydion Smit",
-		"img": "/assets/people/gwydion.jpg",
-		"social": "https://www.linkedin.com/in/gwydionsmit/",
-		"role": "Co-Chair",
-		"email": "gwydion@unicsmcr.com"
-	},
+        "name": "Saurav Maheshkar",
+        "img": "/assets/people/saurav.jpg",
+        "social": "https://www.linkedin.com/in/sauravmaheshkar/",
+        "role": "Events Officer",
+        "email": "events@unicsmcr.com"
+    },
+	
 	{
-		"name": "Germaine George",
-		"img": "/assets/people/germaine.jpg",
-		"social": "https://www.linkedin.com/in/germaine-george-4136b515b/",
-		"role": "Co-Chair",
-		"email": "germaine@unicsmcr.com"
-	},
+        "name": "Anisha Sahu",
+        "img": "/assets/people/anisha.jpg",
+        "social": "https://www.linkedin.com/in/anishasahu2004/",
+        "role": "Events Officer",
+        "email": "events@unicsmcr.com"
+    },
 	{
-		"name": "Ali Lakho",
-		"img": "/assets/people/ali.jpg",
-		"social": "https://www.linkedin.com/in/ali-lakho/",
-		"role": "Treasurer",
-		"email": "ali@unicsmcr.com"
-	},
-	{
-		"name": "Joshua Simanullang",
-		"img": "/assets/people/joshua.jpg",
-		"social": "https://www.linkedin.com/in/joshua-simanullang-376374228/",
-		"role": "Secretary",
-		"email": "joshua@unicsmcr.com"
-	},
-	{
-		"name": "Dhruv Sharma",
-		"img": "/assets/people/dhruv.jpg",
-		"social": "https://www.linkedin.com/in/dsio/",
-		"role": "Graphics Officer",
-		"email": "dhruv@unicsmcr.com"
-	},
-	{
-		"name": "Sambbhav Khare",
-		"img": "/assets/people/sambbhav.jpg",
-		"social": "https://www.linkedin.com/in/khare-sambbhav/",
-		"role": "Dev Officer",
-		"email": "sambbhav@unicsmcr.com"
-	},
-	{
-		"name": "Mehar Mehta",
-		"img": "/assets/people/mehar.jpg",
-		"social": "https://www.linkedin.com/in/mehar-mehta/",
-		"role": "PR Officer",
-		"email": "mehar@unicsmcr.com"
-	},
-	{
-		"name": "Dhrishaj Garg",
-		"img": "/assets/people/dhrishaj.jpg",
-		"social": "https://www.linkedin.com/in/dhrishaj-garg/",
-		"role": "Events Officer",
-		"email": "dhrishaj@unicsmcr.com"
-	},
-	{
-		"name": "Muna Hassan",
-		"img": "/assets/people/muna.jpeg",
-		"social": "https://www.linkedin.com/in/muna-a-hassan/",
-		"role": "Events Officer",
-		"email": "muna@unicsmcr.com"
-	},
-	{
-		"name": "MJ Ponsonby",
-		"img": "/assets/people/gamedev.jpg",
-		"social": "https://www.linkedin.com/in/mj-ponsonby-23857623b/",
-		"role": "Game Dev Head",
-		"email": "mj@unicsmcr.com"
-	},
-	{
-		"name": "Siqi Li",
-		"img": "/assets/people/siqi.jpg",
-		"social": "https://www.linkedin.com/in/siqi-li-862aa021a/",
-		"role": "Procurement Officer",
-		"email": "siqi@unicsmcr.com"
-	},
-	{
-		"name": "Keshav Gupta",
-		"img": "/assets/people/keshav.jpg",
-		"social": "https://www.linkedin.com/in/keshavigupta/",
-		"role": "May Ball Officer",
-		"email": "keshav@unicsmcr.com"
-	},
-	{
-		"name": "Asma Ali",
-		"img": "/assets/people/asmaali.jpg",
-		"social": "https://www.linkedin.com/in/asma-o-ali/",
-		"role": "Hackathons Co-Lead",
-		"email": "asma.ali@unicsmcr.com"
-	},
-	{
-		"name": "Asma Alshebli",
-		"img": "/assets/people/asmaalshebli.jpg",
-		"social": "https://www.linkedin.com/in/asma-alshebli-86a13a264/",
-		"role": "Hackathons Co-Lead",
-		"email": "asma.alshebli@unicsmcr.com"
-	},
-	{
-		"name": "Vidhi Shetty",
-		"img": "/assets/people/vidhi.jpg",
-		"social": "https://www.linkedin.com/in/vidhi-shetty-a29417214/",
-		"role": "Sponsorship Officer",
-		"email": "vidhi@unicsmcr.com" 
-	}
+        "name": "Nayan Suresh",
+        "img": "/assets/people/nayan.jpg",
+        "social": "https://www.linkedin.com/in/nayan-suresh-9a0753217/",
+        "role": "Events Officer",
+        "email": "events@unicsmcr.com"
+    },
+    {
+        "name": "Abubakar Tafida",
+        "img": "/assets/people/abubakar.jpg",
+        "social": "https://www.linkedin.com/in/abubakar-tafida-63b968215/",
+        "role": "Game Dev Officer",
+        "email": "gamedev@unicsmcr.com"
+    }
 ]
+
