@@ -13,7 +13,8 @@ const Committee = () => {
 							className="flex flex-col mx-auto hover:-translate-y-1 items-center content-around"
 						>
 							<a href={social}>
-								<Image width={128} height={128} quality={100} className="h-32 w-32 rounded-full" src={img} alt={name} />
+								<Image width={128} height={128} quality={100} className="h-32 w-32 rounded-full" src={img} alt={name} style={{ objectFit: "cover"}} />
+								
 							</a>
 							<p className="text-center text-lg font-bold text-white mt-2">{name}</p>
 							<p className="text-center text-md text-unics-green">{role}</p>
