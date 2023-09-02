@@ -27,7 +27,13 @@
         "role": "Secretary",
         "email": "secretary@unicsmcr.com"
     },
-    
+    {
+        "name": "Adwik Roshan",
+        "img": "/assets/people/adwik.jpg",
+        "social": "https://www.linkedin.com/in/adwik-roshan-9351a5250/",
+        "role": "Inclusions Officer",
+        "email": "inclusion@unicsmcr.com"
+    },
     {
         "name": "Rosie Halsall",
         "img": "/assets/people/rosie.jpg",
@@ -105,13 +111,6 @@
         "social": "https://www.linkedin.com/in/abubakar-tafida-63b968215/",
         "role": "Game Dev Officer",
         "email": "gamedev@unicsmcr.com"
-    },
-	{
-        "name": "Adwik Roshan",
-        "img": "/assets/people/adwik.jpg",
-        "social": "https://www.linkedin.com/in/adwik-roshan-9351a5250/",
-        "role": "Inclusions Officer",
-        "email": "inclusion@unicsmcr.com"
     }
 ]
 
