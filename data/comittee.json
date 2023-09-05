@@ -4,14 +4,14 @@
         "img": "/assets/people/sarah.jpg",
         "social": "https://www.linkedin.com/in/sarahssaad/",
         "role": "Co-Chair",
-        "email": "sarah@unicsmcr.com"
+        "email": "chair@unicsmcr.com"
     },
     {
         "name": "Minahil Tariq",
         "img": "/assets/people/minahil.jpg",
         "social": "https://www.linkedin.com/in/minahil-h-tariq/",
         "role": "Co-Chair",
-        "email": "minahil@unicsmcr.com"
+        "email": "chair@unicsmcr.com"
     },
     {
         "name": "Luke Sanderson",
@@ -53,14 +53,14 @@
         "img": "/assets/people/hanzila.jpg",
         "social": "https://www.linkedin.com/in/hanzila-hussain-941a40263/",
         "role": "Graphics Officer",
-        "email": "graphics@unicsmcr.com"
+        "email": "hackathons@unicsmcr.com"
     },
 	{
 		"name": "Asma Ali",
 		"img": "/assets/people/asmaali.jpg",
 		"social": "https://www.linkedin.com/in/asma-o-ali/",
 		"role": "Hackathons Co-Lead",
-		"email": "asma.ali@unicsmcr.com"
+		"email": "hackathons@unicsmcr.com"
 	},
 	{
 		"name": "Asma Alshebli",
