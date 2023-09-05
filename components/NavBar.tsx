@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaFacebookSquare, FaDiscord, FaTwitter, FaInstagram, FaGithub } from 'react-icons/fa';
+import { FaFacebookSquare, FaTwitter, FaInstagram, FaGithub } from 'react-icons/fa';
 import { v4 as uuidv4 } from 'uuid';
 import logo from '../public/logov2.svg';
 
