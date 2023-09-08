@@ -1,4 +1,4 @@
-import { FaFacebookSquare, FaDiscord, FaTwitter, FaInstagram, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { FaFacebookSquare, FaTwitter, FaInstagram, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = (): JSX.Element => (
 	<footer className="bg-guh-black py-16">
