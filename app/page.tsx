@@ -64,7 +64,7 @@ const Home = (): JSX.Element => {
 
 
 					<section id="cal" className="mx-auto py-20 max-w-screen-xl ">
-					<div className="text-1xl text-black bg-white p-4 leading-relaxed">
+					<div className="text-1xl text-white  p-4 leading-relaxed">
 					<FullCalendar
       plugins={[
         dayGridPlugin,

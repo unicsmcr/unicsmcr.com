@@ -1,4 +1,4 @@
-import committeeData from '@data/comittee.json';
+import committeeData from '@data/committee2023_24.json';
 import Image from 'next/image';
 
 const Committee = () => {
