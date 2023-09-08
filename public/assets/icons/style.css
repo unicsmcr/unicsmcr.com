@@ -25,9 +25,6 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-discord:before {
-	content: '\e905';
-}
 .icon-github:before {
 	content: '\e904';
 }
