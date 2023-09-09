@@ -4,14 +4,14 @@
         "img": "/assets/people/sarah.jpg",
         "social": "https://www.linkedin.com/in/sarahssaad/",
         "role": "Co-Chair",
-        "email": "sarah@unicsmcr.com"
+        "email": "chair@unicsmcr.com"
     },
     {
         "name": "Minahil Tariq",
         "img": "/assets/people/minahil.jpg",
         "social": "https://www.linkedin.com/in/minahil-h-tariq/",
         "role": "Co-Chair",
-        "email": "minahil@unicsmcr.com"
+        "email": "chair@unicsmcr.com"
     },
     {
         "name": "Luke Sanderson",
@@ -42,13 +42,6 @@
         "email": "dev@unicsmcr.com"
     },
     {
-        "name": "Pallavi Nair",
-        "img": "/assets/people/pallavi.jpg",
-        "social": "https://www.linkedin.com/in/pallavi-nair-9b0237266/",
-        "role": "Procurement Officer",
-        "email": "procurement@unicsmcr.com"
-    },
-    {
         "name": "Diya Chutani",
         "img": "/assets/people/diya.jpg",
         "social": "https://www.linkedin.com/in/diya-chutani-b0b22a256/",
@@ -60,8 +53,23 @@
         "img": "/assets/people/hanzila.jpg",
         "social": "https://www.linkedin.com/in/hanzila-hussain-941a40263/",
         "role": "Graphics Officer",
-        "email": "graphics@unicsmcr.com"
+        "email": "hackathons@unicsmcr.com"
     },
+	{
+		"name": "Asma Ali",
+		"img": "/assets/people/asmaali.jpg",
+		"social": "https://www.linkedin.com/in/asma-o-ali/",
+		"role": "Hackathons Co-Lead",
+		"email": "hackathons@unicsmcr.com"
+	},
+	{
+		"name": "Asma Alshebli",
+		"img": "/assets/people/asmaalshebli.jpg",
+		"social": "https://www.linkedin.com/in/asma-alshebli-86a13a264/",
+		"role": "Hackathons Co-Lead",
+		"email": "asma.alshebli@unicsmcr.com"
+	},
+
     {
 		"name": "Asma Ali",
 		"img": "/assets/people/asmaali.jpg",
@@ -89,6 +97,13 @@
         "social": "https://www.linkedin.com/in/jain-kavya/",
         "role": "PR Officer",
         "email": "pr@unicsmcr.com"
+    },
+	{
+        "name": "Pallavi Nair",
+        "img": "/assets/people/pallavi.jpg",
+        "social": "https://www.linkedin.com/in/pallavi-nair-9b0237266/",
+        "role": "Procurement Officer",
+        "email": "procurement@unicsmcr.com"
     },
     {
         "name": "Anulome Kishore",

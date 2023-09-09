@@ -1,4 +1,6 @@
+
 import { FaFacebookSquare, FaTwitter, FaInstagram, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+
 
 const Footer = (): JSX.Element => (
 	<footer className="bg-guh-black py-16">
@@ -19,6 +21,7 @@ const Footer = (): JSX.Element => (
 				<a href="https://github.com/unicsmcr">
 					<FaGithub size={40} />
 				</a>
+
 
 				<a href="https://www.linkedin.com/company/unics-manchester/">
 					<FaLinkedinIn size={40} />
