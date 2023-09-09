@@ -20,7 +20,7 @@ const Footer = (): JSX.Element => (
 					<FaGithub size={40} />
 				</a>
 
-				<a href="https://linkedin.com/unicsmcr">
+				<a href="https://www.linkedin.com/company/unics-manchester/">
 					<FaLinkedinIn size={40} />
 				</a> 
 
