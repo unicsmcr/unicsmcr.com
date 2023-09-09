@@ -71,6 +71,20 @@
 	},
 
     {
+		"name": "Asma Ali",
+		"img": "/assets/people/asmaali.jpg",
+		"social": "https://www.linkedin.com/in/asma-o-ali/",
+		"role": "Hackathons Co-Lead",
+		"email": "hackathons@unicsmcr.com"
+	},
+	{
+		"name": "Asma Alshebli",
+		"img": "/assets/people/asmaalshebli.jpg",
+		"social": "https://www.linkedin.com/in/asma-alshebli-86a13a264/",
+		"role": "Hackathons Co-Lead",
+		"email": "hackathons@unicsmcr.com"
+	},
+    {
         "name": "Yashika Gandhi",
         "img": "/assets/people/yashika.jpg",
         "social": "https://www.linkedin.com/in/yashikagandhi2023/",

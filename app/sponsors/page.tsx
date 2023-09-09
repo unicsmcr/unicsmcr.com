@@ -9,7 +9,7 @@ import dayGridPlugin from "@fullcalendar/daygrid";
 import interactionPlugin from "@fullcalendar/interaction";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import googleCalendarPlugin from "@fullcalendar/google-calendar";
-import committeeData from '@data/comittee.json';
+import committeeData from '@data/committee2023_24.json';
 import '/app/style.css';
 function MyComponent() {
     const [myState, setMyState] = useState('initial value');
