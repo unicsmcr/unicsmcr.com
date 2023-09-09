@@ -37,7 +37,6 @@ const Committee = () => {
 							</a>
 							<p className="text-center text-lg font-bold text-white mt-2">{name}</p>
 							<p className="text-center text-md text-unics-green">{role}</p>
-							<p className="text-center text-sm text-white">{email}</p>
 						</li>
 					))}
 				</ul>
