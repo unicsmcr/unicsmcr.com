@@ -1,7 +1,7 @@
 "use client";
 import Marquee from 'react-fast-marquee';
 import React, {useEffect, useState}  from 'react';
-import { app, database } from "../../firebase.js/index.js";
+import { app, database } from "../../firebase.js";
 import { collection, addDoc, getDocs } from "firebase/firestore";
 
 import '/app/style.css';
