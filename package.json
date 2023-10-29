@@ -29,6 +29,7 @@
 		"encoding": "^0.1.13",
 		"eslint": "8.30.0",
 		"eslint-config-next": "13.1.1",
+		"firebase": "^10.5.2",
 		"navigation-vertica-dots": "^1.0.0",
 		"next": "^13.1.1",
 		"react": "^18.2.0",
@@ -38,7 +39,8 @@
 		"react-tsparticles": "^2.9.3",
 		"tsparticles": "^2.9.3",
 		"typescript": "4.9.4",
-		"uuid": "^9.0.0"
+		"uuid": "^9.0.0",
+		"yarn": "^1.22.19"
 	},
 	"devDependencies": {
 		"@types/uuid": "^9.0.0",
