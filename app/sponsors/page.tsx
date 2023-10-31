@@ -1,33 +1,56 @@
 'use client';
-import Marquee from 'react-fast-marquee';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Dispatch, SetStateAction } from 'react';
 
 
-import Image from "next/image";
-import FullCalendar from "@fullcalendar/react";
-import dayGridPlugin from "@fullcalendar/daygrid";
-import interactionPlugin from "@fullcalendar/interaction";
-import timeGridPlugin from "@fullcalendar/timegrid";
-import googleCalendarPlugin from "@fullcalendar/google-calendar";
-import committeeData from '@data/committee2023_24.json';
+
 import '/app/style.css';
 
+
 // Importing firebase
-import { initializeApp } from "firebase/app";
-import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
 import db from './firebase';
-import { Firestore } from 'firebase/firestore';
-import { forEachChild } from 'typescript';
-import { it } from 'node:test';
+import { Firestore, getDoc, getDocFromServer, query, where, getDocs, collection, doc } from 'firebase/firestore';
 import { SponsorType } from './types/sponsor';
 
 
 
-function SponsorItem({sponsor} : {sponsor: SponsorType}) {
+function SponsorItem({sponsor, setSponsorID} : {sponsor: SponsorType, setSponsorID: Dispatch<SetStateAction<string | undefined>>}) {
+	const onClickHandler = (event: any) => {
+		setSponsorID(sponsor.id)
+	}
+
     // rest of your component code
 	return (
-		<div className="sponsor">
-			{ sponsor.name }
+		<div>
+			<button onClick={ onClickHandler }>{ sponsor.name }</button>
+		</div>
+		
+	)
+}
+
+
+function SponsorDetail({sponsorID} : {sponsorID: string | undefined}) {
+	const sponsorDoc = doc(db, "sponsor", `${sponsorID}`);
+	const [sponsor, setSponsor] = useState<SponsorType>({});
+
+
+	async function getSponsorDetail() {
+		const sponsorSnapshot = await getDoc(sponsorDoc);
+		const newSponsorObj = {
+			id: sponsorSnapshot.id,
+			...sponsorSnapshot.data(),
+		}
+		setSponsor(newSponsorObj);
+		console.log(sponsorSnapshot)
+	} 
+
+	useEffect(() => {
+		getSponsorDetail()
+	}, [sponsorID])
+
+	
+	return (
+		<div style={{ fontSize: "60px" }}>
+			{ sponsor.description }
 		</div>
 	)
 }
@@ -36,15 +59,22 @@ function SponsorItem({sponsor} : {sponsor: SponsorType}) {
 const Sponsors = () => {
 
 	const [sponsors, setSponsors] = useState<SponsorType[]>([])
+	const [sponsorID, setSponsorID] = useState<string>()
+	
 
 	// method to query the database
 	async function getSponsors() {
-		console.log("get sponsors called")
+		// console.log("get sponsors called");
 		const sponsorCol = collection(db, 'sponsor');
-		const sponsolSnapshot = await getDocs(sponsorCol);
+		const sponsorSnapshot = await getDocs(sponsorCol);
 		const items : object[] = [];
-		sponsolSnapshot.docs.map(doc => {
-			items.push(doc.data());
+		sponsorSnapshot.docs.map(doc => {
+			// console.log(doc)
+			const newSponsorObj = {
+				id: doc.id,
+				...doc.data()
+			}
+			items.push(newSponsorObj)
 		});
 		setSponsors(items);
 	}
@@ -53,21 +83,29 @@ const Sponsors = () => {
 	useEffect(() => {
 		getSponsors()
 	}, [])
-	console.log(sponsors[0])
-	
+
+	// console.log(sponsors[0])
+	useEffect(() => {
+		console.log(sponsorID)
+	}, [sponsorID])
 
 
 	return (
 		<>
-			<div style={{ color: "white", fontSize: "250px" }}>
+			<div style={{ color: "white", fontSize: "120px", paddingTop: "70px" }}>
 				<p>sponsor list</p>
 				<div className='SponsorDiv'>
 					{
 						sponsors?.map((sponsor) => (
-							<SponsorItem sponsor={sponsor}/>
+							<SponsorItem sponsor={sponsor} setSponsorID={setSponsorID}/>
 						))
 					}
 				</div>
+
+				<div className="Sponsor-detail">
+					{ (sponsorID != "") && <SponsorDetail sponsorID={sponsorID}/>}
+				</div>
+
 			</div>
 		</>
 	);
