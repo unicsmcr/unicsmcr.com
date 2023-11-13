@@ -7,6 +7,7 @@ import timeGridPlugin from '@fullcalendar/timegrid';
 import googleCalendarPlugin from '@fullcalendar/google-calendar';
 import listPlugin from '@fullcalendar/list';
 
+// import { redirect } from 'next/navigation';
 
 
 const Hero = (): JSX.Element => (
@@ -28,7 +29,6 @@ const Home = (): JSX.Element => {
 	return (
 		
 		<>
-		 	
 			<Hero />
 			<div className="bg-black">
 				<section id="about" className="py-20 pt-40">
