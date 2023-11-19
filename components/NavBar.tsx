@@ -10,8 +10,10 @@ const pages = [
 	{ label: 'About', href: '/#about', key: uuidv4() },
 	{ label: 'Events', href: '/#events', key: uuidv4(), scroll: true },
 	{ label: 'Committee', href: '/committee', key: uuidv4(), scroll: true },
-	{ label: 'Sponsors', href: '/sponsors', key: uuidv4() },
+	{ label: 'Sponsors', href: '/sponsors', key: uuidv4(), scroll: true }
 ];
+
+const joinUs = [{ label: 'Join Us', href: 'https://manchesterstudentsunion.com/activities/view/unics', key: uuidv4() }]
 
 const NavBar = (): JSX.Element => {
 	const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -65,6 +67,16 @@ const NavBar = (): JSX.Element => {
 				<div className="flex flex-col justify-between h-full">
 					<div>
 						{pages.map(({ label, href, key, scroll = true }) => (
+							<a
+								key={key}
+								href={href}
+								className="block p-4 hover:bg-gray-800 text-white text-lg text-center justify-center"
+								onClick={() => setShowMobileMenu(false)}
+							>
+								{label}
+							</a>
+						))}
+						{joinUs.map(({ label, href, key}) => (
 							<a
 								key={key}
 								href={href}
