@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --unics-black: #252824;
+    --unics-black-black: #141513;
+    --unics-purple: #8A3EB0;
+    --unics-yellow: #FCCD40;
+    --unics-white: #F1F1F1;
+
+    margin: 0;
+    padding: 0;
+    background-color: var(--unics-black);
+}
