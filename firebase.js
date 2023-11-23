@@ -4,12 +4,13 @@ import { getFirestore } from "firebase/firestore"
 
 // Our Firebase configuration - Keep this private -> this should be in .env
 const firebaseConfig = {
-  apiKey: "API_KEY",
-  authDomain: "AUTH_DOMAIN",
-  projectId: "PROJECT_ID",
-  storageBucket: "STORAGE_BUCKET",
-  messagingSenderId: "MESSAGING_SENDER_ID",
-  appId: "APP_ID"
+  apiKey: "AIzaSyBjJwQb2U_vey814MgFPFr9m3gjN0eJBIU",
+  authDomain: "unicssponsorpage.firebaseapp.com",
+  projectId: "unicssponsorpage",
+  storageBucket: "unicssponsorpage.appspot.com",
+  messagingSenderId: "743867196579",
+  appId: "1:743867196579:web:1737518e98a1301f7f0b16",
+  measurementId: "G-EGJD821DWL"
 };
 
 // Initialise Firebase

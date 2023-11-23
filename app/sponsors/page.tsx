@@ -28,7 +28,7 @@ interface Opportunity {
 }
 
 const Sponsors = () => {
-    const db = collection(database, "sponsors"); 
+    const db = collection(database, "sponsor");
     const [sponsors, setSponsors] = useState<Sponsor[]>([]);
     const addSponsor = async (sponsor: Sponsor) => {
         const docRef = await addDoc(db, sponsor); //..
@@ -37,13 +37,14 @@ const Sponsors = () => {
     useEffect(() => {
         const getSponsors = async () => {
             const querySnapshot = await getDocs(db);
+            console.log(querySnapshot)
             const sponsorData = querySnapshot.docs.map((doc) => doc.data() as Sponsor);
             setSponsors(sponsorData);
         }
 
         getSponsors();
     }, []); 
-    
+    console.log(sponsors)
     // now create sponsors HTML..
     const sponsorToHTML = (sponsor: Sponsor) => {
         return (
@@ -81,18 +82,16 @@ const Sponsors = () => {
 
             <h1 className='text-2xl font-bold mb-4 text-guh-green'>Gold Sponsors</h1>
             <ul className="sponsors-list">
-                {sponsors
-                .filter((sponsor) => sponsor.Tier === "Gold")
-                .map((sponsor) => (
-                    <React.Fragment>
-                        {sponsorToHTML(sponsor)}
-                    </React.Fragment>
-                ))}
+                {
+                    sponsors?.filter((sponsor: Sponsor) => sponsor.Tier === "Gold").map((sponsor: Sponsor) => (
+                        sponsorToHTML(sponsor)
+                    ))
+                }
             </ul>
             <h1 className='text-2xl font-bold mb-4 text-guh-green'>Silver Sponsors</h1>
             <ul className="sponsors-list">
                 {sponsors
-                .filter((sponsor) => sponsor.Tier === "Gold")
+                .filter((sponsor) => sponsor.Tier === "Silver")
                 .map((sponsor) => (
                     <React.Fragment>
                         {sponsorToHTML(sponsor)}
