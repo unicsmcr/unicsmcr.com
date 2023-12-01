@@ -10,7 +10,9 @@ export default {
         "unics-yellow": "#FCCD40",
         "unics-white": "#F1F1F1",
       },
-      fontFamily: {},
+      fontFamily: {
+        "rubik-mono": ["rubik-mono", "sans-serif"],
+      },
       backgroundImage: {},
     },
   },
