@@ -2,6 +2,10 @@ import type { CollapseProps } from "antd";
 import { CaretUpFilled } from "@ant-design/icons";
 import { Collapse } from "antd";
 
+import DiscordIcon from "../assets/icons/logo-discord.svg?react";
+import LinkedinIcon from "../assets/icons/logo-linkedin.svg?react";
+import EmailIcon from "../assets/icons/mail.svg?react";
+
 import committee_2022_23 from "../data/committee_2022-23.json";
 import committee_2023_24 from "../data/committee_2023-24.json";
 
@@ -14,22 +18,39 @@ const items: CollapseProps["items"] = [
       </h1>
     ),
     children: (
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center gap-8">
         {committee_2023_24.map(({ name, role, social, img, email }) => (
-          <div
-            className="flex flex-col items-center gap-y-0.5 p-6 text-xs"
-            key={`${name}-committee`}
-          >
-            <a href={social} className="mb-4">
-              <img className="object-cover w-56 h-56" src={img} alt={name} />
-            </a>
-            <p className="text-unics-white ">{name}</p>
-            <p className="text-unics-purple text-bold">{role}</p>
-            <a href={`mailto:${email}`}>
-              <p className="text-unics-white text-center underline break-words w-56">
-                {email}
+          <div className="flex flex-col justify-between items-center p-6 bg-black bg-opacity-20 rounded-3xl">
+            <div
+              className="flex flex-col items-center gap-y-0.5"
+              key={`${name}-committee`}
+            >
+              <a href={social} className="mb-4">
+                <img
+                  className="object-cover w-52 h-52 rounded-3xl"
+                  src={img}
+                  alt={name}
+                />
+              </a>
+              <p className="text-unics-white text-md text-center w-52">
+                {name}
               </p>
-            </a>
+              <p className="text-unics-purple text-bold text-md text-center w-52">
+                {role}
+              </p>
+            </div>
+
+            <div className="flex gap-8 mt-4">
+              <a href={`mailto:${email}`}>
+                <EmailIcon className="fill-unics-white w-10 h-10" />
+              </a>
+              <a href={""}>
+                <DiscordIcon className="fill-unics-white w-10 h-10" />
+              </a>
+              <a href={social}>
+                <LinkedinIcon className="fill-unics-white w-10 h-10" />
+              </a>
+            </div>
           </div>
         ))}
       </div>
@@ -43,22 +64,39 @@ const items: CollapseProps["items"] = [
       </h1>
     ),
     children: (
-      <div className="flex flex-wrap justify-center ">
+      <div className="flex flex-wrap justify-center gap-8">
         {committee_2022_23.map(({ name, role, social, img, email }) => (
-          <div
-            className="flex flex-col items-center gap-y-0.5 p-6 text-xs"
-            key={`${name}-committee`}
-          >
-            <a href={social} className="mb-4">
-              <img className="object-cover w-56 h-56" src={img} alt={name} />
-            </a>
-            <p className="text-unics-white ">{name}</p>
-            <p className="text-unics-purple text-bold">{role}</p>
-            <a href={`mailto:${email}`}>
-              <p className="text-unics-white text-center underline break-words w-56">
-                {email}
+          <div className="flex flex-col justify-between items-center p-6 bg-black bg-opacity-20 rounded-3xl">
+            <div
+              className="flex flex-col items-center gap-y-0.5"
+              key={`${name}-committee`}
+            >
+              <a href={social} className="mb-4">
+                <img
+                  className="object-cover w-52 h-52 rounded-3xl"
+                  src={img}
+                  alt={name}
+                />
+              </a>
+              <p className="text-unics-white text-md text-center w-52">
+                {name}
               </p>
-            </a>
+              <p className="text-unics-purple text-bold text-md text-center w-52">
+                {role}
+              </p>
+            </div>
+
+            <div className="flex gap-8 mt-4">
+              <a href={`mailto:${email}`}>
+                <EmailIcon className="fill-unics-white w-10 h-10" />
+              </a>
+              <a href={""}>
+                <DiscordIcon className="fill-unics-white w-10 h-10" />
+              </a>
+              <a href={social}>
+                <LinkedinIcon className="fill-unics-white w-10 h-10" />
+              </a>
+            </div>
           </div>
         ))}
       </div>
