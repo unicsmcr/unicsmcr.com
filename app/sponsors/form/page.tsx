@@ -1,8 +1,10 @@
 'use client';
 import React, { useState, useEffect, Dispatch, SetStateAction } from 'react';
 import '/app/style.css';
+import fs from 'fs';
+
 // Importing firebase
-import db from '../firebase';
+import { database } from '../../../firebase';
 import {
     Firestore,
     getDoc,
@@ -21,11 +23,14 @@ import {any} from "prop-types";
 function CreateSponsorForm() {
 
     const [sponsorName, setSponsorName] = useState<string>("");
+    const [sponsorActiveStatus, setSponsorActiveStatus] = useState<Boolean>(true);
+    const [sponsorTier, setSponsorTier] = useState<string>("");
     const [sponsorDescription, setSponsorDescription] = useState<string>("");
-
+    const [sponsorLink, setSponsorLink] = useState<string>("");
+    
     // submitting hotel data to firebase
     async function submitSponsor(sponsorData: submitSponsorType) {
-        const sponsorCol = collection(db, 'sponsor');
+        const sponsorCol = collection(database, 'sponsor');
         const newSponsor = await addDoc(sponsorCol, sponsorData);
         console.log(`The new hotel was created at ${newSponsor.path}`)
     }
@@ -33,10 +38,10 @@ function CreateSponsorForm() {
     const addNewSponsor = (e:  React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         // submitHotel()
-        submitSponsor({
-            name: sponsorName,
-            description: sponsorDescription
-        });
+        // submitSponsor({
+        //     name: sponsorName,
+        //     description: sponsorDescription
+        // });
 
 
         console.log("successfully created a new sponsor")
@@ -45,18 +50,35 @@ function CreateSponsorForm() {
     useEffect(() => {
         console.log("sponsor name: " + sponsorName)
         console.log("sponsor description: " + sponsorDescription)
-    }, [sponsorName, sponsorDescription]);
+        console.log("sponsor tier: " + sponsorTier)
+    }, [sponsorName, sponsorDescription, sponsorTier]);
 
     return (
-        <div style={{ color: "white", fontSize: "120px", paddingTop: "70px", paddingLeft:"20px" }}>
+        <div style={{ color: "white", fontSize: "30px", paddingTop: "70px", paddingLeft:"20px" }}>
             <h2> Add new sponsor </h2>
             <form onSubmit={(e) => addNewSponsor(e)}>
-                <label>Sponsor name</label><br/>
-                <input style={{ color: "black", fontSize:"40px" }}
-                    type="text" required value={sponsorName} onChange={(event) => {setSponsorName(event.target.value)}}/> <br/>
-                <label>Sponsor description</label><br/>
-                <input style={{ color: "black", fontSize:"40px" }}
+                <label>Sponsor name: </label>
+                <input style={{ color: "black", fontSize:"30px" }}
+                    type="text" required value={sponsorName} onChange={(event) => {setSponsorName(event.target.value)}}/>
+                <br/>
+                <br/>
+                <label>Sponsor tier: </label>
+                <select name={"sponsor-tier"} id={"sponsor-tier"} style={{color: "black"}}
+                    onChange={(event) => {setSponsorTier(event.target.value)}}>
+                    <option value={"gold"}>gold</option>
+                    <option value={"silver"}>silver</option>
+                </select>
+                <br/>
+                <br/>
+                <label>Sponsor description: </label>
+                <input style={{ color: "black", fontSize:"30px" }}
                        type="text" required value={sponsorDescription} onChange={(event) => {setSponsorDescription(event.target.value)}}/>
+                <br/>
+                <br/>
+                <label>Sponsor link: </label>
+                <input style={{ color: "black", fontSize:"30px" }}
+                       type="text" required value={sponsorLink} onChange={(event) => {setSponsorLink(event.target.value)}}/>
+                <br/>
                 <br/>
                 <input type="submit" value={"add new sponsor"}/>
             </form>
@@ -67,7 +89,7 @@ function CreateSponsorForm() {
 
 function EditSponsorForm() {
     // configure sponsors
-    const sponsorCol = collection(db, "sponsor");
+    const sponsorCol = collection(database, "game sessions");
 
     const [sponsorList, setSponsorList] = useState<SponsorType[]>([])
     const [selectedSponsorID, setSelectedSponsorID] = useState<string>("")
@@ -76,6 +98,7 @@ function EditSponsorForm() {
     async function getSponsors() {
         // console.log("get sponsors called");
         const sponsorSnapshot = await getDocs(sponsorCol);
+        console.log(sponsorSnapshot)
         const items : object[] = [];
         sponsorSnapshot.docs.map(doc => {
             // console.log(doc)
@@ -83,6 +106,7 @@ function EditSponsorForm() {
                 id: doc.id,
                 ...doc.data()
             }
+            console.log(newSponsorObj)
             items.push(newSponsorObj)
         });
         setSponsorList(items);
@@ -115,7 +139,7 @@ function EditSponsorForm() {
 
     // edit new sponsor function
     async function updateSponsor(id:string, docData: any) {
-        const sponsorDoc = doc(db, `sponsor/${id}`)
+        const sponsorDoc = doc(database, `sponsor/${id}`)
         await setDoc(sponsorDoc, docData, {merge: true})
         console.log("the value has been written to the database")
     }
