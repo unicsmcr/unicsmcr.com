@@ -43,16 +43,18 @@ const Navbar: React.FC = () => {
         },
       }}
     >
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-        <img alt='UniCS logo' src='src/assets/logos/logo.png' width={60} height={60} className='mx-20'></img>
-        <Menu
-          onClick={onClick}
-          selectedKeys={[current]}
-          mode="horizontal"
-          items={items}
-          className="bg-unics-black"
-          
-        />
+      <div className='container mx-auto'>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          <img alt='UniCS logo' src='src/assets/logos/logo.png' width={60} height={60} className='mx-20'></img>
+          <Menu
+            onClick={onClick}
+            selectedKeys={[current]}
+            mode="horizontal"
+            items={items}
+            className="bg-unics-black"
+            
+          />
+        </div>
       </div>
     </ConfigProvider>
   );
