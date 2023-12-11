@@ -57,3 +57,31 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2023-11-18 15:52:14
+DROP TABLE IF EXISTS `sponsors`;
+
+CREATE TABLE `sponsors` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) DEFAULT NULL,
+  `active` boolean DEFAULT 0,
+  `tier` enum('Gold', 'Silver', 'Bronze', 'SingleEvent', 'Promotion') DEFAULT 'Bronze',
+  `description` varchar(1000) DEFAULT NULL,
+  `link` varchar(255) DEFAULT NULL,
+  `iconPath` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+DROP TABLE IF EXISTS `opportunities`;
+
+CREATE TABLE `opportunities` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `sponsorId` int(11) NOT NULL AUTO_INCREMENT,
+  `description` varchar(100) DEFAULT NULL,
+  `dateStart` date DEFAULT NULL,
+  `dateEnd` date DEFAULT NULL,
+  `link` varchar(255) DEFAULT NULL,
+  `role` varchar(255) DEFAULT NULL,
+  `field` varchar(255) DEFAULT NULL,
+  `location` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  FOREIGN KEY (`sponsorId`) REFERENCES `sponsors`(`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
