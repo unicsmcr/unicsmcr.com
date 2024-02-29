@@ -34,6 +34,22 @@
         "role": "Inclusions Officer",
         "email": "inclusion@unicsmcr.com"
     },
+
+    {
+		"name": "Jakub Pabian",
+		"img": "/assets/people/jakub.jpg",
+		"social": "https://www.linkedin.com/in/jacob-pabian/",
+		"role": "Hackathons Co-Director",
+		"email": "hackathons@unicsmcr.com"
+	},
+	{
+		"name": "Naddy Takruri",
+		"img": "/assets/people/naddy.jpg",
+		"social": "https://www.linkedin.com/in/nadoms/",
+		"role": "Hackathons Co-Director",
+		"email": "hackathons@unicsmcr.com"
+	},
+    
     {
         "name": "Rosie Halsall",
         "img": "/assets/people/rosie.jpg",
@@ -56,20 +72,7 @@
         "email": "graphics@unicsmcr.com"
     },
 	
-    {
-		"name": "Asma Ali",
-		"img": "/assets/people/asmaali.jpg",
-		"social": "https://www.linkedin.com/in/asma-o-ali/",
-		"role": "Hackathons Co-Lead",
-		"email": "hackathons@unicsmcr.com"
-	},
-	{
-		"name": "Asma Alshebli",
-		"img": "/assets/people/asmaalshebli.jpg",
-		"social": "https://www.linkedin.com/in/asma-alshebli-86a13a264/",
-		"role": "Hackathons Co-Lead",
-		"email": "hackathons@unicsmcr.com"
-	},
+   
     {
         "name": "Yashika Gandhi",
         "img": "/assets/people/yashika.jpg",
