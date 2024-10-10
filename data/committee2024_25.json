@@ -1,0 +1,114 @@
+[
+    {
+        "name": "Na",
+        "img": "/assets/people/Na-Co-Chair.png",
+        "social": "",
+        "role": "Co-Chair",
+        "email": "cochair@unicsmcr.com"
+    },
+    {
+        "name": "Joshua",
+        "img": "/assets/people/Joshua-Treasurer.png",
+        "social": "",
+        "role": "Treasurer",
+        "email": "treasurer@unicsmcr.com"
+    },
+    {
+        "name": "Sahar",
+        "img": "/assets/people/Sahar-Secretary.png",
+        "social": "",
+        "role": "Secretary",
+        "email": "secretary@unicsmcr.com"
+    },
+    {
+        "name": "Adi",
+        "img": "/assets/people/Adi-Sponsorships-Director.png",
+        "social": "",
+        "role": "Sponsorships Director",
+        "email": "sponsorships@unicsmcr.com"
+    },
+    {
+        "name": "Jakub",
+        "img": "/assets/people/Jakub-Hackathons-Director.png",
+        "social": "",
+        "role": "Hackathons Director",
+        "email": "hackathons@unicsmcr.com"
+    },
+    {
+        "name": "Naddy",
+        "img": "/assets/people/Naddy-Hackathons-Director.png",
+        "social": "",
+        "role": "Hackathons Director",
+        "email": "hackathons@unicsmcr.com"
+    },
+    {
+        "name": "Nish",
+        "img": "/assets/people/Nish-Procurement-Officer.png",
+        "social": "",
+        "role": "Procurement Officer",
+        "email": "procurement@unicsmcr.com"
+    },
+    {
+        "name": "Keshav",
+        "img": "/assets/people/Keshav-Events-Officer.png",
+        "social": "",
+        "role": "Events Officer",
+        "email": "events@unicsmcr.com"
+    },
+    {
+        "name": "Rey",
+        "img": "/assets/people/Rey-Events-Officer.png",
+        "social": "",
+        "role": "Events Officer",
+        "email": "events@unicsmcr.com"
+    },
+    {
+        "name": "Sahil",
+        "img": "/assets/people/Sahil-Events-Officer.png",
+        "social": "",
+        "role": "Events Officer",
+        "email": "events@unicsmcr.com"
+    },
+    {
+        "name": "Adam",
+        "img": "/assets/people/Adam-Gamedev-Officer.png",
+        "social": "",
+        "role": "Game Dev Officer",
+        "email": "gamedev@unicsmcr.com"
+    },
+    {
+        "name": "Merve",
+        "img": "/assets/people/Merve-Dev-Officer.png",
+        "social": "",
+        "role": "Dev Officer",
+        "email": "dev@unicsmcr.com"
+    },
+    {
+        "name": "Affan",
+        "img": "/assets/people/Affan-PR-Officer.png",
+        "social": "",
+        "role": "PR Officer",
+        "email": "pr@unicsmcr.com"
+    },
+    {
+        "name": "Taran",
+        "img": "/assets/people/Taran-PR-Officer.png",
+        "social": "",
+        "role": "PR Officer",
+        "email": "pr@unicsmcr.com"
+    },
+    {
+        "name": "Sourabh",
+        "img": "/assets/people/Sourabh-Graphics-Officer.png",
+        "social": "",
+        "role": "Graphics Officer",
+        "email": "graphics@unicsmcr.com"
+    },
+    {
+        "name": "Vidhi",
+        "img": "/assets/people/Vidhi-Inclusions-Officer.png",
+        "social": "",
+        "role": "Inclusions Officer",
+        "email": "inclusions@unicsmcr.com"
+    }
+]
