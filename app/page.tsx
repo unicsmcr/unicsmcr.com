@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCog } from '@fortawesome/free-solid-svg-icons';
 
 
-
+/*
 const UnderConstruction = (): JSX.Element => {
 	console.log("under construction appears");
 	const [isVisible, setIsVisible] = useState(false);
@@ -62,7 +62,7 @@ const UnderConstruction = (): JSX.Element => {
 		
 		</div>
 	  );
-};
+}; */
 
 const Hero = (): JSX.Element => (
 	
@@ -84,7 +84,6 @@ const Home = (): JSX.Element => {
 	return (
 		
 		<>
-		 	<UnderConstruction />
 			<Hero />
 			<div className="bg-black">
 				<section id="about" className="py-20 pt-40">
