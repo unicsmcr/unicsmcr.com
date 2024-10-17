@@ -1,13 +1,68 @@
 'use client';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import interactionPlugin from '@fullcalendar/interaction';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import googleCalendarPlugin from '@fullcalendar/google-calendar';
 import listPlugin from '@fullcalendar/list';
+//import GearIcon from './GearIcon';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCog } from '@fortawesome/free-solid-svg-icons';
 
 
+
+const UnderConstruction = (): JSX.Element => {
+	console.log("under construction appears");
+	const [isVisible, setIsVisible] = useState(false);
+	
+	useEffect (() => {
+		const timer  = setTimeout(() => setIsVisible(true), 600);
+		return () => clearTimeout(timer);
+
+	}, [] )
+
+	if (!isVisible) return null;
+
+	return (
+		<div 
+		style={{
+			position: 'fixed',
+			top: '0px',
+			left: '48%',
+			transform: 'translateX(-50%)',
+			width: '75%',
+			maxWidth: '600px',
+			backgroundColor: '#8B4513',
+			color: 'white',
+			textAlign: 'center',
+			padding: '0.5rem',
+			fontWeight: 'bold',
+			fontSize: '1rem',
+			zIndex: 9999,
+			borderRadius: '25px',
+			boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+			display: 'flex',
+			alignItems: 'center',
+			justifyContent: 'center',
+			gap: '10px'
+		  }}
+		>
+		<div style={{ position: 'relative', width: '60px', height: '25px', marginRight: '10px' }}>
+			<FontAwesomeIcon icon={faCog} spin style={{ position: 'absolute', left: 0, fontSize: '30px' }} />
+			<FontAwesomeIcon icon={faCog} spin style={{ position: 'absolute', right: 18, fontSize: '13px' }} />
+			
+      	</div>
+		
+		<div style={{position: 'relative', width:'30px', height: '5px', marginRight: '10px'}}>
+			<FontAwesomeIcon icon={faCog} spin style={{ position: 'absolute', right: 60, fontSize: '20px' }} />
+		</div>
+      <span>Website under construction!</span>
+      
+		
+		</div>
+	  );
+};
 
 const Hero = (): JSX.Element => (
 	
@@ -17,6 +72,7 @@ const Hero = (): JSX.Element => (
 				Uni<span className="text-guh-green">CS</span>
 			</h1>
 			<div className="text-3xl text-white bg-black p-4 text-center leading-relaxed">
+				
 				<p>University of Manchester</p>
 				<p>Computer Science Society</p>
 			</div>
@@ -28,7 +84,7 @@ const Home = (): JSX.Element => {
 	return (
 		
 		<>
-		 	
+		 	<UnderConstruction />
 			<Hero />
 			<div className="bg-black">
 				<section id="about" className="py-20 pt-40">
@@ -66,6 +122,7 @@ const Home = (): JSX.Element => {
 					<section id="cal" className="mx-auto py-20 max-w-screen-xl ">
 					<div className="text-1xl text-white  p-4 leading-relaxed">
 					<FullCalendar
+			
       plugins={[
         dayGridPlugin,
         interactionPlugin,
