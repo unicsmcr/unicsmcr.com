@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+    padding-top: 5px;
+    padding: 2vw;
+    font-size: 1.5vw;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: purple;
+    text-align: center;
+    font-size: 8vw;
+}
+
+h2 {
+    color: purple;
+    font-size: 3vw;
+  }
+
+.join {
+    position:absolute;
+     top:1vw;
+     right:1vw;
+     color: purple;
+     background-color: black;
+     font-size: 1.5vw;
+     border-color: purple;
+     padding: 0.5%;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5vw;
+    height: auto;
+}
+
+a {
+    color: white;
+}
+
+p,ul{
+    color: white;
+  }
+
+footer {
+    text-align: center;
+  }
