@@ -1,49 +1,81 @@
 body {
-    background-color: black;
-    padding-top: 5px;
-    padding: 2vw;
-    font-size: 1.5vw;
-    font-family: Helvetica Neue, sans-serif;
+  background-color: black;
+  padding-top: 5px;
+  padding: 2vw;
+  font-size: 1.5vw;
+  font-family: Helvetica Neue, sans-serif;
 }
 
 h1 {
-    color: #A020F0;
-    text-align: center;
-    font-size: 8vw;
+  color: #a020f0;
+  text-align: center;
+  font-size: 8vw;
 }
 
 h2 {
-    color: #A020F0;
-    font-size: 3vw;
-  }
+  color: #a020f0;
+  font-size: 3vw;
+}
 
 .join {
-    position:absolute;
-     top:1vw;
-     right:1vw;
-     color:#A020F0;
-     background-color: black;
-     font-size: 1.5vw;
-     border-color: #A020F0;
-     padding: 0.5%;
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+  color: #a020f0;
+  background-color: black;
+  font-size: 1.5vw;
+  border-color: #a020f0;
+  padding: 0.5%;
 }
 
 .logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 5vw;
-    height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5vw;
+  height: auto;
 }
 
 a {
-    color: white;
+  color: white;
 }
 
-p,ul{
-    color: white;
-  }
+p,
+ul {
+  color: white;
+}
 
 footer {
-    text-align: center;
+  text-align: center;
+}
+
+.logo-container {
+  perspective: 1000px;
+}
+
+#logo {
+  width: 150px;
+  transition: transform 1s ease;
+}
+
+#logo:hover {
+  animation: roll 1s ease-in-out;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
   }
+  25% {
+    transform: rotateX(90deg) rotateY(90deg);
+  }
+  50% {
+    transform: rotateX(180deg) rotateY(180deg);
+  }
+  75% {
+    transform: rotateX(270deg) rotateY(270deg);
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+}
