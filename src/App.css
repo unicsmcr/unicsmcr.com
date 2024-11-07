@@ -49,6 +49,10 @@ footer {
   text-align: center;
 }
 
+.logo-container {
+  perspective: 1000px;
+}
+
 #logo {
   width: 75px;
   transition: transform 2s ease;
