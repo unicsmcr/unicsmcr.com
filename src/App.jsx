@@ -1,8 +1,10 @@
 import "./App.css";
+import NavBar from "./NavBar";
 
 function App() {
   return (
     <>
+    <NavBar />
       {/* <a
         //href="https://manchesterstudentsunion.com/activities/view/unics"
         target="_blank"
@@ -10,22 +12,13 @@ function App() {
       >
         <button className="join">Join Us</button>
       </a> */}
-      <div className="logo-container">
+
+    
+    <div className="logo-container">
         <img src="logo.png" id="logo" alt="Logo" className="logo" />
       </div>
-      <p style={{ textAlign: "center", color: "red" }}>
-        Disclaimer: This website is under construction!
-      </p>
-
-      <p>
-        <ul>
-          <li>About</li>
-          <li>Events</li>
-          <li>Committee</li>
-          <li>Sponsors</li>
-        </ul>
-      </p>
-
+     
+     
       <h1 className="header">UniCS</h1>
 
       <p style={{ textAlign: "center", fontSize: "3vw" }}>
