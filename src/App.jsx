@@ -1,4 +1,6 @@
-import "./App.css";
+import React from 'react';
+import About from './components/About';
+import './App.css';
 
 function App() {
   return (
@@ -33,18 +35,7 @@ function App() {
         Computer Science Society{" "}
       </p>
 
-      <h2 className="header2">ABOUT US</h2>
-
-      <p>
-        UniCS is the University of Manchester&#39;s tech society. We are a big
-        community with a passion for technology and creating innovative
-        solutions for everyone to enjoy. Through our hackathons and other
-        events, we aim to bring students and industry closer together. When we
-        aren&#39;t organising our own events we also travel to events in places
-        like Barcelona, Helsinki, and Bordeaux, amongst other exotic
-        destinations, often free due to various hackathon sponsors. Come join us
-        to see what we get up to this year!
-      </p>
+      <About />
 
       <h2 className="header2">EVENTS</h2>
       <p>
@@ -154,3 +145,4 @@ function App() {
 }
 
 export default App;
+
