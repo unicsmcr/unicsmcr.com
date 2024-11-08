@@ -3,13 +3,13 @@ import "./App.css";
 function App() {
   return (
     <>
-      {/* <a
-        //href="https://manchesterstudentsunion.com/activities/view/unics"
+      <a
+        href="https://manchesterstudentsunion.com/activities/view/unics"
         target="_blank"
-        style={{ textDecoration: none }}
+        style={{ textDecoration: "none" }}
       >
         <button className="join">Join Us</button>
-      </a> */}
+      </a>
       <div className="logo-container">
         <img src="logo.png" id="logo" alt="Logo" className="logo" />
       </div>
