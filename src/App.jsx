@@ -1,10 +1,12 @@
 import React from 'react';
 import About from './components/About';
-import './App.css';
+import "./App.css";
+import NavBar from "./NavBar";
 
 function App() {
   return (
     <>
+      <NavBar />
       <a
         href="https://manchesterstudentsunion.com/activities/view/unics"
         target="_blank"
@@ -15,18 +17,6 @@ function App() {
       <div className="logo-container">
         <img src="logo.png" id="logo" alt="Logo" className="logo" />
       </div>
-      <p style={{ textAlign: "center", color: "red" }}>
-        Disclaimer: This website is under construction!
-      </p>
-
-      <p>
-        <ul>
-          <li>About</li>
-          <li>Events</li>
-          <li>Committee</li>
-          <li>Sponsors</li>
-        </ul>
-      </p>
 
       <h1 className="header">UniCS</h1>
 
@@ -106,7 +96,7 @@ function App() {
         them to a dynamic network of information, people and ideas. The
         company&#39;s strength — delivering data, news and analytics through
         innovative technology, quickly and accurately — is at the core of the
-        Bloomberg Terminal. Bloomberg\&#39;s enterprise solutions build on the
+        Bloomberg Terminal. Bloomberg&#39;s enterprise solutions build on the
         company&#39;s core strength: leveraging technology to allow customers to
         access, integrate, distribute and manage data and information across
         organizations more efficiently and effectively.
@@ -145,4 +135,3 @@ function App() {
 }
 
 export default App;
-

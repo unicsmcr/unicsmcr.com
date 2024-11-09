@@ -1,3 +1,14 @@
+
+main {
+  padding-top: 160px; 
+}
+
+@media (max-width: 768px) {
+  main {
+      padding-top: 140px;
+  }
+}
+
 body {
   background-color: black;
   padding-top: 5px;
@@ -68,4 +79,6 @@ footer {
   100% {
     transform: rotateX(0deg) rotateY(0deg);
   }
+
+  
 }
