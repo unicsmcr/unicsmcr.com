@@ -2,23 +2,26 @@
   "name": "unicsmcr.com",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://unicsmcr.github.io/unicsmcr.com/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist"
   },
- "dependencies": {
+  "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "next": "^15.0.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "typewriter-effect": "^2.21.0",
     "react-icons": "^5.3.0",
+    "typewriter-effect": "^2.21.0",
     "uuid": "^11.0.2"
-},
+  },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
     "@types/react": "^18.3.12",
@@ -28,6 +31,7 @@
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.14",
+    "gh-pages": "^6.2.0",
     "globals": "^15.11.0",
     "vite": "^5.4.10"
   }
