@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "vite build --base=/unicsmcr.com/",
-    "deploy": "gh-pages -d dist"
+    "deploy": "vite build --base=/unicsmcr.com/ && gh-pages -d dist"
   },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
