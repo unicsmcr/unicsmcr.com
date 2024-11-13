@@ -14,9 +14,6 @@ function App() {
       >
         <button className="join">Join Us</button>
       </a>
-      <div className="logo-container">
-        <img src="logo.png" id="logo" alt="Logo" className="logo" />
-      </div>
 
       <h1 className="header">UniCS</h1>
 

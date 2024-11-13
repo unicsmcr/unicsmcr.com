@@ -21,7 +21,7 @@ const UnderConstruction = () => {
     if (!isVisible) return null;
 
     return (
-        <div 
+        <div
             style={{
                 position: 'fixed',
                 top: '0px',
@@ -64,11 +64,12 @@ const NavBar = () => {
             <div className="max-w-screen-xl mx-auto py-4 flex justify-center items-center">
                 <div className="flex-shrink-0">
                     <a href="/">
-                        <img src="/logo.png" width="64" height="64" alt="UniCS logo" />
+                        <div className="logo-container">
+                            <img src="logo.png" id="logo" alt="UniCS logo" />
+                        </div>
                     </a>
                 </div>
 
-                {/* Navigation Links - Centered like UnderConstruction */}
                 <div style={{
                     position: 'absolute',
                     left: '48%',
@@ -76,7 +77,7 @@ const NavBar = () => {
                     display: 'flex',
                     gap: '2rem',
                     alignItems: 'center',
-                    top: '40px' 
+                    top: '40px'
                 }} className="hidden md:flex">
                     {pages.map(({ label, href, key }) => (
                         <a
@@ -89,17 +90,17 @@ const NavBar = () => {
                     ))}
                 </div>
 
-                <div className="ml-auto hidden md:block">
-                    <a href="https://manchesterstudentsunion.com/activities/view/unics" 
+                {/* <div className="ml-auto hidden md:block">
+                    <a href="https://manchesterstudentsunion.com/activities/view/unics"
                        className="text-[#ffcc33] border-2 border-[#ffcc33] py-2 px-9 hover:bg-[#ffcc33] hover:text-black transition-colors duration-200">
                         Join Us
                     </a>
-                </div>
+                </div> */}
 
-                
+
             </div>
 
-            
+
         </nav>
     );
 };
