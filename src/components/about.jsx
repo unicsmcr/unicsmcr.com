@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Typewriter from 'typewriter-effect';
-import './About.css';
+import './about.css';
 
 const About = () => {
   useEffect(() => {
