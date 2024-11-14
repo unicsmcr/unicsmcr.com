@@ -9,6 +9,7 @@ h1 {
   color: #a020f0;
   text-align: center;
   font-size: 6vw;
+  padding-top: 20px;
 }
 
 h2 {
@@ -126,7 +127,8 @@ footer {
 }
 
 @keyframes blink {
-  from, to {
+  from,
+  to {
     opacity: 0;
   }
   50% {
@@ -157,3 +159,106 @@ footer {
   margin-top: 20px;
 }
 
+.under-construction-banner {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 75%;
+  max-width: 600px;
+  background-color: #8b4513;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  z-index: 9999;
+  border-radius: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.under-construction-icon {
+  position: relative;
+  width: 60px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.icon-left {
+  position: absolute;
+  left: 0;
+  font-size: 30px;
+}
+
+.icon-right {
+  position: absolute;
+  right: 18px;
+  font-size: 13px;
+}
+
+.under-construction-icon-small {
+  position: relative;
+  width: 30px;
+  height: 5px;
+  margin-right: 10px;
+}
+
+.icon-small {
+  position: absolute;
+  right: 60px;
+  font-size: 20px;
+}
+
+.navbar {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.navbar-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-link {
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #a020f0;
+}
+
+/* Join Us Button */
+.join-us-button {
+  color: #a020f0;
+  border: 2px solid #a020f0;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.join-us-button:hover {
+  background-color: #a020f0;
+  color: black;
+}
