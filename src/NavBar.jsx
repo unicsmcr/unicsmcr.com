@@ -6,8 +6,8 @@ import { v4 as uuidv4 } from "uuid";
 const pages = [
   { label: "About", href: "/#about", key: uuidv4() },
   { label: "Events", href: "/#events", key: uuidv4(), scroll: true },
-  { label: "Committee", href: "/committee", key: uuidv4(), scroll: true },
-  { label: "Sponsors", href: "/sponsors", key: uuidv4() },
+  { label: "Committee", href: "/#committee", key: uuidv4(), scroll: true },
+  { label: "Sponsors", href: "/#sponsors", key: uuidv4() },
 ];
 
 const UnderConstruction = () => {
