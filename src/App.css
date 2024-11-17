@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
 body {
   background-color: black;
-  padding: 2vw;
+  padding: 0;
   font-size: 1.5vw;
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Karla", sans-serif;
 }
 
 h1 {
@@ -10,6 +12,7 @@ h1 {
   text-align: center;
   font-size: 6vw;
   padding-top: 20px;
+  margin-top: 225px;
 }
 
 h2 {
@@ -23,7 +26,7 @@ h2 {
   right: 1vw;
   color: #a020f0;
   background-color: black;
-  font-size: 1.2vw;
+  font-size: 1vw;
   border-color: #a020f0;
   padding: 0.5%;
 }
@@ -80,17 +83,14 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  box-sizing: border-box;
+  margin-bottom: 40px;
   border-top: 10px solid transparent;
   border-image: linear-gradient(to right, black 30%, transparent 70%) 1;
   border-bottom: 10px solid transparent;
   border-image: linear-gradient(to right, transparent 30%, black 70%) 1;
-  margin-bottom: 40px;
   clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
 }
 
@@ -162,23 +162,21 @@ footer {
 .under-construction-banner {
   position: fixed;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 75%;
-  max-width: 600px;
-  background-color: #8b4513;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #a020f0, #800080);
   color: white;
   text-align: center;
-  padding: 0.5rem;
+  padding: 0.8rem 1rem;
   font-weight: bold;
   font-size: 1rem;
-  z-index: 9999;
-  border-radius: 25px;
+  z-index: 10000;
+  border-bottom: 3px solid #800080;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 0.5rem;
 }
 
 .under-construction-icon {
@@ -216,10 +214,11 @@ footer {
 .navbar {
   background-color: black;
   position: fixed;
-  top: 0;
+  top: 50px;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 9999;
+  border-bottom: 1px solid #a020f0;
 }
 
 .navbar-content {
@@ -233,13 +232,13 @@ footer {
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   align-items: center;
 }
 
 .nav-link {
   color: white;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   text-decoration: none;
   transition: color 0.3s;
@@ -249,13 +248,13 @@ footer {
   color: #a020f0;
 }
 
-/* Join Us Button */
 .join-us-button {
   color: #a020f0;
   border: 2px solid #a020f0;
   padding: 0.5rem 1.5rem;
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
 }
 
 .join-us-button:hover {
