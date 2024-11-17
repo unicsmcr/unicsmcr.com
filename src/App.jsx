@@ -36,20 +36,30 @@ function App() {
       <p>More information about May Ball and GUH 23 coming soon!</p>
 
       <h2 className="header2">SPONSORS</h2>
+      
       <p>
-        bet365, the world's leading online betting and gaming company, is a
-        driving force in the development of enterprise and Internet technology.
-        Delivering an unrivalled online experience to more than 63 million
-        customers in 21 languages. Innovation continues to be our lifeblood and
-        we pride ourselves on the standards of customer service we deliver.
-        Driven by a shared vision to be the best in our industry, a technology
-        team in excess of 1,600 people work in house to provide the
-        technological advances that enable us to maintain our leadership
-        position. Giving our teams the freedom to innovate is essential to our
-        success. Our award winning business has worked hard to cultivate a
-        culture of creativity where good ideas and a techno entrepreneurial
-        attitude are encouraged and rewarded. Today we continue to push
-        technological boundaries and break new ground in software innovation.
+        TPP - Media Contract        
+      </p>
+
+      <p>
+        Jane Street (JS) - Bronze Tier        
+      </p>
+
+      <p>
+        Cambridge Consultants - Bronze Tier        
+      </p>
+
+      <p>
+        Over the past few years we have been sponsored by:
+        <br />
+      </p>
+
+      <p>
+        Reply - Gold Tier        
+      </p>
+
+      <p>
+        Roku - Silver Tier        
       </p>
 
       <p>
@@ -83,6 +93,22 @@ function App() {
       </p>
 
       <p>
+        bet365, the world's leading online betting and gaming company, is a
+        driving force in the development of enterprise and Internet technology.
+        Delivering an unrivalled online experience to more than 63 million
+        customers in 21 languages. Innovation continues to be our lifeblood and
+        we pride ourselves on the standards of customer service we deliver.
+        Driven by a shared vision to be the best in our industry, a technology
+        team in excess of 1,600 people work in house to provide the
+        technological advances that enable us to maintain our leadership
+        position. Giving our teams the freedom to innovate is essential to our
+        success. Our award winning business has worked hard to cultivate a
+        culture of creativity where good ideas and a techno entrepreneurial
+        attitude are encouraged and rewarded. Today we continue to push
+        technological boundaries and break new ground in software innovation.
+      </p>
+
+      <p>
         Bloomberg, the global business and financial information and news
         leader, gives influential decision makers a critical edge by connecting
         them to a dynamic network of information, people and ideas. The
@@ -94,11 +120,6 @@ function App() {
         organizations more efficiently and effectively.
       </p>
 
-      <p>
-        Over the past few years we have been sponsored by:
-        <br />
-        ...
-      </p>
 
       <footer>
         <a id="contact" href="mailto:contact@unicsmcr.com">
