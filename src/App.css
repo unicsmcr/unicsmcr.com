@@ -2,7 +2,7 @@
 
 body {
   background-color: black;
-  padding: 2vw;
+  padding: 0;
   font-size: 1.5vw;
   font-family: "Karla", sans-serif;
 }
@@ -83,17 +83,14 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  box-sizing: border-box;
+  margin-bottom: 40px;
   border-top: 10px solid transparent;
   border-image: linear-gradient(to right, black 30%, transparent 70%) 1;
   border-bottom: 10px solid transparent;
   border-image: linear-gradient(to right, transparent 30%, black 70%) 1;
-  margin-bottom: 40px;
   clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
 }
 
