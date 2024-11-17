@@ -33,7 +33,7 @@ function App() {
         You can keep up-to-date with our events and see a full list of them by
         following our Instagram page.
       </p>
-      <p>More information about May Ball and GUH 23 coming soon!</p>
+      <p>More information about May Ball coming soon!</p>
 
       <h2 className="header2">SPONSORS</h2>
       
@@ -49,7 +49,7 @@ function App() {
         Cambridge Consultants - Bronze Tier        
       </p>
 
-      <p>
+      {/* <p>
         Over the past few years we have been sponsored by:
         <br />
       </p>
@@ -71,55 +71,7 @@ function App() {
         enables us to solve the most complex challenges. QRT&#39;s culture of
         innovation continuously drives our ambition to deliver high quality
         returns for our investors.
-      </p>
-
-      <p>
-        Founded in 1996 in Amsterdam, Booking.com has grown from a small Dutch
-        startup to one of the world&#39;s leading digital travel companies. Part
-        of Booking Holdings Inc. (NASDAQ: BKNG), Booking.com&#39;s mission is to
-        make it easier for everyone to experience the world. By investing in the
-        technology that helps take the friction out of travel, Booking.com
-        seamlessly connects millions of travellers with memorable experiences, a
-        range of transport options and incredible places to stay - from homes to
-        hotels and much more. As one of the world&#39;s largest travel
-        marketplaces for both established brands and entrepreneurs of all sizes,
-        Booking.com enables properties all over the world to reach a global
-        audience and grow their businesses. Booking.com is available in 43
-        languages and offers more than 28 million total reported accommodation
-        listings, including over 6.6 million listings alone of homes, apartments
-        and other unique places to stay. No matter where you want to go or what
-        you want to do, Booking.com makes it easy and backs it all up with 24/7
-        customer support.
-      </p>
-
-      <p>
-        bet365, the world's leading online betting and gaming company, is a
-        driving force in the development of enterprise and Internet technology.
-        Delivering an unrivalled online experience to more than 63 million
-        customers in 21 languages. Innovation continues to be our lifeblood and
-        we pride ourselves on the standards of customer service we deliver.
-        Driven by a shared vision to be the best in our industry, a technology
-        team in excess of 1,600 people work in house to provide the
-        technological advances that enable us to maintain our leadership
-        position. Giving our teams the freedom to innovate is essential to our
-        success. Our award winning business has worked hard to cultivate a
-        culture of creativity where good ideas and a techno entrepreneurial
-        attitude are encouraged and rewarded. Today we continue to push
-        technological boundaries and break new ground in software innovation.
-      </p>
-
-      <p>
-        Bloomberg, the global business and financial information and news
-        leader, gives influential decision makers a critical edge by connecting
-        them to a dynamic network of information, people and ideas. The
-        company&#39;s strength — delivering data, news and analytics through
-        innovative technology, quickly and accurately — is at the core of the
-        Bloomberg Terminal. Bloomberg&#39;s enterprise solutions build on the
-        company&#39;s core strength: leveraging technology to allow customers to
-        access, integrate, distribute and manage data and information across
-        organizations more efficiently and effectively.
-      </p>
-
+      </p> */}
 
       <footer>
         <a id="contact" href="mailto:contact@unicsmcr.com">
