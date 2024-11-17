@@ -8,7 +8,9 @@ function App() {
     <>
       <NavBar />
 
-      <h1 className="header">UniCS</h1>
+      <h1 className="header">
+        <span style={{ color: "white" }}>Uni</span>CS
+      </h1>
 
       <p style={{ textAlign: "center", fontSize: "3vw" }}>
         University of Manchester <br />

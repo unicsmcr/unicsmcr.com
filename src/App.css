@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
 body {
   background-color: black;
   padding: 2vw;
   font-size: 1.5vw;
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Karla", sans-serif;
 }
 
 h1 {
@@ -10,6 +12,7 @@ h1 {
   text-align: center;
   font-size: 6vw;
   padding-top: 20px;
+  margin-top: 150px;
 }
 
 h2 {
@@ -23,7 +26,7 @@ h2 {
   right: 1vw;
   color: #a020f0;
   background-color: black;
-  font-size: 1.2vw;
+  font-size: 1vw;
   border-color: #a020f0;
   padding: 0.5%;
 }
@@ -232,13 +235,13 @@ footer {
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   align-items: center;
 }
 
 .nav-link {
   color: white;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   text-decoration: none;
   transition: color 0.3s;
