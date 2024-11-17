@@ -1,5 +1,5 @@
-import React from 'react';
-import About from '../src/components/About';
+import React from "react";
+import About from "../src/components/About";
 import "../src/App.css";
 import NavBar from "../src/NavBar";
 
@@ -7,13 +7,6 @@ function App() {
   return (
     <>
       <NavBar />
-      <a
-        href="https://manchesterstudentsunion.com/activities/view/unics"
-        target="_blank"
-        style={{ textDecoration: "none" }}
-      >
-        <button className="join">Join Us</button>
-      </a>
 
       <h1 className="header">UniCS</h1>
 
