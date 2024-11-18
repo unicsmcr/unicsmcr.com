@@ -35,6 +35,65 @@ function App() {
       </p>
       <p>More information about May Ball coming soon!</p>
 
+      <h2 className="header2">COMMITTEE</h2>
+
+      <div class="display: flex; flex-direction: row">
+        <div>
+      <p>Co-Chair</p>
+      <img src = "Na-Co-Chair.png" id="Na" class="committee" alt = "Na, Co-Chair"/>
+      </div>
+
+      <div>
+      <p>Secretary</p>
+      <img src = "Sahar-Secretary.png" id="Sahar" class="committee"/>
+      </div>
+
+      <p>Inclusions Officer</p>
+      <img src = "Vidhi-Inclusions-Officer.png" id="Vidhi" class="committee"/>
+
+      <p>Treasurer</p>
+      <img src = "Joshua-Treasurer.png" class="committee"/>
+
+      <p>Procurement Officer</p>
+      <img src = "Nish-Procurement-Officer.png" class="committee"/>
+
+      <p>PR Officer</p>
+      <img src = "Taran-PR-Officer.png" class="committee"/>
+
+      </div>
+
+      <p>PR Officer</p>
+      <img src = "Affan-PR-Officer.png" class="committee"/>
+
+      <p>Graphics Officer</p>
+      <img src = "Sourabh-Graphics-Officer.png" class="committee"/>
+
+      <p>Events Officer</p>
+      <img src = "Sahil-Events-Officer.png" class="committee"/>
+
+      <p>Events Officer</p>
+      <img src = "Rey-Events-Officer.png" class="committee"/>
+
+      <p>Events Officer</p>
+      <img src = "Keshav-Events-Officer.png" class="committee"/>
+
+      <p>Hackathons Co-Director</p>
+      <img src = "Naddy-Hackathons-Director.png" class="committee"/>
+
+      <p>Hackathons Co-Director</p>
+      <img src = "Jakub-Hackathons-Director.png" class="committee"/>
+
+      <p>Sponsorships Director</p>
+      <img src = "Adi-Sponsorships-Director.png" class="committee"/>
+
+      <p>Game-Dev Officer</p>
+      <img src = "Adam-Gamedev-Officer.png" class="committee"/>
+
+      <p>Dev Officer</p>
+      <img src = "Merve-Dev-Officer.png" class="committee"/>
+
+
+
       <h2 className="header2">SPONSORS</h2>
       
       <p>
