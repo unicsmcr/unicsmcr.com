@@ -261,3 +261,30 @@ footer {
   background-color: #a020f0;
   color: black;
 }
+
+.dropdown-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .under-construction-banner {
+    font-size: 0.8rem;
+    padding: 0.8rem;
+  }
+
+  .icon-large {
+    font-size: 1.2rem;
+  }
+
+  .icon-small {
+    font-size: 0.8rem;
+  }
+
+  .dropdown-toggle {
+    display: block;
+  }
+
+  .navbar-content {
+    display: none;
+  }
+}

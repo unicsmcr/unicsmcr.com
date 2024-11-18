@@ -1,6 +1,7 @@
+import SideBar from "./SideBar";
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCog } from "@fortawesome/free-solid-svg-icons";
+import { faCog, faBars } from "@fortawesome/free-solid-svg-icons";
 import { v4 as uuidv4 } from "uuid";
 
 const pages = [
@@ -33,32 +34,42 @@ const UnderConstruction = () => {
     </div>
   );
 };
-
 const NavBar = () => {
-  const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  const toggleDropdown = () => {
+    setShowDropdown(!showDropdown);
+  };
 
   return (
     <nav className="navbar">
       <UnderConstruction />
-      <div className="navbar-content">
-        <div className="logo-container">
-          <img src="logo.png" id="logo" alt="UniCS logo" />
-        </div>
+      <button className="dropdown-toggle" onClick={toggleDropdown}>
+        <FontAwesomeIcon icon={faBars} />
+      </button>
+      {showDropdown ? (
+        <SideBar pages={pages} setShowMobileMenu={setShowDropdown} />
+      ) : (
+        <div className="navbar-content">
+          <div className="logo-container">
+            <img src="logo.png" id="logo" alt="UniCS logo" />
+          </div>
 
-        <div className="nav-links">
-          {pages.map(({ label, href, key }) => (
-            <a key={key} href={href} className="nav-link">
-              {label}
-            </a>
-          ))}
+          <div className="nav-links">
+            {pages.map(({ label, href, key }) => (
+              <a key={key} href={href} className="nav-link">
+                {label}
+              </a>
+            ))}
+          </div>
+          <a
+            href="https://manchesterstudentsunion.com/activities/view/unics"
+            className="join-us-button"
+          >
+            Join Us
+          </a>
         </div>
-        <a
-          href="https://manchesterstudentsunion.com/activities/view/unics"
-          className="join-us-button"
-        >
-          Join Us
-        </a>
-      </div>
+      )}
     </nav>
   );
 };
