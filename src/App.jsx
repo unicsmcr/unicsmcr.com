@@ -2,6 +2,7 @@ import React from "react";
 import About from "../src/components/About";
 import "../src/App.css";
 import NavBar from "./components/NavBar";
+import Bee from "./Bee";
 import Committee from "./components/Committee";
 
 function App() {
@@ -17,6 +18,8 @@ function App() {
         University of Manchester <br />
         Computer Science Society{" "}
       </p>
+
+      <Bee />
 
       <About />
 
@@ -44,8 +47,12 @@ function App() {
 
       <p>TPP - Media Contract</p>
 
+      <p>TPP - Media Contract</p>
+
+      <p>Jane Street (JS) - Bronze Tier</p>
       <p>Jane Street (JS) - Bronze Tier</p>
 
+      <p>Cambridge Consultants - Bronze Tier</p>
       <p>Cambridge Consultants - Bronze Tier</p>
 
       {/* <p>
@@ -55,9 +62,11 @@ function App() {
 
       <p>
         Reply - Gold Tier
+        Reply - Gold Tier
       </p>
 
       <p>
+        Roku - Silver Tier
         Roku - Silver Tier
       </p>
 
