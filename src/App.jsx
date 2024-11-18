@@ -102,6 +102,13 @@ function App() {
 
         <p>&copy; Copyright 2018–2024 UniCS</p>
         <p>All rights reserved</p>
+        <p style={{ fontSize: "0.5em" }}>
+          Bee image from{" "}
+          <a href="https://www.deviantart.com/golborne-identity/art/County-Flag-of-Greater-Manchester-honey-bee-386924833">
+            Golborne-Identity
+          </a>{" "}
+          on DeviantArt under the Creative Commons license and edited by UniCS
+        </p>
       </footer>
     </>
   );
