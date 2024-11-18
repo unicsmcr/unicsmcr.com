@@ -1,128 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
-
-.committee {
-  border-radius: 100%;
-  width: 12vw;
-  height: 12vw;
+.typewriter {
+  display: inline-block;
+  font-size: 2.5vw;
   overflow: hidden;
-  object-fit: cover;
+  white-space: nowrap;
 }
 
-@media (max-width: 1200px) {
-  .committee {
-    width: 15vw;
-    height: 15vw;
+.blinker {
+  display: inline-block;
+  color: #800080;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    opacity: 0;
   }
-}
-
-@media (max-width: 992px) {
-  .committee {
-    width: 18vw;
-    height: 18vw;
-  }
-}
-
-@media (max-width: 768px) {
-  .committee {
-    width: 22vw;
-    height: 22vw;
-  }
-}
-
-@media (max-width: 480px) {
-  .committee {
-    width: 30vw;
-    height: 30vw;
-  }
-}
-
-.committee-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-  justify-items: center;
-  margin: 20px;
-  grid-auto-rows: minmax(150px, auto);
-}
-
-@media (max-width: 1200px) {
-  .committee-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media (max-width: 992px) {
-  .committee-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .committee-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  .committee-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.role {
-  text-align: center;
-}
-
-.name {
-  font-weight: bold;
-  font-size: 1.8em;
-  color: white;
-  margin-bottom: 0;
-}
-
-.role-name {
-  font-size: 1.6em;
-  color: #a020f0;
-  font-weight: bold;
-  margin-block: 0;
-}
-
-.email {
-  font-size: 1.2em;
-  color: gray;
-  margin-bottom: 0;
-  text-decoration: none;
-}
-
-.email:hover {
-  color: white;
-  text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-  .name {
-    font-size: 2em;
-  }
-
-  .role-name {
-    font-size: 1.8em;
-  }
-
-  .email {
-    font-size: 1.3em;
-  }
-}
-
-@media (max-width: 480px) {
-  .name {
-    font-size: 2.5em;
-  }
-
-  .role-name {
-    font-size: 2em;
-  }
-
-  .email {
-    font-size: 1.5em;
+  50% {
+    opacity: 1;
   }
 }
