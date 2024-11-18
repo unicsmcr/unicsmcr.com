@@ -44,16 +44,17 @@ const NavBar = () => {
   return (
     <nav className="navbar">
       <UnderConstruction />
-      <button className="dropdown-toggle" onClick={toggleDropdown}>
-        <FontAwesomeIcon icon={faBars} />
-      </button>
       {showDropdown ? (
-        <SideBar pages={pages} setShowMobileMenu={setShowDropdown} />
+        <SideBar pages={pages} setShowDropdown={setShowDropdown} />
       ) : (
         <div className="navbar-content">
           <div className="logo-container">
             <img src="logo.png" id="logo" alt="UniCS logo" />
           </div>
+
+          <button className="dropdown-toggle" onClick={toggleDropdown}>
+            <FontAwesomeIcon icon={faBars} />
+          </button>
 
           <div className="nav-links">
             {pages.map(({ label, href, key }) => (
@@ -64,7 +65,7 @@ const NavBar = () => {
           </div>
           <a
             href="https://manchesterstudentsunion.com/activities/view/unics"
-            className="join-us-button"
+            className="join-us-button join-us-button-nav"
           >
             Join Us
           </a>

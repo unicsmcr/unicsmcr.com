@@ -263,9 +263,24 @@ footer {
 }
 
 .dropdown-toggle {
+  background-color: #850ecf;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
   display: none;
 }
 
+.dropdown-toggle:hover {
+  background-color: #800080;
+}
 @media (max-width: 768px) {
   .under-construction-banner {
     font-size: 0.8rem;
@@ -284,7 +299,11 @@ footer {
     display: block;
   }
 
-  .navbar-content {
+  .nav-links {
+    display: none;
+  }
+
+  .join-us-button-nav {
     display: none;
   }
 }

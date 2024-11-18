@@ -1,11 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const SideBar = ({ pages, setShowMobileMenu }) => {
+const SideBar = ({ pages, setShowDropdown }) => {
   return (
     <div
       className="sidebar"
       onClick={() => {
-        setShowMobileMenu(false);
+        setShowDropdown(false);
       }}
       style={{
         borderBottom: "1px solid #a020f0",
@@ -27,7 +27,7 @@ const SideBar = ({ pages, setShowMobileMenu }) => {
       }}
     >
       <button
-        onClick={() => setShowMobileMenu(false)}
+        onClick={() => setShowDropdown(false)}
         style={{ color: "white" }}
         className="close-button"
       >
@@ -51,6 +51,13 @@ const SideBar = ({ pages, setShowMobileMenu }) => {
             <FontAwesomeIcon icon={icon} /> {label}
           </a>
         ))}
+        <a
+          href="https://manchesterstudentsunion.com/activities/view/unics"
+          className="join-us-button"
+          style={{ fontSize: "1rem", color: "white" }}
+        >
+          Join Us
+        </a>
       </div>
     </div>
   );
