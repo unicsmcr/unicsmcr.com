@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
-
 .committee {
   border-radius: 100%;
   width: 15vw;
   height: 15vw;
   overflow: hidden;
   object-fit: cover;
+  max-width: 100%; /* Prevent horizontal overflow */
+  max-height: 100%; /* Prevent vertical overflow */
 }
 
 @media (max-width: 1200px) {
@@ -31,8 +31,8 @@
 
 @media (max-width: 480px) {
   .committee {
-    width: 50vw;
-    height: 50vw;
+    width: 45vw;
+    height: 45vw;
   }
 }
 
@@ -81,6 +81,20 @@
   margin-bottom: 0;
 }
 
+@media (max-width: 768px) {
+  .name {
+    font-size: 3em;
+    line-height: 1.8;
+  }
+}
+
+@media (max-width: 480px) {
+  .name {
+    font-size: 4em;
+    line-height: 1;
+  }
+}
+
 .role-name {
   font-size: 1em;
   color: #a020f0;
@@ -88,14 +102,38 @@
   margin-block: 0;
 }
 
+@media (max-width: 768px) {
+  .role-name {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .role-name {
+    font-size: 3em;
+  }
+}
+
 .email {
   font-size: 0.9em;
   color: gray;
-  margin-bottom: 0;
+  margin-bottom: 5px;
   text-decoration: none;
 }
 
 .email:hover {
   color: white;
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .email {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .email {
+    font-size: 2.5em;
+  }
 }

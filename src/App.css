@@ -373,3 +373,31 @@ footer {
   margin-bottom: 25px;
   color: #a020f0;
 }
+
+@media (max-width: 1200px) {
+  .header2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header2 {
+    font-size: 2.8em;
+    margin-bottom: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header2 {
+    font-size: 3.2em;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header2 {
+    font-size: 4em;
+    margin-bottom: 12px;
+  }
+}
