@@ -2,8 +2,8 @@
 
 .committee {
   border-radius: 100%;
-  width: 12vw;
-  height: 12vw;
+  width: 15vw;
+  height: 15vw;
   overflow: hidden;
   object-fit: cover;
 }
@@ -17,32 +17,33 @@
 
 @media (max-width: 992px) {
   .committee {
-    width: 18vw;
-    height: 18vw;
+    width: 30vw;
+    height: 30vw;
   }
 }
 
 @media (max-width: 768px) {
   .committee {
-    width: 22vw;
-    height: 22vw;
+    width: 35vw;
+    height: 35vw;
   }
 }
 
 @media (max-width: 480px) {
   .committee {
-    width: 30vw;
-    height: 30vw;
+    width: 50vw;
+    height: 50vw;
   }
 }
 
 .committee-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
+  gap: 20px;
   justify-items: center;
   margin: 20px;
-  grid-auto-rows: minmax(150px, auto);
+  grid-auto-rows: minmax(200px, auto);
+  overflow: hidden;
 }
 
 @media (max-width: 1200px) {
@@ -75,20 +76,20 @@
 
 .name {
   font-weight: bold;
-  font-size: 1.8em;
+  font-size: 1.1em;
   color: white;
   margin-bottom: 0;
 }
 
 .role-name {
-  font-size: 1.6em;
+  font-size: 1em;
   color: #a020f0;
   font-weight: bold;
   margin-block: 0;
 }
 
 .email {
-  font-size: 1.2em;
+  font-size: 0.9em;
   color: gray;
   margin-bottom: 0;
   text-decoration: none;
@@ -97,32 +98,4 @@
 .email:hover {
   color: white;
   text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-  .name {
-    font-size: 2em;
-  }
-
-  .role-name {
-    font-size: 1.8em;
-  }
-
-  .email {
-    font-size: 1.3em;
-  }
-}
-
-@media (max-width: 480px) {
-  .name {
-    font-size: 2.5em;
-  }
-
-  .role-name {
-    font-size: 2em;
-  }
-
-  .email {
-    font-size: 1.5em;
-  }
 }

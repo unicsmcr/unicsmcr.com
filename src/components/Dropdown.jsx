@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
-const SideBar = ({ pages, setShowDropdown }) => {
+const Dropdown = ({ pages, setShowDropdown }) => {
   return (
     <div className="dropdown">
       <button
@@ -28,4 +28,4 @@ const SideBar = ({ pages, setShowDropdown }) => {
   );
 };
 
-export default SideBar;
+export default Dropdown;
