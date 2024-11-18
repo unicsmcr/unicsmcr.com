@@ -1,14 +1,32 @@
-import SideBar from "./SideBar";
+import Dropdown from "./Dropdown";
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faInfo,
+  faCalendar,
+  faUsers,
+  faHandshake,
+} from "@fortawesome/free-solid-svg-icons";
 import { faCog, faBars } from "@fortawesome/free-solid-svg-icons";
 import { v4 as uuidv4 } from "uuid";
 
 const pages = [
-  { label: "About", href: "/#about", key: uuidv4() },
-  { label: "Events", href: "/#events", key: uuidv4(), scroll: true },
-  { label: "Committee", href: "/#committee", key: uuidv4(), scroll: true },
-  { label: "Sponsors", href: "/#sponsors", key: uuidv4() },
+  { label: "About", href: "/#about", key: uuidv4(), icon: faInfo },
+  {
+    label: "Events",
+    href: "/#events",
+    key: uuidv4(),
+    scroll: true,
+    icon: faCalendar,
+  },
+  {
+    label: "Committee",
+    href: "/#committee",
+    key: uuidv4(),
+    scroll: true,
+    icon: faUsers,
+  },
+  { label: "Sponsors", href: "/#sponsors", key: uuidv4(), icon: faHandshake },
 ];
 
 const UnderConstruction = () => {
@@ -45,7 +63,7 @@ const NavBar = () => {
     <nav className="navbar">
       <UnderConstruction />
       {showDropdown ? (
-        <SideBar pages={pages} setShowDropdown={setShowDropdown} />
+        <Dropdown pages={pages} setShowDropdown={setShowDropdown} />
       ) : (
         <div className="navbar-content">
           <div className="logo-container">
