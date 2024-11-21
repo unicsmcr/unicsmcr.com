@@ -4,6 +4,7 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import Bee from "./Bee";
 import Committee from "./components/Committee";
+import Timeline from "./components/TimeLineFolder/TimeLine";
 
 function App() {
   return (
@@ -40,7 +41,7 @@ function App() {
         </p>
         <p>More information about May Ball coming soon!</p>
       </div>
-
+      <Timeline/>
       <Committee />
 
       <h2 className="header2">SPONSORS</h2>
@@ -80,7 +81,7 @@ function App() {
         innovation continuously drives our ambition to deliver high quality
         returns for our investors.
       </p> */}
-
+      
       <footer>
         <a id="contact" href="mailto:contact@unicsmcr.com">
           Contact Us
