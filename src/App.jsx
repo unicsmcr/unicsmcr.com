@@ -1,6 +1,6 @@
 import React from "react";
-import About from "../components/About";
-import "../App.css";
+import About from "./components/about";
+import "./App.css";
 import NavBar from "./components/NavBar";
 import Bee from "./Bee";
 import Committee from "./components/Committee";
