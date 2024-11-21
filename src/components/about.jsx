@@ -14,6 +14,7 @@ const About = () => {
     return (
     <div className="about-section">
       <div className="about-content">
+        
         <h2 className="typewriter">
         <Typewriter
             onInit={(typewriter) => {
@@ -46,6 +47,8 @@ const About = () => {
             boxShadow: '0 0 1px 0 rgba(0,0,0,0.5), 0 1px 10px 0 rgba(0,0,0,0.15)',
             margin: '1px',
             padding: 0,
+            width: '100%',
+            maxWidth: '800px'
           }}
         >
           <a href="https://www.instagram.com/unicsmcr/?hl=en" target="_blank" rel="noreferrer noopener">
