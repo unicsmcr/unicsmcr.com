@@ -401,3 +401,16 @@ footer {
     margin-bottom: 12px;
   }
 }
+
+.reverse-spin {
+  animation: reverse-spin 2s linear infinite;
+}
+
+@keyframes reverse-spin {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

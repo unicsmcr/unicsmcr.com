@@ -43,7 +43,7 @@ const UnderConstruction = () => {
     <div className="under-construction-banner">
       <div className="under-construction-icon">
         <FontAwesomeIcon icon={faCog} spin className="icon-left" />
-        <FontAwesomeIcon icon={faCog} spin className="icon-right" />
+        <FontAwesomeIcon icon={faCog} className="reverse-spin icon-right" />
       </div>
       <div className="under-construction-icon-small">
         <FontAwesomeIcon icon={faCog} spin className="icon-small" />
