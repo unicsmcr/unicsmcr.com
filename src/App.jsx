@@ -4,6 +4,7 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import Bee from "./Bee";
 import Committee from "./components/Committee";
+import ConnectWithUs from "./components/ConnectWithUs";
 
 function App() {
   return (
@@ -81,25 +82,9 @@ function App() {
         returns for our investors.
       </p> */}
 
+      <ConnectWithUs />
+
       <footer>
-        <a id="contact" href="mailto:contact@unicsmcr.com">
-          Contact Us
-        </a>
-
-        <br />
-
-        <a href="https://www.facebook.com/unicsmcr"> Facebook </a>
-
-        <a href="https://twitter.com/unicsmcr_"> Twitter</a>
-
-        <a href="https://www.instagram.com/unicsmcr/">Instagram</a>
-
-        <a href="https://github.com/unicsmcr">GitHub</a>
-
-        <a href="https://www.linkedin.com/company/unics-manchester/">
-          LinkedIn
-        </a>
-
         <p>&copy; Copyright 2018–2024 UniCS</p>
         <p>All rights reserved</p>
         <p style={{ fontSize: "0.5em" }}>
