@@ -367,8 +367,14 @@ footer {
   margin-top: 1rem;
 }
 
+.header {
+  align-items: center;
+  justify-content: center;
+  font-size: 9em;
+}
+
 .header2 {
-  font-size: 2em;
+  font-size: 3em;
   text-align: center;
   margin-bottom: 25px;
   color: #a020f0;
@@ -377,28 +383,28 @@ footer {
 
 @media (max-width: 1200px) {
   .header2 {
-    font-size: 2.5em;
+    font-size: 3em;
     margin-bottom: 20px;
   }
 }
 
 @media (max-width: 992px) {
   .header2 {
-    font-size: 2.8em;
+    font-size: 3.5em;
     margin-bottom: 18px;
   }
 }
 
 @media (max-width: 768px) {
   .header2 {
-    font-size: 3.2em;
+    font-size: 3.5em;
     margin-bottom: 15px;
   }
 }
 
 @media (max-width: 480px) {
   .header2 {
-    font-size: 4em;
+    font-size: 5.1em;
     margin-bottom: 12px;
   }
 }
@@ -426,7 +432,7 @@ footer {
 }
 
 .social-media-icon {
-  font-size: 1.95em;
+  font-size: 2.5em;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -435,14 +441,13 @@ footer {
   transform: scale(1.15);
 }
 
-
 @media (max-width: 768px) {
   .social-media-icons {
     gap: 15px;
   }
 
   .social-media-icon {
-    font-size: 2.3em;
+    font-size: 2.7em;
   }
 }
 
@@ -453,7 +458,7 @@ footer {
   }
 
   .social-media-icon {
-    font-size: 2.5em;
+    font-size: 4em;
     width: 1.5em;
     height: 1.5em;
     display: flex;
