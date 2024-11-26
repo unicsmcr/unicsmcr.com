@@ -1,41 +1,59 @@
-const TimelineEvent = ({ title, description, imageUrl, isKey, isTop, date, onDelete }) => (
-    <div className={`absolute transform ${isTop ? '-translate-y-full -mt-4' : 'mt-4'}`}>
-      {/* Vertical connection line */}
-      <div 
-        className="absolute left-1/2 -translate-x-1/2 w-px h-8 bg-purple-500"
-        style={{ top: isTop ? '100%' : '-2rem' }} 
-      />
-      
-      {/* Content */}
-      <div className="w-64 flex flex-col items-center relative">
-        {/* Delete button for admin */}
-        {onDelete && (
-          <button
-            onClick={onDelete}
-            className="absolute -top-2 -right-2 bg-red-500 text-white w-6 h-6 rounded-full 
-                     flex items-center justify-center hover:bg-red-600 z-10"
-          >
-            ×
-          </button>
+// src/components/TimeLineFolder/TimelineEvent.jsx
+import React from 'react';
+import PropTypes from 'prop-types';
+
+const TimelineEvent = ({ title, description, isKey, isTop, date, onDelete, imageUrl }) => (
+  <div className={`timeline-event-wrapper ${isTop ? 'top' : 'bottom'}`}>
+    <div className="timeline-event">
+      {onDelete && (
+        <button
+          onClick={onDelete}
+          className="absolute -top-2 -right-2 bg-red-500 text-white w-6 h-6 rounded-full 
+                   flex items-center justify-center hover:bg-red-600 z-10"
+        >
+          ×
+        </button>
+      )}
+
+      {isKey && imageUrl && (
+        <img
+          src={imageUrl}
+          alt={title}
+          className="timeline-event-image"
+          onError={(e) => {
+            e.target.src = '/api/placeholder/400/320';
+            e.target.onerror = null;
+          }}
+        />
+      )}
+
+      <div className="timeline-event-content">
+        <span className="timeline-event-date">{date}</span>
+        <h3 className="timeline-event-title">{title}</h3>
+        {description && (
+          <p className="timeline-event-description">{description}</p>
         )}
-        
-        {isKey && imageUrl && (
-          <div className="w-full h-40 mb-2">
-            <img
-              src={imageUrl}
-              alt={title}
-              className="w-full h-full object-cover rounded-lg"
-            />
-          </div>
-        )}
-        <div className="text-center">
-          <span className="text-purple-400 text-sm">{date}</span>
-          <h3 className="text-white text-lg font-semibold">{title}</h3>
-          {description && (
-            <p className="text-gray-300 text-sm">{description}</p>
-          )}
-        </div>
       </div>
     </div>
-  );
-  
+  </div>
+);
+
+TimelineEvent.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string,
+  isKey: PropTypes.bool,
+  isTop: PropTypes.bool,
+  date: PropTypes.string,
+  imageUrl: PropTypes.string,
+  onDelete: PropTypes.func
+};
+
+TimelineEvent.defaultProps = {
+  isKey: false,
+  isTop: false,
+  description: '',
+  date: '',
+  imageUrl: ''
+};
+
+export default TimelineEvent;

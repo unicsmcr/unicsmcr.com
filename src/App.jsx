@@ -5,7 +5,7 @@ import NavBar from "./components/NavBar";
 import Bee from "./Bee";
 import Committee from "./components/Committee";
 import Timeline from "./components/TimeLineFolder/TimeLine";
-
+import TestAuth from './components/testAuth';
 function App() {
   return (
     <>
@@ -41,6 +41,7 @@ function App() {
         </p>
         <p>More information about May Ball coming soon!</p>
       </div>
+      <TestAuth />
       <Timeline/>
       <Committee />
 

@@ -1,40 +1,79 @@
-import React, { useState } from 'react';
-import { useAuth } from './context/Auth';
+import React, { useState, useRef, useEffect } from 'react';
+import { useAuth } from '../../context/Auth';
 import TimelineEvent from './TimelineEvent';
 import AddEventForm from './AddEventForm';
 import LoginButton from './LoginButton';
+import './Timeline.css';
 
 const Timeline = () => {
+  const scrollRef = useRef(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+  
   const { user } = useAuth();
   const [showAddForm, setShowAddForm] = useState(false);
   const [events, setEvents] = useState([
     {
-      title: 'Company Founded',
-      description: 'Our journey began in Silicon Valley',
+      title: '',
+      description: '',
       isKey: true,
-      imageUrl: '/api/placeholder/400/320',
-      date: '2020'
+      imageUrl: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d',
+      date: ''
     },
     {
-      title: 'First Product Launch',
-      description: 'Released our flagship product',
+      title: 'Cool event!',
+      description: 'Another milestone',
       isKey: false,
       date: '2021'
     },
     {
-      title: '1 Million Users',
-      description: 'Reached major milestone',
-      isKey: true,
-      imageUrl: '/api/placeholder/400/320',
+      title: 'Cool event!',
+      description: 'Progress continues',
+      isKey: false,
       date: '2022'
     },
     {
-      title: 'Global Expansion',
-      description: 'Opened offices in Europe',
-      isKey: false,
+      title: 'Key event!',
+      description: '',
+      isKey: true,
+      imageUrl: 'https://images.unsplash.com/photo-1515187029135-18ee286d815b',
       date: '2023'
     }
   ]);
+
+  // Handle mouse down event
+  const handleMouseDown = (e) => {
+    setIsDragging(true);
+    setStartX(e.pageX - scrollRef.current.offsetLeft);
+    setScrollLeft(scrollRef.current.scrollLeft);
+  };
+
+  // Handle mouse move event
+  const handleMouseMove = (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - scrollRef.current.offsetLeft;
+    const walk = (x - startX) * 2;
+    scrollRef.current.scrollLeft = scrollLeft - walk;
+  };
+
+  // Handle mouse up event
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  useEffect(() => {
+    const timeline = scrollRef.current;
+    if (timeline) {
+      timeline.addEventListener('mouseleave', handleMouseUp);
+    }
+    return () => {
+      if (timeline) {
+        timeline.removeEventListener('mouseleave', handleMouseUp);
+      }
+    };
+  }, []);
 
   const handleAddEvent = (newEvent) => {
     setEvents([...events, newEvent]);
@@ -46,53 +85,31 @@ const Timeline = () => {
     }
   };
 
-  // Calculate the minimum width needed for the timeline
-  const timelineWidth = Math.max(events.length * 300, 1200);
-
   return (
-    <div className="bg-gray-900 min-h-screen p-4">
-      <section className="max-w-screen-xl mx-auto py-20">
-        {/* Header Section */}
-        <div className="flex justify-between items-center mb-20">
-          <h2 className="text-6xl text-purple-500 font-bold font-sans uppercase">
-            Company Timeline
-          </h2>
-          <div className="flex gap-4">
-            <LoginButton />
-            {user?.role === 'admin' && (
-              <button
-                onClick={() => setShowAddForm(true)}
-                className="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600"
-              >
-                Add Event
-              </button>
-            )}
-          </div>
-        </div>
-
-        {/* Timeline Container */}
-        <div className="relative overflow-x-auto overflow-y-hidden">
-          <div
-            className="relative h-96"
-            style={{ width: `${timelineWidth}px` }}
-          >
-            {/* Main horizontal line */}
-            <div className="absolute top-1/2 left-0 right-0 h-1 bg-purple-500" />
-
-            {/* Events */}
+    <div className="timeline-section">
+      <h2 className="events-title">EVENTS</h2>
+      <div 
+        ref={scrollRef}
+        className="timeline-container"
+        onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}
+        onMouseLeave={handleMouseUp}
+      >
+        <div className="timeline-content" style={{ width: `${events.length * 300 + 300}px` }}>
+          <div className="timeline-event-container">
+            <div className="timeline-line" />
             {events.map((event, index) => (
               <div
                 key={index}
-                className="absolute"
                 style={{
+                  position: 'absolute',
                   left: `${(index * 300) + 150}px`,
-                  top: '50%'
+                  top: '50%',
+                  transform: 'translateY(-50%)'
                 }}
               >
-                {/* Timeline dot */}
-                <div className="absolute w-3 h-3 bg-purple-500 rounded-full -translate-x-1/2 -translate-y-1/2" />
-
-                {/* Event content */}
+                <div className="timeline-dot" />
                 <TimelineEvent
                   {...event}
                   isTop={index % 2 === 0}
@@ -102,20 +119,18 @@ const Timeline = () => {
             ))}
           </div>
         </div>
-
-        {/* Scroll hint */}
-        <div className="text-gray-400 text-center mt-4 text-sm">
-          Scroll horizontally to see more events →
-        </div>
-
-        {/* Add Event Modal */}
-        {showAddForm && (
-          <AddEventForm
-            onClose={() => setShowAddForm(false)}
-            onAddEvent={handleAddEvent}
-          />
-        )}
-      </section>
+      </div>
+      <div className="timeline-scroll-hint">
+        Scroll horizontally to see more events →
+      </div>
+      {showAddForm && (
+        <AddEventForm
+          onClose={() => setShowAddForm(false)}
+          onAddEvent={handleAddEvent}
+        />
+      )}
     </div>
   );
 };
+
+export default Timeline;
