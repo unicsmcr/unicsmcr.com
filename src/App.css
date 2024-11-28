@@ -1,5 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.fa, .fab {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  /* background: #3B5998; */
+  color: white;
+}
+
+.fa:hover {
+  opacity: 0.7;
+  color: #a020f0;
+}
+
+.X{
+  font-size: 2.5vw;
+}
+
+.X:hover {
+  opacity: 0.7;
+  color: #a020f0;
+}
+
 body {
   background-color: black;
   padding: 0;

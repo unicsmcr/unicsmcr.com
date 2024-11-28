@@ -45,16 +45,14 @@ function App() {
 
       <h2 className="header2">SPONSORS</h2>
 
-      <p>TPP - Media Contract</p>
-
+    <div style={{ textAlign: "center" }}>
       <p>TPP - Media Contract</p>
 
       <p>Jane Street (JS) - Bronze Tier</p>
-      <p>Jane Street (JS) - Bronze Tier</p>
 
       <p>Cambridge Consultants - Bronze Tier</p>
-      <p>Cambridge Consultants - Bronze Tier</p>
-
+      <br/><br/><br/>
+      </div>
       {/* <p>
         Over the past few years we have been sponsored by:
         <br />
@@ -88,18 +86,16 @@ function App() {
 
         <br />
 
-        <a href="https://www.facebook.com/unicsmcr"> Facebook </a>
+        <a href="https://www.facebook.com/unicsmcr" class="fa fa-facebook"></a>
 
-        <a href="https://twitter.com/unicsmcr_"> Twitter</a>
+        <a href="https://x.com/unicsmcr_" class="X"> X </a>
 
-        <a href="https://www.instagram.com/unicsmcr/">Instagram</a>
+        <a href="https://www.instagram.com/unicsmcr/" class="fa fa-instagram"></a>
 
-        <a href="https://github.com/unicsmcr">GitHub</a>
+        <a href="https://github.com/unicsmcr" class="fa fa-github"></a>
 
-        <a href="https://www.linkedin.com/company/unics-manchester/">
-          LinkedIn
-        </a>
-
+        <a href="https://www.linkedin.com/company/unics-manchester/" class="fa fa-linkedin"></a>
+        
         <p>&copy; Copyright 2018–2024 UniCS</p>
         <p>All rights reserved</p>
         <p style={{ fontSize: "0.5em" }}>
