@@ -4,6 +4,7 @@ import {
   FaInstagram,
   FaLinkedin,
   FaEnvelope,
+  FaDiscord,
 } from "react-icons/fa";
 import { FaX } from "react-icons/fa6";
 
@@ -23,6 +24,10 @@ const ConnectWithUs = () => {
     {
       href: "mailto:mailto:contact@unicsmcr.com",
       icon: FaEnvelope,
+    },
+    {
+      href: "https://discord.com/invite/k2rttpghw2",
+      icon: FaDiscord,
     },
   ];
 
