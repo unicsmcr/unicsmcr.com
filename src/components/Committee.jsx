@@ -3,7 +3,7 @@ import "./Committee.css";
 const Committee = () => {
   return (
     <>
-      <h2 className="header2">COMMITTEE</h2>
+      <h2 className="header2">Committee</h2>
       <div className="committee-grid">
         <div className="role">
           <img
