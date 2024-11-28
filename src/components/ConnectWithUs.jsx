@@ -16,18 +16,19 @@ const ConnectWithUs = () => {
       href: "https://www.linkedin.com/company/unics-manchester/",
       icon: FaLinkedin,
     },
+    {
+      href: "https://discord.com/invite/k2rttpghw2",
+      icon: FaDiscord,
+    },
     { href: "https://x.com/unicsmcr", icon: FaX },
     {
       href: "https://github.com/unicsmcr",
       icon: FaGithub,
     },
+
     {
       href: "mailto:mailto:contact@unicsmcr.com",
       icon: FaEnvelope,
-    },
-    {
-      href: "https://discord.com/invite/k2rttpghw2",
-      icon: FaDiscord,
     },
   ];
 
