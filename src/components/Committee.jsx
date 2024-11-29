@@ -118,30 +118,6 @@ const Committee = () => {
         </div>
         <div className="role">
           <img
-            src="Rey-Events-Officer.png"
-            className="committee"
-            alt="Rey, Events Officer"
-          />
-          <p className="name">Rey</p>
-          <p className="role-name">Events Officer</p>
-          <a href="mailto:events@unicsmcr.com" className="email">
-            events@unicsmcr.com
-          </a>
-        </div>
-        <div className="role">
-          <img
-            src="Keshav-Events-Officer.png"
-            className="committee"
-            alt="Keshav, Events Officer"
-          />
-          <p className="name">Keshav</p>
-          <p className="role-name">Events Officer</p>
-          <a href="mailto:events@unicsmcr.com" className="email">
-            events@unicsmcr.com
-          </a>
-        </div>
-        <div className="role">
-          <img
             src="Naddy-Hackathons-Director.png"
             className="committee"
             alt="Naddy, Hackathons Co-Director"
