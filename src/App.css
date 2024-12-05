@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: black;
   padding: 0;

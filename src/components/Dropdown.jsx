@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
-const Dropdown = ({ pages, setShowDropdown }) => {
+const Dropdown = ({ pages, setShowDropdown, handleNavClick }) => {
   return (
     <div className="dropdown">
       <button
@@ -13,7 +13,12 @@ const Dropdown = ({ pages, setShowDropdown }) => {
       </button>
       <div className="dropdown-content">
         {pages.map(({ label, href, key, icon }) => (
-          <a key={key} href={href} className="nav-link dropdown-link">
+          <a
+            key={key}
+            href={href}
+            className="nav-link dropdown-link"
+            onClick={(e) => handleNavClick(e, href)}
+          >
             <FontAwesomeIcon icon={icon} /> {label}
           </a>
         ))}

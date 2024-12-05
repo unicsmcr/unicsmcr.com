@@ -2,7 +2,7 @@ import "./Committee.css";
 
 const Committee = () => {
   return (
-    <>
+    <div id="committee">
       <h2 className="header2">Committee</h2>
       <div className="committee-grid">
         <div className="role">
@@ -177,7 +177,7 @@ const Committee = () => {
           </a>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

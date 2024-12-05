@@ -12,26 +12,39 @@ import { faCog, faBars } from "@fortawesome/free-solid-svg-icons";
 import { v4 as uuidv4 } from "uuid";
 
 const pages = [
-  { label: "About", href: "/#about", key: uuidv4(), icon: faInfo },
+  {
+    label: "About",
+    href: "#about",
+    key: uuidv4(),
+    scroll: true,
+    icon: faInfo,
+  },
   {
     label: "Events",
-    href: "/#events",
+    href: "#events",
     key: uuidv4(),
     scroll: true,
     icon: faCalendar,
   },
   {
     label: "Committee",
-    href: "/#committee",
+    href: "#committee",
     key: uuidv4(),
     scroll: true,
     icon: faUsers,
   },
-  { label: "Sponsors", href: "/#sponsors", key: uuidv4(), icon: faHandshake },
+  {
+    label: "Sponsors",
+    href: "#sponsors",
+    key: uuidv4(),
+    scroll: true,
+    icon: faHandshake,
+  },
   {
     label: "Connect With Us",
-    href: "/#connect",
+    href: "#connect",
     key: uuidv4(),
+    scroll: true,
     icon: faHashtag,
   },
 ];
@@ -66,11 +79,23 @@ const NavBar = () => {
     setShowDropdown(!showDropdown);
   };
 
+  const handleNavClick = (e, href) => {
+    e.preventDefault();
+    const target = document.querySelector(href);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <nav className="navbar">
       <UnderConstruction />
       {showDropdown ? (
-        <Dropdown pages={pages} setShowDropdown={setShowDropdown} />
+        <Dropdown
+          pages={pages}
+          setShowDropdown={setShowDropdown}
+          handleNavClick={handleNavClick}
+        />
       ) : (
         <div className="navbar-content">
           <div className="logo-container">
@@ -83,7 +108,12 @@ const NavBar = () => {
 
           <div className="nav-links">
             {pages.map(({ label, href, key }) => (
-              <a key={key} href={href} className="nav-link">
+              <a
+                key={key}
+                href={href}
+                className="nav-link"
+                onClick={(e) => handleNavClick(e, href)}
+              >
                 {label}
               </a>
             ))}
