@@ -40,6 +40,13 @@ const committeeMembers = [
     image: "Affan-PR-Officer.png",
   },
   {
+    name: "Felix",
+    role: "PR Officer",
+    email: "pr@unicsmcr.com",
+    image: "Felix-PR-Officer.png",
+
+  },
+  {
     name: "Sourabh",
     role: "Graphics Officer",
     email: "graphics@unicsmcr.com",
