@@ -1,55 +1,78 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { useAuth } from '../../context/Auth';
 import TimelineEvent from './TimelineEvent';
-import AddEventForm from './AddEventForm';
-import LoginButton from './LoginButton';
 import './Timeline.css';
 
 const Timeline = () => {
   const scrollRef = useRef(null);
+  const sectionRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
-  
-  const { user } = useAuth();
-  const [showAddForm, setShowAddForm] = useState(false);
   const [events, setEvents] = useState([
     {
-      title: '',
+      title: 'Pub Crawler',
       description: '',
       isKey: true,
-      imageUrl: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d',
-      date: ''
+      imageUrl: 'pubcrawler.png',
+      date: '2025/02/06'
     },
     {
-      title: 'Cool event!',
-      description: 'Another milestone',
-      isKey: false,
-      date: '2021'
-    },
-    {
-      title: 'Cool event!',
-      description: 'Progress continues',
-      isKey: false,
-      date: '2022'
-    },
-    {
-      title: 'Key event!',
-      description: '',
+      title: 'Roku',
+      description: 'Networking enet',
       isKey: true,
-      imageUrl: 'https://images.unsplash.com/photo-1515187029135-18ee286d815b',
-      date: '2023'
+      imageUrl: 'roku.png',
+      date: '2025/02/06'
+    },
+    {
+      title: 'Student Hack',
+      description: 'Hackhaton',
+      isKey: true,
+      imageUrl: 'uniHack.jpg',
+      date: '2025'
+    },
+    {
+      title: 'May Ball',
+      description: 'Social event',
+      isKey: true,
+      imageUrl: '',
+      date: 'May 2025'
+    },
+    {
+      title: 'Great Uni Hack',
+      description: 'Hackhaton',
+      isKey: true,
+      imageUrl: 'GreatHack.png',
+      date: '2026'
     }
   ]);
 
-  // Handle mouse down event
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect(); // Only trigger animation once
+        }
+      },
+      {
+        threshold: 0.2 // Trigger when 20% of the component is visible
+      }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   const handleMouseDown = (e) => {
     setIsDragging(true);
     setStartX(e.pageX - scrollRef.current.offsetLeft);
     setScrollLeft(scrollRef.current.scrollLeft);
   };
 
-  // Handle mouse move event
   const handleMouseMove = (e) => {
     if (!isDragging) return;
     e.preventDefault();
@@ -58,26 +81,31 @@ const Timeline = () => {
     scrollRef.current.scrollLeft = scrollLeft - walk;
   };
 
-  // Handle mouse up event
   const handleMouseUp = () => {
     setIsDragging(false);
+  };
+
+  const handleKeyboardNavigation = (e) => {
+    if (e.key === 'ArrowLeft') {
+      scrollRef.current.scrollLeft -= 100;
+    } else if (e.key === 'ArrowRight') {
+      scrollRef.current.scrollLeft += 100;
+    }
   };
 
   useEffect(() => {
     const timeline = scrollRef.current;
     if (timeline) {
       timeline.addEventListener('mouseleave', handleMouseUp);
+      timeline.addEventListener('keydown', handleKeyboardNavigation);
     }
     return () => {
       if (timeline) {
         timeline.removeEventListener('mouseleave', handleMouseUp);
+        timeline.removeEventListener('keydown', handleKeyboardNavigation);
       }
     };
   }, []);
-
-  const handleAddEvent = (newEvent) => {
-    setEvents([...events, newEvent]);
-  };
 
   const handleDeleteEvent = (indexToDelete) => {
     if (window.confirm('Are you sure you want to delete this event?')) {
@@ -86,19 +114,35 @@ const Timeline = () => {
   };
 
   return (
-    <div className="timeline-section">
+    <div 
+      ref={sectionRef} 
+      className={`timeline-section ${isVisible ? 'start-animation' : ''}`}
+    >
       <h2 className="events-title">EVENTS</h2>
-      <div 
+      <div
         ref={scrollRef}
         className="timeline-container"
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp}
         onMouseLeave={handleMouseUp}
+        role="region"
+        aria-label="Timeline of events"
+        tabIndex={0}
+        style={{ cursor: isDragging ? 'grabbing' : 'grab' }}
       >
-        <div className="timeline-content" style={{ width: `${events.length * 300 + 300}px` }}>
+        <div className="timeline-content" style={{ width: `${events.length * 200 + 200}px` }}>
           <div className="timeline-event-container">
-            <div className="timeline-line" />
+            {events.map((_, index) => (
+              <div 
+                key={`line-${index}`}
+                className="timeline-line-segment"
+                style={{
+                  left: `${(index * 300)}px`,
+                  width: '300px'
+                }}
+              />
+            ))}
             {events.map((event, index) => (
               <div
                 key={index}
@@ -113,7 +157,7 @@ const Timeline = () => {
                 <TimelineEvent
                   {...event}
                   isTop={index % 2 === 0}
-                  onDelete={user?.role === 'admin' ? () => handleDeleteEvent(index) : null}
+                  onDelete={() => handleDeleteEvent(index)}
                 />
               </div>
             ))}
@@ -123,12 +167,6 @@ const Timeline = () => {
       <div className="timeline-scroll-hint">
         Scroll horizontally to see more events →
       </div>
-      {showAddForm && (
-        <AddEventForm
-          onClose={() => setShowAddForm(false)}
-          onAddEvent={handleAddEvent}
-        />
-      )}
     </div>
   );
 };
