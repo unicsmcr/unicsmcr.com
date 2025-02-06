@@ -6,6 +6,7 @@ import {
   faCalendar,
   faUsers,
   faHandshake,
+  faHashtag,
 } from "@fortawesome/free-solid-svg-icons";
 import { faCog, faBars } from "@fortawesome/free-solid-svg-icons";
 import { v4 as uuidv4 } from "uuid";
@@ -27,6 +28,12 @@ const pages = [
     icon: faUsers,
   },
   { label: "Sponsors", href: "/#sponsors", key: uuidv4(), icon: faHandshake },
+  {
+    label: "Connect With Us",
+    href: "/#connect",
+    key: uuidv4(),
+    icon: faHashtag,
+  },
 ];
 
 /*
@@ -44,7 +51,7 @@ const UnderConstruction = () => {
     <div className="under-construction-banner">
       <div className="under-construction-icon">
         <FontAwesomeIcon icon={faCog} spin className="icon-left" />
-        <FontAwesomeIcon icon={faCog} spin className="icon-right" />
+        <FontAwesomeIcon icon={faCog} className="reverse-spin icon-right" />
       </div>
       <div className="under-construction-icon-small">
         <FontAwesomeIcon icon={faCog} spin className="icon-small" />
