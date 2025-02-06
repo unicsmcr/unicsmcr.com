@@ -10,6 +10,12 @@ const committeeMembers = [
     image: "Na-Co-Chair.png",
   },
   {
+    name: "Arpan",
+    role: "Co-Chair",
+    email: "chair@unicsmcr.com",
+    image: "Arpan-Co-Chair.png",
+  },
+  {
     name: "Sahar",
     role: "Secretary",
     email: "secretary@unicsmcr.com",
@@ -22,22 +28,10 @@ const committeeMembers = [
     image: "Vidhi-Inclusions-Officer.png",
   },
   {
-    name: "Joshua",
-    role: "Treasurer",
-    email: "treasurer@unicsmcr.com",
-    image: "Joshua-Treasurer.png",
-  },
-  {
     name: "Nish",
     role: "Procurement Officer",
     email: "procurement@unicsmcr.com",
     image: "Nish-Procurement-Officer.png",
-  },
-  {
-    name: "Taran",
-    role: "PR Officer",
-    email: "pr@unicsmcr.com",
-    image: "Taran-PR-Officer.png",
   },
   {
     name: "Affan",
@@ -56,6 +50,18 @@ const committeeMembers = [
     role: "Events Officer",
     email: "events@unicsmcr.com",
     image: "Sahil-Events-Officer.png",
+  },
+  {
+    name: "Manoj",
+    role: "Events Officer",
+    email: "events@unicsmcr.com",
+    image: "Manoj-Events-Officer.png",
+  },
+  {
+    name: "Arjun",
+    role: "Events Officer",
+    email: "events@unicsmcr.com",
+    image: "Arjun-Events-Officer.png",
   },
   {
     name: "Naddy",
