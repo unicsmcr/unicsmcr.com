@@ -6,7 +6,7 @@ import {
   FaEnvelope,
   FaDiscord,
 } from "react-icons/fa";
-import { FaX } from "react-icons/fa6";
+import { RiTwitterXFill } from "react-icons/ri";
 
 const ConnectWithUs = () => {
   const icons = [
@@ -20,7 +20,7 @@ const ConnectWithUs = () => {
       href: "https://discord.com/invite/k2rttpghw2",
       icon: FaDiscord,
     },
-    { href: "https://x.com/unicsmcr", icon: FaX },
+    { href: "https://x.com/unicsmcr", icon: RiTwitterXFill },
     {
       href: "https://github.com/unicsmcr",
       icon: FaGithub,
