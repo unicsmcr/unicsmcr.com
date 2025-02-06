@@ -6,6 +6,7 @@ import {
   faCalendar,
   faUsers,
   faHandshake,
+  faHashtag,
 } from "@fortawesome/free-solid-svg-icons";
 import { faCog, faBars } from "@fortawesome/free-solid-svg-icons";
 import { v4 as uuidv4 } from "uuid";
@@ -27,6 +28,12 @@ const pages = [
     icon: faUsers,
   },
   { label: "Sponsors", href: "/#sponsors", key: uuidv4(), icon: faHandshake },
+  {
+    label: "Connect With Us",
+    href: "/#connect",
+    key: uuidv4(),
+    icon: faHashtag,
+  },
 ];
 
 const UnderConstruction = () => {

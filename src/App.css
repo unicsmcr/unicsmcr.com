@@ -367,37 +367,44 @@ footer {
   margin-top: 1rem;
 }
 
+.header {
+  align-items: center;
+  justify-content: center;
+  font-size: 5em;
+}
+
 .header2 {
-  font-size: 2em;
+  font-size: 2.5em;
   text-align: center;
   margin-bottom: 25px;
   color: #a020f0;
+  text-transform: uppercase;
 }
 
 @media (max-width: 1200px) {
   .header2 {
-    font-size: 2.5em;
+    font-size: 3em;
     margin-bottom: 20px;
   }
 }
 
 @media (max-width: 992px) {
   .header2 {
-    font-size: 2.8em;
+    font-size: 3.5em;
     margin-bottom: 18px;
   }
 }
 
 @media (max-width: 768px) {
   .header2 {
-    font-size: 3.2em;
+    font-size: 3.5em;
     margin-bottom: 15px;
   }
 }
 
 @media (max-width: 480px) {
   .header2 {
-    font-size: 4em;
+    font-size: 5.1em;
     margin-bottom: 12px;
   }
 }
@@ -412,5 +419,62 @@ footer {
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.social-media-icon {
+  font-size: 2em;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-media-icon:hover {
+  color: #a020f0;
+  transform: scale(1.15);
+}
+
+@media (max-width: 768px) {
+  .social-media-icons {
+    gap: 15px;
+  }
+
+  .social-media-icon {
+    font-size: 2.7em;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-media-icons {
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .social-media-icon {
+    font-size: 4em;
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .social-media-icons {
+    gap: 4px;
+  }
+
+  .social-media-icon {
+    font-size: 2.2em;
+    width: 45px;
+    height: 45px;
   }
 }
