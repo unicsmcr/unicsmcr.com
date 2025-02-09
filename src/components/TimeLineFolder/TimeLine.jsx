@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import TimelineEvent from './TimelineEvent';
+import TimelineEvent from './TimeLineEvent.jsx';
 import './Timeline.css';
 
 const Timeline = () => {
