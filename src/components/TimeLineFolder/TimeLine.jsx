@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import TimelineEvent from './TimeLineEvent.jsx';
-import './Timeline.css';
+import './TimeLine.css';
 
 const Timeline = () => {
   const scrollRef = useRef(null);
