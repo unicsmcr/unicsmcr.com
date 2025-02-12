@@ -8,8 +8,8 @@ import Committee2023 from "../committee_data/2023-24.json";
 import Committee2024 from "../committee_data/2024-25.json";
 
 const committeeMembers = {
-  "2022-23": [],
-  "2023-24": [],
+  "2022-23": Committee2022,
+  "2023-24": Committee2023,
   "2024-25": Committee2024,
 };
 
