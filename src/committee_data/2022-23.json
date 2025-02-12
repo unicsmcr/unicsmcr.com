@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Gwydion",
+    "image": "Gwydion-Co-Chair.jpg",
+    "social": "https://www.linkedin.com/in/gwydionsmit/",
+    "role": "Co-Chair"
+  },
+  {
+    "name": "Germaine",
+    "image": "Germaine-Co-Chair.jpg",
+    "social": "https://www.linkedin.com/in/germaine-george-4136b515b/",
+    "role": "Co-Chair"
+  },
+  {
+    "name": "Ali",
+    "image": "Ali-Treasurer.jpg",
+    "social": "https://www.linkedin.com/in/ali-lakho/",
+    "role": "Treasurer"
+  },
+  {
+    "name": "Joshua",
+    "image": "Joshua-Secretary.jpg",
+    "social": "https://www.linkedin.com/in/joshua-simanullang-376374228/",
+    "role": "Secretary"
+  },
+  {
+    "name": "Dhruv",
+    "image": "Dhruv-Graphics-Officer.jpg",
+    "social": "https://www.linkedin.com/in/dsio/",
+    "role": "Graphics Officer"
+  },
+  {
+    "name": "Sambbhav",
+    "image": "Sambbhav-Dev-Officer.jpg",
+    "social": "https://www.linkedin.com/in/khare-sambbhav/",
+    "role": "Dev Officer"
+  },
+  {
+    "name": "Mehar",
+    "image": "Mehar-PR-Officer.jpg",
+    "social": "https://www.linkedin.com/in/mehar-mehta/",
+    "role": "PR Officer"
+  },
+  {
+    "name": "Dhrishaj",
+    "image": "Dhrishaj-Events-Officer.jpg",
+    "social": "https://www.linkedin.com/in/dhrishaj-garg/",
+    "role": "Events Officer"
+  },
+  {
+    "name": "Muna",
+    "image": "Muna-Events-Officer.jpeg",
+    "social": "https://www.linkedin.com/in/muna-a-hassan/",
+    "role": "Events Officer"
+  },
+  {
+    "name": "MJ",
+    "image": "MJ-Game-Dev-Head.jpg",
+    "social": "https://www.linkedin.com/in/mj-ponsonby-23857623b/",
+    "role": "Game Dev Head"
+  },
+  {
+    "name": "Siqi",
+    "image": "Siqi-Procurement-Officer.jpg",
+    "social": "https://www.linkedin.com/in/siqi-li-862aa021a/",
+    "role": "Procurement Officer"
+  },
+  {
+    "name": "Keshav",
+    "image": "Keshav-May-Ball-Officer.jpg",
+    "social": "https://www.linkedin.com/in/keshavigupta/",
+    "role": "May Ball Officer"
+  },
+  {
+    "name": "Asma Ali",
+    "image": "Asma-Ali-Hackathons-Director.jpg",
+    "social": "https://www.linkedin.com/in/asma-o-ali/",
+    "role": "Hackathons Co-Lead"
+  },
+  {
+    "name": "Asma Alshebli",
+    "image": "Asma-Alshebli-Hackathons-Director.jpg",
+    "social": "https://www.linkedin.com/in/asma-alshebli-86a13a264/",
+    "role": "Hackathons Co-Lead"
+  },
+  {
+    "name": "Vidhi",
+    "image": "Vidhi-Sponsorship-Officer.jpg",
+    "social": "https://www.linkedin.com/in/vidhi-shetty-a29417214/",
+    "role": "Sponsorship Officer"
+  }
+]
