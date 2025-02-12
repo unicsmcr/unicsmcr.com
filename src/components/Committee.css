@@ -170,9 +170,15 @@
   }
 }
 
+@media (max-width: 768px) {
+  .carousel-header h3 {
+    font-size: 5vw;
+  }
+}
+
 @media (max-width: 480px) {
   .carousel-header h3 {
-    font-size: 3vw;
+    font-size: 6.5vw;
   }
 }
 
