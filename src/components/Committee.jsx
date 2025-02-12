@@ -118,7 +118,7 @@ const Committee = () => {
           <div key={index} className="committee-year" year={year}>
             <div className="committee-grid">
               {committeeMembers[year].map((member, index) => (
-                <CommitteeMember key={index} {...member} />
+                <CommitteeMember key={index} year={year} {...member} />
               ))}
             </div>
           </div>
