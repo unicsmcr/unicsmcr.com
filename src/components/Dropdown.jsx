@@ -13,7 +13,12 @@ const Dropdown = ({ pages, setShowDropdown }) => {
       </button>
       <div className="dropdown-content">
         {pages.map(({ label, href, key, icon }) => (
-          <a key={key} href={href} className="nav-link dropdown-link">
+          <a
+            key={key}
+            href={href}
+            className="nav-link dropdown-link"
+            onClick={() => setShowDropdown(false)}
+          >
             <FontAwesomeIcon icon={icon} /> {label}
           </a>
         ))}
