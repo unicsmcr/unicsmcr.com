@@ -44,7 +44,6 @@ const committeeMembers = [
     role: "PR Officer",
     email: "pr@unicsmcr.com",
     image: "Felix-PR-Officer.png",
-
   },
   {
     name: "Sourabh",
@@ -105,7 +104,9 @@ const committeeMembers = [
 const Committee = () => {
   return (
     <>
-      <h2 className="header2">Committee</h2>
+      <h2 id="committee" className="header2">
+        Committee
+      </h2>
       <div className="committee-grid">
         {committeeMembers.map((member, index) => (
           <CommitteeMember key={index} {...member} />

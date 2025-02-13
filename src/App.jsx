@@ -4,6 +4,7 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import Bee from "./Bee";
 import Committee from "./components/Committee";
+import faq from "./components/faq";
 import ConnectWithUs from "./components/ConnectWithUs";
 import "./components/Logo.css";
 
@@ -25,7 +26,9 @@ function App() {
 
       <About />
 
-      <h2 className="header2">EVENTS</h2>
+      <h2 id="events" className="header2">
+        EVENTS
+      </h2>
       <div style={{ paddingInline: "75px" }}>
         <p>
           Our events are suited to every level of knowledge and all degree
@@ -45,7 +48,9 @@ function App() {
 
       <Committee />
 
-      <h2 className="header2">SPONSORS</h2>
+      <h2 id="sponsors" className="header2">
+        SPONSORS
+      </h2>
 
       <div style={{ textAlign: "center", paddingInline: "75px" }}>
       
