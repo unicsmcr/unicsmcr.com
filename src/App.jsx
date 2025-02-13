@@ -4,7 +4,7 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import Bee from "./Bee";
 import Committee from "./components/Committee";
-import Faq from "./components/Faq";
+import faq from "./components/faq";
 import ConnectWithUs from "./components/ConnectWithUs";
 
 function App() {
