@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 import Bee from "./Bee";
 import Committee from "./components/Committee";
 import ConnectWithUs from "./components/ConnectWithUs";
+import "./components/Logo.css";
 
 function App() {
   return (
@@ -47,8 +48,19 @@ function App() {
       <h2 className="header2">SPONSORS</h2>
 
       <div style={{ textAlign: "center", paddingInline: "75px" }}>
-      <p>TPP - Media Contract</p>
+      
+      {/* media contract */}
+      <p style={{color: "pink", fontSize: "2vw"}}><b>TPP </b></p> 
 
+      <div className="container">  
+
+      <img src="/tpp.png" style={{
+                  border: "5px solid pink",
+                  width: "10vw",
+                  padding: "5px"
+                }}              
+          alt="Cambridge Consultants logo" />
+          
       <p>TPP is a global digital health company. With over 7,000 organisations using our
         solutions to care for over 50 million patients, our software is used across all health
         and social care settings, including GPs, emergency departments, hospitals and mental health
@@ -64,8 +76,20 @@ function App() {
         required for the majority of our roles. <br/>
         <a href="https://tpp-careers.com"><span style={{color: "purple"}}>See job Opportunities!</span></a>
         </p>
+        </div>
+
       <br/>
-      <p>Jane Street (JS) - Bronze Tier</p>
+
+  
+      <p style={{color: "grey", fontSize: "2vw"}}><b>Jane Street (JS) </b></p>
+
+    <div className="container">  
+      <img src="/JaneStreet.png" style={{
+                  border: "5px solid #555",
+                  width: "20vw",
+                  padding: "5px"
+                }}              
+          alt="Cambridge Consultants logo" />
       <p>
       Established in 2000, Jane Street is a research-driven trading firm where
       curious people work together on deep problems. We innovate in tech,
@@ -82,19 +106,39 @@ function App() {
       <a href="https://www.cambridgeconsultants.com/careers/"><span style={{color: "purple"}}>See job Opportunities!</span></a>
       </p><br/>
 
+      </div>
 
-      <p>Cambridge Consultants - Bronze Tier</p>
-      <p>
-      Cambridge Consultants, the deep tech powerhouse of Capgemini. We do extraordinary, new-to-the-world tech innovation. 
-      We do impactful things that benefit the society. We helped develop the
-      world&#39;s first 24/7 wrist-worn activity monitor, wireless pacemaker, wireless
-      patient monitor, as well as the first connected drug inhaler.
-      We&#39;re eager to welcome passionate interns and graduate engineers,
-      scientists, mathematicians, designers, developers, consultants and analysts. We welcome
-      applicants from all STEM disciplines! <br/>
-      <a href="https://www.cambridgeconsultants.com/careers/"><span style={{color: "purple"}}>See job Opportunities!</span></a>
-      </p>
+      
+      <p style={{color: "grey", fontSize: "2vw"}}><b>Cambridge Consultants</b></p>
+      
+      <div className="container">
+
+      <img src="/CC-logo.jpg" style={{
+                  border: "5px solid #555",
+                  width: "20vw",
+                  padding: "5px"
+                }}              
+          alt="Cambridge Consultants logo" />
+
+        <p>
+          Cambridge Consultants, the deep tech powerhouse of Capgemini. We do extraordinary, new-to-the-world tech innovation. 
+          We do impactful things that benefit the society. We helped develop the
+          world's first 24/7 wrist-worn activity monitor, wireless pacemaker, wireless
+          patient monitor, as well as the first connected drug inhaler.
+          We're eager to welcome passionate interns and graduate engineers,
+          scientists, mathematicians, designers, developers, consultants and analysts. We welcome
+          applicants from all STEM disciplines!
+          <br/>
+          <a href="https://www.cambridgeconsultants.com/careers/">
+            <span style={{color: "purple"}}>See job Opportunities!</span>
+          </a>
+        </p>
+    
+      </div>
+      
       <br/><br/><br/>
+
+
       </div>
 
       {/* <p>
