@@ -36,6 +36,7 @@ const pages = [
   },
 ];
 
+/*
 const UnderConstruction = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -59,6 +60,9 @@ const UnderConstruction = () => {
     </div>
   );
 };
+*/
+
+
 const NavBar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
 
@@ -68,7 +72,7 @@ const NavBar = () => {
 
   return (
     <nav className="navbar">
-      <UnderConstruction />
+      
       {showDropdown ? (
         <Dropdown pages={pages} setShowDropdown={setShowDropdown} />
       ) : (
