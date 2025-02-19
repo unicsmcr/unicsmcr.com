@@ -1,5 +1,5 @@
 import Dropdown from "./Dropdown";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInfo,
@@ -8,7 +8,7 @@ import {
   faHandshake,
   faHashtag,
 } from "@fortawesome/free-solid-svg-icons";
-import { faCog, faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { v4 as uuidv4 } from "uuid";
 
 const pages = [
