@@ -219,3 +219,33 @@
 .carousel-item:target {
   display: block;
 }
+
+.name-and-social {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+
+.name {
+  margin: 0;
+  line-height: 1;
+}
+
+.linkedin {
+  display: flex;
+  align-items: center;
+}
+
+.linkedin a {
+  display: flex;
+  align-items: center;
+}
+
+.linkedin-icon {
+  color: white;
+}
+
+.linkedin-icon:hover {
+  color: #0b66c2;
+}
