@@ -123,7 +123,7 @@ function App() {
       <p style={{color: "#CD7F32", fontSize: "2vw"}}><b>TPP </b></p> 
 
       <div className="container">  
-
+    
       <a href="https://tpp-careers.com">
       <img src="/tpp.png" style={{
                   border: "2px solid #CD7F32",
@@ -187,7 +187,6 @@ function App() {
       <br/>
       <i>Click on logo to see job Opportunities!</i>
       </p><br/>
-
       </div>
 
       
