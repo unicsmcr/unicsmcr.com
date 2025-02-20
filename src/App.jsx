@@ -8,7 +8,7 @@ import faq from "./components/faq";
 import ConnectWithUs from "./components/ConnectWithUs";
 import "./components/Logo.css";
 
-
+// Function for collapsable div with button
 function App() {
 
   
@@ -66,19 +66,19 @@ function App() {
       <div style={{ textAlign: "center", paddingInline: "75px" }}>
       
 
-      <p style={{color: "orange", fontSize: "2vw"}}><b>Reply</b></p>
+      <p style={{color: "yellow", fontSize: "2vw"}}><b>Reply</b></p>
       
       <div className="container">
 
 {/* <a href="https://tpp-careers.com"> */}
       <img src="/reply.png" style={{
-                  border: "2px solid orange",
+                  border: "2px solid yellow",
                   width: "30vw",
                   height: "auto",
                   padding: "5px",
                   maxWidth: "100%",
                   borderRadius: "10%",
-                  boxShadow: "3px 3px 9px orange"
+                  boxShadow: "3px 3px 9px yellow"
                 }}              
           alt="Reply logo" />
           {/* </a> */}
@@ -172,6 +172,7 @@ function App() {
                   marginTop: "5vw"
                 }}              
           alt="Jane Street logo" />
+
       <p>
       Established in 2000, Jane Street is a research-driven trading firm where
       curious people work together on deep problems. We innovate in tech,
@@ -192,8 +193,8 @@ function App() {
       
       <p style={{color: "#CD7F32", fontSize: "2vw", marginBottom: '5px', marginLeft: '20vw'}}><b>Cambridge Consultants</b></p>
 
-      <button style={{ backgroundColor: "black", color: "white", marginLeft: '20vw', display: 'inline-block', width: 'fit-content'}}onClick={toggleVisibility} onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}><b>Hover to read more...</b></button>
+      {/* <button style={{ backgroundColor: "black", color: "white", marginLeft: '20vw', display: 'inline-block', width: 'fit-content'}}onClick={toggleVisibility} onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}><b>Hover to read more...</b></button> */}
       
       <div className="container">
 
@@ -211,7 +212,7 @@ function App() {
           alt="Cambridge Consultants logo" />
         </a>
 
-        <div style={{ display: isHovered ? 'block' : 'none' }}>
+        {/* <div style={{ display: isHovered ? 'block' : 'none' }}> */}
         <p>
           Cambridge Consultants, the deep tech powerhouse of Capgemini. We do extraordinary, new-to-the-world tech innovation. 
           We do impactful things that benefit the society. We helped develop the
@@ -223,11 +224,9 @@ function App() {
           <br/>
             <i>Click on logo to see job Opportunities!</i>
         </p>
-        </div>
+        {/* </div> */}
       </div>
       <div>
-      {/* <button onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}>Try it</button> */}
       </div>
 
 
