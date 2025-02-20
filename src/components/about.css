@@ -20,3 +20,13 @@
     opacity: 1;
   }
 }
+
+.instagram-embed blockquote {
+  max-width: 800px;
+}
+
+@media (max-width: 800px) {
+  .instagram-embed blockquote {
+    max-width: 300px;
+  }
+}
