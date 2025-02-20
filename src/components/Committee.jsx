@@ -22,6 +22,12 @@ const committeeMembers = [
     image: "Sahar-Secretary.png",
   },
   {
+    name: "Fahim",
+    role: "Treasurer",
+    email: "treasurer@unicsmcr.com",
+    image: "Fahim-Treasurer.jpg",
+  },
+  {
     name: "Vidhi",
     role: "Inclusions Officer",
     email: "inclusion@unicsmcr.com",
@@ -70,16 +76,10 @@ const committeeMembers = [
     image: "Arjun-Events-Officer.png",
   },
   {
-    name: "Naddy",
+    name: "Shirin",
     role: "Hackathons Co-Director",
     email: "hackathons@unicsmcr.com",
-    image: "Naddy-Hackathons-Director.png",
-  },
-  {
-    name: "Jakub",
-    role: "Hackathons Co-Director",
-    email: "hackathons@unicsmcr.com",
-    image: "Jakub-Hackathons-Director.png",
+    image: "Shirin-Hackathons-Director.png",
   },
   {
     name: "Adi",
