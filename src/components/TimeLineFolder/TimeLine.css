@@ -371,6 +371,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   z-index: 1010; /* Ensure it's above other modal content */
+  padding: 0;
 }
 
 .modal-close:hover {

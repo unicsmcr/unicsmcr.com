@@ -8,7 +8,7 @@ const EventModal = ({ event, onClose }) => {
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={e => e.stopPropagation()}>
       <button 
-          className="modal-close" 
+          className="modal-close " 
           onClick={onClose}
           aria-label="Close modal"
         >
@@ -78,7 +78,7 @@ const EventModal = ({ event, onClose }) => {
               </button>
             </div>
             */}
-            
+
           </div>
         </div>
       </div>
