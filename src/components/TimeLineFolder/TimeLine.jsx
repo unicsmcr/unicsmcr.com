@@ -18,14 +18,14 @@ const Timeline = () => {
       isKey: true,
       imageUrl: 'stundentHack.jpg',
       date: '13th/14th of April',
-      location: 'Manchester, UK',
-      time: '10:00 AM - 5:00 PM',
-      status: 'Registration Open',
-      organizer: 'University Tech Society',
-      capacity: '200 participants',
+      location: 'Nancy rothwell building',
+      time: '10:00 AM',
+      status: 'Registration soon to open',
+      organizer: 'UniCs',
+      capacity: 'Over 100 participants',
       requirements: 'Open to all university students',
-      fullDescription: 'Join us for StudentHack 2025, a 24-hour hackathon where students from across the UK come together to build amazing projects. With prizes worth £5000, workshops, and networking opportunities with leading tech companies.',
-      registrationLink: 'https://studenthack2025.com'
+      fullDescription: 'Join us for StudentHack 2025, a 24-hour hackathon where students from across the UK come together to build amazing projects as you will get chances to get prizes, workshops, and networking opportunities with leading tech companies.',
+      registrationLink: ''
     },
     {
       title: 'GameJam 2',
