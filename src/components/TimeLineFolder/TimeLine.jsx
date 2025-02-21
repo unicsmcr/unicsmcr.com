@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import TimelineEvent from './TimeLineEvent.jsx';
 import './TimeLine.css';
+import EventModal from './EventModal.jsx';  
 
 const Timeline = () => {
   const scrollRef = useRef(null);
@@ -9,40 +10,49 @@ const Timeline = () => {
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
+  const [selectedEvent, setSelectedEvent] = useState(null);
   const [events, setEvents] = useState([
     {
-      title: 'Pub Crawler',
-      description: '',
-      isKey: true,
-      imageUrl: 'pubcrawler.png',
-      date: '2025/02/06'
-    },
-    {
-      title: 'Roku',
-      description: 'Networking enet',
-      isKey: true,
-      imageUrl: 'roku.png',
-      date: '2025/02/06'
-    },
-    {
-      title: 'Student Hack',
+      title: 'StudentHack 2025',
       description: 'Hackhaton',
       isKey: true,
-      imageUrl: 'uniHack.jpg',
-      date: '2025'
+      imageUrl: 'stundentHack.jpg',
+      date: '13th/14th of April',
+      location: 'Manchester, UK',
+      time: '10:00 AM - 5:00 PM',
+      status: 'Registration Open',
+      organizer: 'University Tech Society',
+      capacity: '200 participants',
+      requirements: 'Open to all university students',
+      fullDescription: 'Join us for StudentHack 2025, a 24-hour hackathon where students from across the UK come together to build amazing projects. With prizes worth £5000, workshops, and networking opportunities with leading tech companies.',
+      registrationLink: 'https://studenthack2025.com'
+    },
+    {
+      title: 'GameJam 2',
+      description: 'Game Jam',
+      isKey: true,
+      imageUrl: 'gameJam.jpg',
+      date: '2025/02/06'
+    },
+    {
+      title: 'LaserTag Event',
+      description: 'Hackhaton',
+      isKey: true,
+      imageUrl: 'laserTag.jpg',
+      date: '10th-16th February'
     },
     {
       title: 'May Ball',
       description: 'Social event',
       isKey: true,
-      imageUrl: '',
+      imageUrl: 'mayBall.jpg',
       date: 'May 2025'
     },
     {
       title: 'Great Uni Hack',
       description: 'Hackhaton',
       isKey: true,
-      imageUrl: 'GreatHack.png',
+      imageUrl: 'greatUniHack.jpg',
       date: '2026'
     }
   ]);
@@ -113,12 +123,22 @@ const Timeline = () => {
     }
   };
 
+  const handleEventClick = (event) => {
+    if (!isDragging) {
+      setSelectedEvent(event);
+    }
+  };
+
+  const handleCloseModal = () => {
+    setSelectedEvent(null);
+  };
+
   return (
     <div 
       ref={sectionRef} 
       className={`timeline-section ${isVisible ? 'start-animation' : ''}`}
     >
-      <h2 className="events-title">EVENTS</h2>
+      
       <div
         ref={scrollRef}
         className="timeline-container"
@@ -158,10 +178,19 @@ const Timeline = () => {
                   {...event}
                   isTop={index % 2 === 0}
                   onDelete={() => handleDeleteEvent(index)}
+                  onClick={() => handleEventClick(event)}
+                  
                 />
               </div>
             ))}
           </div>
+          {/* Modal appears when selectedEvent is not null */}
+          {selectedEvent && (
+                  <EventModal 
+                    event={selectedEvent}
+                    onClose={handleCloseModal}
+                  />
+                )}
         </div>
       </div>
       <div className="timeline-scroll-hint">
