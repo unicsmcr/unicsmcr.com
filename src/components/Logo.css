@@ -10,3 +10,8 @@
   grid-template-columns: auto 1fr;
   gap: 15px;
 }
+
+.button{
+  background-color: black;
+  color: white;
+}

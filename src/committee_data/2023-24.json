@@ -1,0 +1,114 @@
+[
+  {
+    "name": "Sarah",
+    "image": "Sarah-Co-Chair.jpg",
+    "social": "https://www.linkedin.com/in/sarahssaad/",
+    "role": "Co-Chair"
+  },
+  {
+    "name": "Minahil",
+    "image": "Minahil-Co-Chair.jpg",
+    "social": "https://www.linkedin.com/in/minahil-h-tariq/",
+    "role": "Co-Chair"
+  },
+  {
+    "name": "Luke",
+    "image": "Luke-Treasurer.jpg",
+    "social": "https://www.linkedin.com/in/luke-sanderson-/",
+    "role": "Treasurer"
+  },
+  {
+    "name": "Kayley",
+    "image": "Kayley-Secretary.jpg",
+    "social": "https://www.linkedin.com/in/kayley-lam/",
+    "role": "Secretary"
+  },
+  {
+    "name": "Adwik",
+    "image": "Adwik-Inclusions-Officer.png",
+    "social": "https://www.linkedin.com/in/adwik-roshan-9351a5250/",
+    "role": "Inclusions Officer"
+  },
+
+  {
+    "name": "Jakub",
+    "image": "Jakub-Hackathons-Director.png",
+    "social": "https://www.linkedin.com/in/jacob-pabian/",
+    "role": "Hackathons Co-Director"
+  },
+  {
+    "name": "Naddy",
+    "image": "Naddy-Hackathons-Director.png",
+    "social": "https://www.linkedin.com/in/nadoms/",
+    "role": "Hackathons Co-Director"
+  },
+
+  {
+    "name": "Rosie",
+    "image": "Rosie-Dev-Officer.jpg",
+    "social": "https://www.linkedin.com/in/rosiehalsall/",
+    "role": "Dev Officer"
+  },
+  {
+    "name": "Diya",
+    "image": "Diya-Sponsorships-Director.jpg",
+    "social": "https://www.linkedin.com/in/diya-chutani-b0b22a256/",
+    "role": "Sponsorships Director"
+  },
+  {
+    "name": "Hanzila",
+    "image": "Hanzila-Graphics-Officer.jpg",
+    "social": "https://www.linkedin.com/in/hanzila-hussain-941a40263/",
+    "role": "Graphics Officer"
+  },
+
+  {
+    "name": "Yashika",
+    "image": "Yashika-PR-Officer.jpg",
+    "social": "https://www.linkedin.com/in/yashikagandhi2023/",
+    "role": "PR Officer"
+  },
+  {
+    "name": "Kavya",
+    "image": "Kavya-PR-Officer.jpg",
+    "social": "https://www.linkedin.com/in/jain-kavya/",
+    "role": "PR Officer"
+  },
+  {
+    "name": "Pallavi",
+    "image": "Pallavi-Procurement-Officer.jpg",
+    "social": "https://www.linkedin.com/in/pallavi-nair-9b0237266/",
+    "role": "Procurement Officer"
+  },
+  {
+    "name": "Anulome",
+    "image": "Anulome-Events-Officer.jpg",
+    "social": "https://www.linkedin.com/in/anulome-kishore-792b00245/",
+    "role": "Events Officer"
+  },
+  {
+    "name": "Saurav",
+    "image": "Saurav-Events-Officer.jpg",
+    "social": "https://www.linkedin.com/in/sauravmaheshkar/",
+    "role": "Events Officer"
+  },
+
+  {
+    "name": "Anisha",
+    "image": "Anisha-Events-Officer.jpg",
+    "social": "https://www.linkedin.com/in/anishasahu2004/",
+    "role": "Events Officer"
+  },
+  {
+    "name": "Nayan",
+    "image": "Nayan-Events-Officer.jpg",
+    "social": "https://www.linkedin.com/in/nayan-suresh-9a0753217/",
+    "role": "Events Officer"
+  },
+  {
+    "name": "Abubakar",
+    "image": "Abubakar-Game-Dev-Officer.jpg",
+    "social": "https://www.linkedin.com/in/abubakar-tafida-63b968215/",
+    "role": "Game Dev Officer"
+  }
+]
