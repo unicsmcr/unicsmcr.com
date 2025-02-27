@@ -14,14 +14,20 @@ const About = () => {
   return (
     <div id="about" className="about-section">
       <div className="about-content">
-        
-        <h2 className="typewriter">
-          <Typewriter
-            onInit={(typewriter) => {
-              typewriter.typeString("Hello World!").start();
-            }}
-          />
-        </h2>
+      <div className="typewriter-container">
+          <h2 className="typewriter">
+            <Typewriter
+              options={{
+                strings: ['Hello World!', 'Welcome!'],
+                loop: true,
+                autoStart: true,
+                pauseFor: 5000,
+                wrapperClassName: "typewriter-text",
+                cursorClassName: "blinker"
+              }}
+            />
+          </h2>
+        </div>
         <hr className="about-line" />
         <p style={{ color: "#000000" }}>
           UniCS is the University of Manchester&#39;s tech society. We are a big
