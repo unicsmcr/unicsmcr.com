@@ -36,11 +36,39 @@ const pages = [
   },
 ];
 
+const UnderConstruction = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setIsVisible(true), 600);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (!isVisible) return null;
+
+  return (
+    <div className="under-construction-banner">
+      <div className="under-construction-icon">
+        <FontAwesomeIcon icon={faCog} spin className="icon-left" />
+        <FontAwesomeIcon icon={faCog} className="reverse-spin icon-right" />
+      </div>
+      <div className="under-construction-icon-small">
+        <FontAwesomeIcon icon={faCog} spin className="icon-small" />
+      </div>
+      <span>Website under construction!</span>
+    </div>
+  );
+};
+
 const NavBar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
 
   const toggleDropdown = () => {
     setShowDropdown(!showDropdown);
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -49,7 +77,7 @@ const NavBar = () => {
         <Dropdown pages={pages} setShowDropdown={setShowDropdown} />
       ) : (
         <div className="navbar-content">
-          <div className="logo-container">
+          <div className="logo-container" onClick={scrollToTop} style={{ cursor: "pointer" }}>
             <img src="logo.png" id="logo" alt="UniCS logo" />
           </div>
 
@@ -75,5 +103,6 @@ const NavBar = () => {
     </nav>
   );
 };
+
 
 export default NavBar;

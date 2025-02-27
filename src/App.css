@@ -65,6 +65,11 @@ footer {
   animation: roll 2s ease-in-out;
 }
 
+p {
+  font-size: clamp(16px, 1.5vw, 20px); /* Adjusts based on screen width */
+  line-height: 1.6;
+}
+
 @keyframes roll {
   0% {
     transform: rotateX(0deg) rotateY(0deg);
@@ -111,29 +116,6 @@ footer {
   height: 4px;
   background-color: #800080;
   margin: 10px 0;
-}
-
-.typewriter {
-  display: inline-block;
-  font-size: 2.5vw;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.blinker {
-  display: inline-block;
-  color: #800080;
-  animation: blink 1s step-end infinite;
-}
-
-@keyframes blink {
-  from,
-  to {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
 }
 
 @media (min-width: 768px) {
@@ -305,7 +287,12 @@ footer {
 .header {
   align-items: center;
   justify-content: center;
-  font-size: 5em;
+  font-size: clamp(3rem, 12vw, 6rem);
+}
+
+.tagline {
+  text-align: center;
+  font-size: clamp(1rem, 3vw, 2rem); 
 }
 
 .header2 {
