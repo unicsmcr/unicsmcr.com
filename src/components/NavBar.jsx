@@ -1,5 +1,5 @@
 import Dropdown from "./Dropdown";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInfo,
@@ -8,7 +8,7 @@ import {
   faHandshake,
   faHashtag,
 } from "@fortawesome/free-solid-svg-icons";
-import { faCog, faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { v4 as uuidv4 } from "uuid";
 
 const pages = [
@@ -36,30 +36,6 @@ const pages = [
   },
 ];
 
-const UnderConstruction = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setIsVisible(true), 600);
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (!isVisible) return null;
-
-  return (
-    <div className="under-construction-banner">
-      <div className="under-construction-icon">
-        <FontAwesomeIcon icon={faCog} spin className="icon-left" />
-        <FontAwesomeIcon icon={faCog} className="reverse-spin icon-right" />
-      </div>
-      <div className="under-construction-icon-small">
-        <FontAwesomeIcon icon={faCog} spin className="icon-small" />
-      </div>
-      <span>Website under construction!</span>
-    </div>
-  );
-};
-
 const NavBar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
 
@@ -73,7 +49,6 @@ const NavBar = () => {
 
   return (
     <nav className="navbar">
-      <UnderConstruction />
       {showDropdown ? (
         <Dropdown pages={pages} setShowDropdown={setShowDropdown} />
       ) : (

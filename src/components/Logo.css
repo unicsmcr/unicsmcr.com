@@ -1,0 +1,17 @@
+.logo {
+  border: 5px solid #555;
+  width: 15vw;
+  height: 15vw;
+  padding: 5px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 15px;
+}
+
+.button{
+  background-color: black;
+  color: white;
+}
