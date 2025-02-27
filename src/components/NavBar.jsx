@@ -59,11 +59,16 @@ const UnderConstruction = () => {
     </div>
   );
 };
+
 const NavBar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
 
   const toggleDropdown = () => {
     setShowDropdown(!showDropdown);
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -73,7 +78,7 @@ const NavBar = () => {
         <Dropdown pages={pages} setShowDropdown={setShowDropdown} />
       ) : (
         <div className="navbar-content">
-          <div className="logo-container">
+          <div className="logo-container" onClick={scrollToTop} style={{ cursor: "pointer" }}>
             <img src="logo.png" id="logo" alt="UniCS logo" />
           </div>
 
@@ -99,5 +104,6 @@ const NavBar = () => {
     </nav>
   );
 };
+
 
 export default NavBar;

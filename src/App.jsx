@@ -11,12 +11,12 @@ function App() {
   return (
     <>
       <NavBar />
-
+    
       <h1 className="header">
         <span style={{ color: "white" }}>Uni</span>CS
       </h1>
 
-      <p style={{ textAlign: "center", fontSize: "3vw" }}>
+      <p className="tagline">
         University of Manchester <br />
         Computer Science Society{" "}
       </p>
