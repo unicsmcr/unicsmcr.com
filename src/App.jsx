@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import About from "./components/about";
 import "./App.css";
 import NavBar from "./components/NavBar";
@@ -8,7 +8,18 @@ import faq from "./components/faq";
 import ConnectWithUs from "./components/ConnectWithUs";
 import "./components/Logo.css";
 
+// Function for collapsable div with button
 function App() {
+
+  
+    const [isVisible, setIsVisible] = useState(true);
+
+    const [isHovered, setIsHovered] = useState(false);
+  
+    const toggleVisibility = () => {
+      setIsVisible(!isVisible);
+    };
+
   return (
     <>
       <NavBar />
@@ -54,19 +65,80 @@ function App() {
 
       <div style={{ textAlign: "center", paddingInline: "75px" }}>
       
+
+      <p style={{color: "yellow", fontSize: "2vw"}}><b>Reply</b></p>
+      
+      <div className="container">
+
+{/* <a href="https://tpp-careers.com"> */}
+      <img src="/reply.png" style={{
+                  border: "2px solid yellow",
+                  width: "30vw",
+                  height: "auto",
+                  padding: "5px",
+                  maxWidth: "100%",
+                  borderRadius: "10%",
+                  boxShadow: "3px 3px 9px yellow"
+                }}              
+          alt="Reply logo" />
+          {/* </a> */}
+
+        <p>
+          
+          <br/>
+          <i>Click on logo to see job Opportunities!</i>
+        </p>
+    
+      </div>
+
+
+
+      <p style={{color: "grey", fontSize: "2vw"}}><b>Roku</b></p>
+      
+      <div className="container">
+
+      {/* <a href="https://tpp-careers.com"> */}
+      <img src="/roku.jpeg" style={{
+                  border: "2px solid #555",
+                  width: "20vw",
+                  height: "auto",
+                  padding: "5px",
+                  maxWidth: "100%",
+                  borderRadius: "10%",
+                  boxShadow: "3px 3px 9px #555"
+                }}              
+          alt="Roku logo" />
+      {/* </a> */}
+        <p>
+          
+          <br/>
+          <i>Click on logo to see job Opportunities!</i>
+        </p>
+    
+      </div>
+
+
+
       {/* media contract */}
-      <p style={{color: "pink", fontSize: "2vw"}}><b>TPP </b></p> 
+      <p style={{color: "#CD7F32", fontSize: "2vw"}}><b>TPP </b></p> 
 
       <div className="container">  
-
+    
+      <a href="https://tpp-careers.com">
       <img src="/tpp.png" style={{
-                  border: "5px solid pink",
-                  width: "10vw",
-                  padding: "5px"
+                  border: "2px solid #CD7F32",
+                  width: "8vw",
+                  height: "auto",
+                  padding: "5px",
+                  maxWidth: "100%",
+                  borderRadius: "10%",
+                  boxShadow: "3px 3px 9px #CD7F32",
+                  marginTop: "5vw"
                 }}              
-          alt="Cambridge Consultants logo" />
+          alt="TPP logo" />
+          </a>
           
-      <p>TPP is a global digital health company. With over 7,000 organisations using our
+      <p style={{height: "10%"}}>TPP is a global digital health company. With over 7,000 organisations using our
         solutions to care for over 50 million patients, our software is used across all health
         and social care settings, including GPs, emergency departments, hospitals and mental health
         services. This means that wherever and whenever a patient needs care, a detailed and
@@ -79,22 +151,28 @@ function App() {
         diagnosis of disease.
         We&#39;re looking for bright, talented applicants to join us. No experience is
         required for the majority of our roles. <br/>
-        <a href="https://tpp-careers.com"><span style={{color: "purple"}}>See job Opportunities!</span></a>
+        <i>Click on logo to see job Opportunities!</i>
         </p>
         </div>
 
       <br/>
 
   
-      <p style={{color: "grey", fontSize: "2vw"}}><b>Jane Street (JS) </b></p>
+      <p style={{color: "#CD7F32", fontSize: "2vw"}}><b>Jane Street (JS) </b></p>
 
     <div className="container">  
       <img src="/JaneStreet.png" style={{
-                  border: "5px solid #555",
-                  width: "20vw",
-                  padding: "5px"
+                  border: "2px solid #CD7F32",
+                  width: "14vw",
+                  height: "auto",
+                  padding: "5px",
+                  maxWidth: "100%",
+                  borderRadius: "10%",
+                  boxShadow: "3px 3px 9px #CD7F32",
+                  marginTop: "5vw"
                 }}              
-          alt="Cambridge Consultants logo" />
+          alt="Jane Street logo" />
+
       <p>
       Established in 2000, Jane Street is a research-driven trading firm where
       curious people work together on deep problems. We innovate in tech,
@@ -108,23 +186,33 @@ function App() {
       We look for smart people with curious minds from any background.
 
       <br/>
-      <a href="https://www.cambridgeconsultants.com/careers/"><span style={{color: "purple"}}>See job Opportunities!</span></a>
+      <i>Click on logo to see job Opportunities!</i>
       </p><br/>
-
       </div>
 
       
-      <p style={{color: "grey", fontSize: "2vw"}}><b>Cambridge Consultants</b></p>
+      <p style={{color: "#CD7F32", fontSize: "2vw", marginBottom: '5px', marginLeft: '20vw'}}><b>Cambridge Consultants</b></p>
+
+      {/* <button style={{ backgroundColor: "black", color: "white", marginLeft: '20vw', display: 'inline-block', width: 'fit-content'}}onClick={toggleVisibility} onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}><b>Hover to read more...</b></button> */}
       
       <div className="container">
 
+      <a href="https://www.cambridgeconsultants.com/careers/">
       <img src="/CC-logo.jpg" style={{
-                  border: "5px solid #555",
+                  border: "2px solid #CD7F32",
                   width: "20vw",
-                  padding: "5px"
+                  height: "auto",
+                  padding: "5px",
+                  maxWidth: "100%",
+                  borderRadius: "10%",
+                  boxShadow: "3px 3px 9px #CD7F32",
+                  marginTop: "2vw"
                 }}              
           alt="Cambridge Consultants logo" />
+        </a>
 
+        {/* <div style={{ display: isHovered ? 'block' : 'none' }}> */}
         <p>
           Cambridge Consultants, the deep tech powerhouse of Capgemini. We do extraordinary, new-to-the-world tech innovation. 
           We do impactful things that benefit the society. We helped develop the
@@ -134,11 +222,31 @@ function App() {
           scientists, mathematicians, designers, developers, consultants and analysts. We welcome
           applicants from all STEM disciplines!
           <br/>
-          <a href="https://www.cambridgeconsultants.com/careers/">
-            <span style={{color: "purple"}}>See job Opportunities!</span>
-          </a>
+            <i>Click on logo to see job Opportunities!</i>
         </p>
-    
+        {/* </div> */}
+      </div>
+      <div>
+      </div>
+
+
+      
+      <p style={{color: "white", fontSize: "2vw"}}><b>Trackr</b></p>
+      
+      <div className="container">
+
+      <img src="/trackr.png" style={{
+                  border: "2px solid white",
+                  width: "20vw",
+                  height: "auto",
+                  padding: "5px",
+                  maxWidth: "100%",
+                  borderRadius: "10%",
+                  boxShadow: "3px 3px 9px white"
+                }}              
+          alt="Trackr logo" />
+
+        <p></p>
       </div>
       
       <br/><br/><br/>
@@ -149,16 +257,6 @@ function App() {
       {/* <p>
         Over the past few years we have been sponsored by:
         <br />
-      </p>
-
-      <p>
-        Reply - Gold Tier
-        Reply - Gold Tier
-      </p>
-
-      <p>
-        Roku - Silver Tier
-        Roku - Silver Tier
       </p>
 
       <p>
