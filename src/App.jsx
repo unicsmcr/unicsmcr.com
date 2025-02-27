@@ -4,11 +4,13 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import Bee from "./Bee";
 import Committee from "./components/Committee";
+import Timeline from "./components/TimeLineFolder/TimeLine";
 import faq from "./components/faq";
 import ConnectWithUs from "./components/ConnectWithUs";
 import "./components/Logo.css";
 
-// Function for collapsable div with button
+
+
 function App() {
 
   
@@ -56,7 +58,8 @@ function App() {
         </p>
         <p>More information about May Ball coming soon!</p>
       </div>
-
+      
+      <Timeline/>
       <Committee />
 
       <h2 id="sponsors" className="header2">
@@ -269,6 +272,7 @@ function App() {
         innovation continuously drives our ambition to deliver high quality
         returns for our investors.
       </p> */}
+
 
       <ConnectWithUs />
 
