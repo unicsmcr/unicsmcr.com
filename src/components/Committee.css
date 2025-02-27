@@ -86,12 +86,18 @@
     font-size: 3em;
     line-height: 1.8;
   }
+  .linkedin {
+    font-size: 3em;
+  }
 }
 
 @media (max-width: 480px) {
   .name {
     font-size: 4em;
     line-height: 1;
+  }
+  .linkedin {
+    font-size: 3.7em;
   }
 }
 

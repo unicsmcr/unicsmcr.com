@@ -356,6 +356,7 @@ footer {
 .social-media-icon {
   font-size: 2em;
   transition: color 0.3s ease, transform 0.3s ease;
+  color: white;
 }
 
 .social-media-icon:hover {
