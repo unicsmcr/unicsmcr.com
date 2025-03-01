@@ -3,7 +3,7 @@ import "./Committee.css";
 
 const CommitteeCarousel = ({ children }) => {
   const [currentCommitteePage, setCurrentCommitteePage] = useState(
-    children.length - 1
+    children.length - 2
   );
 
   const scrollBack = () => {

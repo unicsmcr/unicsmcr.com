@@ -11,6 +11,7 @@ const committeeMembers = {
   "2022-23": Committee2022,
   "2023-24": Committee2023,
   "2024-25": Committee2024,
+  "Dev Team": [],
 };
 
 const Committee = () => {
