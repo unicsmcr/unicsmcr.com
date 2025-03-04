@@ -1,3 +1,4 @@
+// Timeline.jsx
 import React, { useState, useRef, useEffect } from 'react';
 import TimelineEvent from './TimeLineEvent.jsx';
 import './TimeLine.css';
@@ -57,6 +58,9 @@ const Timeline = () => {
     }
   ]);
 
+  // The constant for event spacing - use this consistently throughout the component
+  const EVENT_SPACING = 300; // pixels between events
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -109,11 +113,17 @@ const Timeline = () => {
       timeline.addEventListener('mouseleave', handleMouseUp);
       timeline.addEventListener('keydown', handleKeyboardNavigation);
     }
+    
+    // Add a class to body to prevent horizontal overflow
+    document.body.classList.add('timeline-active');
+    
     return () => {
       if (timeline) {
         timeline.removeEventListener('mouseleave', handleMouseUp);
         timeline.removeEventListener('keydown', handleKeyboardNavigation);
       }
+      // Remove the class when component unmounts
+      document.body.classList.remove('timeline-active');
     };
   }, []);
 
@@ -133,69 +143,77 @@ const Timeline = () => {
     setSelectedEvent(null);
   };
 
+  // Calculate the width needed for all events plus some padding
+  const timelineWidth = events.length * EVENT_SPACING + 300; // Added padding
+
   return (
     <div 
       ref={sectionRef} 
       className={`timeline-section ${isVisible ? 'start-animation' : ''}`}
     >
       
-      <div
-        ref={scrollRef}
-        className="timeline-container"
-        onMouseDown={handleMouseDown}
-        onMouseMove={handleMouseMove}
-        onMouseUp={handleMouseUp}
-        onMouseLeave={handleMouseUp}
-        role="region"
-        aria-label="Timeline of events"
-        tabIndex={0}
-        style={{ cursor: isDragging ? 'grabbing' : 'grab' }}
-      >
-        <div className="timeline-content" style={{ width: `${events.length * 200 + 200}px` }}>
-          <div className="timeline-event-container">
-            {events.map((_, index) => (
-              <div 
-                key={`line-${index}`}
-                className="timeline-line-segment"
-                style={{
-                  left: `${(index * 300)}px`,
-                  width: '300px'
-                }}
-              />
-            ))}
-            {events.map((event, index) => (
-              <div
-                key={index}
-                style={{
-                  position: 'absolute',
-                  left: `${(index * 300) + 150}px`,
-                  top: '50%',
-                  transform: 'translateY(-50%)'
-                }}
-              >
-                <div className="timeline-dot" />
-                <TimelineEvent
-                  {...event}
-                  isTop={index % 2 === 0}
-                  onDelete={() => handleDeleteEvent(index)}
-                  onClick={() => handleEventClick(event)}
-                  
+      <div className="timeline-outer-container">
+        <div
+          ref={scrollRef}
+          className="timeline-container"
+          onMouseDown={handleMouseDown}
+          onMouseMove={handleMouseMove}
+          onMouseUp={handleMouseUp}
+          onMouseLeave={handleMouseUp}
+          role="region"
+          aria-label="Timeline of events"
+          tabIndex={0}
+          style={{ cursor: isDragging ? 'grabbing' : 'grab' }}
+        >
+          <div className="timeline-content" style={{ width: `${timelineWidth}px` }}>
+            <div className="timeline-event-container">
+              <div className="timeline-full-line"></div>
+              
+              {events.map((_, index) => (
+                <div 
+                  key={`line-${index}`}
+                  className="timeline-line-segment"
+                  style={{
+                    left: `${(index * EVENT_SPACING)}px`,
+                    width: `${EVENT_SPACING}px`
+                  }}
                 />
-              </div>
-            ))}
-          </div>
-          {/* Modal appears when selectedEvent is not null */}
-          {selectedEvent && (
-                  <EventModal 
-                    event={selectedEvent}
-                    onClose={handleCloseModal}
+              ))}
+              {events.map((event, index) => (
+                <div
+                  key={index}
+                  style={{
+                    position: 'absolute',
+                    left: `${(index * EVENT_SPACING) + (EVENT_SPACING / 2)}px`,
+                    top: '50%',
+                    transform: 'translateY(-50%)'
+                  }}
+                >
+                  <div className="timeline-dot" />
+                  <TimelineEvent
+                    {...event}
+                    isTop={index % 2 === 0}
+                    onDelete={() => handleDeleteEvent(index)}
+                    onClick={() => handleEventClick(event)}
                   />
-                )}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
+      
       <div className="timeline-scroll-hint">
         Scroll horizontally to see more events →
       </div>
+      
+      {/* Modal appears when selectedEvent is not null */}
+      {selectedEvent && (
+        <EventModal 
+          event={selectedEvent}
+          onClose={handleCloseModal}
+        />
+      )}
     </div>
   );
 };

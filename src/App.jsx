@@ -59,7 +59,9 @@ function App() {
         <p>More information about May Ball coming soon!</p>
       </div>
       
-      <Timeline/>
+      
+      <Timeline />
+      
       <Committee />
 
       <h2 id="sponsors" className="header2">

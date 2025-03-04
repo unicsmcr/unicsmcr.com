@@ -25,7 +25,7 @@ const TimelineEvent = ({
           </div>
           <div className="timeline-event-bottom">
             <p className="timeline-event-description">{description}</p>
-            <button onClick={onClick } className="timeline-event-button">
+            <button onClick={onClick} className="timeline-event-button">
               Learn More
             </button>
           </div>
