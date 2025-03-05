@@ -206,8 +206,6 @@ const Timeline = () => {
       <div className="timeline-scroll-hint">
         Scroll horizontally to see more events →
       </div>
-      
-      {/* Modal appears when selectedEvent is not null */}
       {selectedEvent && (
         <EventModal 
           event={selectedEvent}
@@ -215,6 +213,7 @@ const Timeline = () => {
         />
       )}
     </div>
+    
   );
 };
 
