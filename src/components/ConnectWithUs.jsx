@@ -50,7 +50,9 @@ const ConnectWithUs = () => {
           display: "flex",
           justifyContent: "center",
           gap: "20px",
+          alignItems: "center",
           marginTop: "20px",
+          flexDirection: "column",
         }}
       >
         <WebsitePreview
@@ -58,6 +60,15 @@ const ConnectWithUs = () => {
           title="Great Uni Hack 2024"
           link="https://greatunihack.com"
         />
+        <span
+          style={{
+            color: "#a020f0",
+            padding: "10px",
+            borderRadius: "5px",
+          }}
+        >
+          More information about the Game Dev website coming soon!
+        </span>
       </div>
     </div>
   );

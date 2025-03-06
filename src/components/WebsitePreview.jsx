@@ -10,8 +10,7 @@ const WebsitePreview = ({ image, title, link }) => {
         onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
       >
         <img src={image} alt={title} style={{ width: "100%", height: "75%" }} />
-        <div class="preview-link-title"
-        >
+        <div class="preview-link-title">
           <span>{title}</span>
         </div>
       </div>
