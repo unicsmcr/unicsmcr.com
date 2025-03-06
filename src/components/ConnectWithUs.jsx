@@ -7,6 +7,7 @@ import {
   FaDiscord,
 } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
+import WebsitePreview from "./WebsitePreview";
 
 const ConnectWithUs = () => {
   const icons = [
@@ -43,6 +44,31 @@ const ConnectWithUs = () => {
             </a>
           ))}
         </div>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          gap: "20px",
+          alignItems: "center",
+          marginTop: "20px",
+          flexDirection: "column",
+        }}
+      >
+        <WebsitePreview
+          image="/guh-website.png"
+          title="Great Uni Hack 2024"
+          link="https://greatunihack.com"
+        />
+        <span
+          style={{
+            color: "#a020f0",
+            padding: "10px",
+            borderRadius: "5px",
+          }}
+        >
+          More information about the Game Dev website coming soon!
+        </span>
       </div>
     </div>
   );
