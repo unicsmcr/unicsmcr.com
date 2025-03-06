@@ -7,6 +7,7 @@ import {
   FaDiscord,
 } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
+import WebsitePreview from "./WebsitePreview";
 
 const ConnectWithUs = () => {
   const icons = [
@@ -43,6 +44,20 @@ const ConnectWithUs = () => {
             </a>
           ))}
         </div>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          gap: "20px",
+          marginTop: "20px",
+        }}
+      >
+        <WebsitePreview
+          image="/guh-website.png"
+          title="Great Uni Hack 2024"
+          link="https://greatunihack.com"
+        />
       </div>
     </div>
   );
