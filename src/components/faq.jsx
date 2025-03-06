@@ -15,24 +15,24 @@ const Faq = () => {
 
   const faqData = [
     {
-      question: "Question 1?",
-      answer: "Answer 1.",
+      question: "How can I contact you?",
+      answer: 'Click on "Join Us" or see our "Contact Us" section.',
     },
     {
-      question: "Question 2?",
-      answer: "Answer 2.",
+      question: "How to learn about UniCS events?",
+      answer: "Check our social media (Instagram at the top) to catch up with our events or view our timeline on this site.",
     },
     {
-      question: "Question 3?",
-      answer: "Answer 3.",
+      question: "How to become part of the UniCS team?",
+      answer: "Keep an eye on our social media and posters for recruitment announcements.",
     },
     {
-      question: "Question 4?",
-      answer: "Answer 4.",
+      question: "I am not a Computer Science student, can I still join?",
+      answer: "100%. UniCS is open to all students. We have many events and workshops geared at helping beginners.",
     },
     {
-      question: "Question 5?",
-      answer: "Answer 5.",
+      question: "Is it free to join UniCS?",
+      answer: "Yes! It is completely free of charge to become a member and is super quick and easy.",
     },
   ];
 
