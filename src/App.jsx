@@ -73,7 +73,7 @@ function App() {
       
       <div className="container">
 
-    <a href="https://www.reply.com/en/about/careers/uk">
+{/* <a href="https://tpp-careers.com"> */}
       <img src="/reply.png" style={{
                   border: "2px solid yellow",
                   width: "30vw",
@@ -84,7 +84,7 @@ function App() {
                   boxShadow: "3px 3px 9px yellow"
                 }}              
           alt="Reply logo" />
-          </a>
+          {/* </a> */}
 
         <p>
           
@@ -100,7 +100,7 @@ function App() {
       
       <div className="container">
 
-      <a href="https://www.weareroku.com/jobs/search">
+      {/* <a href="https://tpp-careers.com"> */}
       <img src="/roku.jpeg" style={{
                   border: "2px solid #555",
                   width: "20vw",
@@ -111,7 +111,7 @@ function App() {
                   boxShadow: "3px 3px 9px #555"
                 }}              
           alt="Roku logo" />
-      </a>
+      {/* </a> */}
         <p>
           
           <br/>
@@ -163,10 +163,7 @@ function App() {
   
       <p style={{color: "#CD7F32", fontSize: "2vw"}}><b>Jane Street (JS) </b></p>
 
-      <div className="container">
-
-    <a href="https://www.janestreet.com/join-jane-street/open-roles/">
-      
+    <div className="container">  
       <img src="/JaneStreet.png" style={{
                   border: "2px solid #CD7F32",
                   width: "14vw",
@@ -178,7 +175,7 @@ function App() {
                   marginTop: "5vw"
                 }}              
           alt="Jane Street logo" />
-      </a>
+
       <p>
       Established in 2000, Jane Street is a research-driven trading firm where
       curious people work together on deep problems. We innovate in tech,
@@ -193,12 +190,8 @@ function App() {
 
       <br/>
       <i>Click on logo to see job Opportunities!</i>
-      </p>
+      </p><br/>
       </div>
-      {/* </div> */}
-
-      <br/>
-      
 
       
       <p style={{color: "#CD7F32", fontSize: "2vw", marginBottom: '5px', marginLeft: '20vw'}}><b>Cambridge Consultants</b></p>
@@ -245,7 +238,6 @@ function App() {
       
       <div className="container">
 
-      <a href="https://the-trackr.com/">
       <img src="/trackr.png" style={{
                   border: "2px solid white",
                   width: "20vw",
@@ -256,13 +248,8 @@ function App() {
                   boxShadow: "3px 3px 9px white"
                 }}              
           alt="Trackr logo" />
-      </a>
-        <p>
-          
-          <br/>
-            <i>Click on logo to see job Opportunities!</i>
-        </p>
 
+        <p></p>
       </div>
       
       <br/><br/><br/>
