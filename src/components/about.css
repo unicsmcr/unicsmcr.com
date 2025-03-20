@@ -1,12 +1,17 @@
-.typewriter {
+.typewriter-container {
+  height: calc(clamp(6px, 4vw, 50px) * 1.5); /* Height based on font size with some extra space */
+  display: flex;
+  align-items: center;
+}
+
+.typewriter-text {
   display: inline-block;
-  font-size: 2.5vw;
-  overflow: hidden;
-  white-space: nowrap;
+  font-size: clamp(6px, 4vw, 50px);
 }
 
 .blinker {
   display: inline-block;
+  font-size: clamp(6px, 4vw, 50px);
   color: #800080;
   animation: blink 1s step-end infinite;
 }
@@ -26,7 +31,19 @@
 }
 
 @media (max-width: 800px) {
+  .instagram-embed {
+    margin-bottom: 80px; 
+  }
   .instagram-embed blockquote {
     max-width: 300px;
+  }
+  .typewriter-container {
+    height: calc(5vw * 1.5); 
+    min-height: 50px;
+    padding-top: 50px;
+  }
+  .typewriter-text {
+    font-size: 5vw; 
+    min-height: 50px;
   }
 }

@@ -15,7 +15,7 @@
   .faq-question {
     cursor: pointer;
     padding: 10px;
-    background-color: #a020f0;
+    background-color: #612685;
     border: 1px solid #a020f0;
     border-radius: 4px;
     font-weight: bold;
@@ -23,10 +23,12 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0;
+    text-align: left;
+    font-size: clamp(16px, 1.5vw, 20px);
   }
   
   .faq-question.open {
-    background-color: #612685;
+    background-color: #a020f0;
   }
   
   .faq-answer {
@@ -44,7 +46,19 @@
   }
   
   .faq-answer.open {
-    max-height: 500px; /* Adjust as needed */
+    max-height: 500px;
     opacity: 1;
-  }                                     
+    font-size: clamp(16px, 1.5vw, 20px)
+  }    
+  
+/* Mobile screens */
+@media (max-width: 768px) {
+  .faq-answer {
+      text-align: center; /* Center text for mobile screens */
+  }
+  .faq-question{
+      text-align: center;
+      flex-direction: column;
+  }
+}
   

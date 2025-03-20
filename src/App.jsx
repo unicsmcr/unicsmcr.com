@@ -5,7 +5,7 @@ import NavBar from "./components/NavBar";
 import Bee from "./Bee";
 import Committee from "./components/Committee";
 import Timeline from "./components/TimeLineFolder/TimeLine";
-import faq from "./components/faq";
+import Faq from "./components/faq";
 import ConnectWithUs from "./components/ConnectWithUs";
 import "./components/Logo.css";
 
@@ -25,12 +25,12 @@ function App() {
   return (
     <>
       <NavBar />
-
+    
       <h1 className="header">
         <span style={{ color: "white" }}>Uni</span>CS
       </h1>
 
-      <p style={{ textAlign: "center", fontSize: "3vw" }}>
+      <p className="tagline">
         University of Manchester <br />
         Computer Science Society{" "}
       </p>
@@ -59,8 +59,9 @@ function App() {
         <p>More information about May Ball coming soon!</p>
       </div>
       
-      <Timeline/>
+      <Timeline />
       <Committee />
+      <Faq />
 
       <h2 id="sponsors" className="header2">
         SPONSORS
